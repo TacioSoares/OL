@@ -367,6 +367,9 @@ li {
     transition-duration: 2s;
     transition-property: opacity;
 }
+.perguntasF, .perguntasG {
+    background-color: rgb(241, 241, 202);
+}
 .marqueX {
     margin-right: 20px;
 }
