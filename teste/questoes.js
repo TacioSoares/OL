@@ -339,21 +339,25 @@ Instalações próximas.
             }
         },
         q9: {
-            pergunta: ``,
+            pergunta: `Quais as medidas tomadas para evitar os riscos de inundação no rio que possa afetar o LABGENE? `,
 
             alternativas: {
-                0: ``,
+                0: `Mesmo ocorrendo a vazão máxima provável, o transbordamento da calha do rio nas proximidades do LABGENE não será capaz de atingi-la.<br><br>
+                
+                Portanto, não é necessário nenhuma medida pois não existe risco de inundação no rio`,
 
                 1: ``,
 
-                2: ``,
+                2: `Serão feitas barreiras físicas no sistema viário no LABGENE com declividades, guias e sarjetas. serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
-                3: ``,
+                3: `As canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
-                4: ``
+                4: `Mesmo ocorrendo a vazão máxima provável, o transbordamento da calha do rio nas proximidades do LABGENE não será capaz de atingi-la.<br><br>
+                
+                Mesmo assim, as canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão superdimensionadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`
             },
 
-            resposta: ``,
+            resposta: `As canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -364,21 +368,21 @@ Instalações próximas.
             }
         },
         q10: {
-            pergunta: ``,
+            pergunta: `Qual é o posto fluviométrico mais próximo de Aramar?`,
 
             alternativas: {
-                0: ``,
+                0: `Estação Corumbá`,
 
-                1: ``,
+                1: `Estação Araçoiaba`,
 
-                2: ``,
+                2: `Estação Usexa`,
 
-                3: ``,
+                3: `Estação Ipanema`,
 
-                4: ``
+                4: `Estação Tupinambá`
             },
 
-            resposta: ``,
+            resposta: `Estação Corumbá`,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -389,21 +393,21 @@ Instalações próximas.
             }
         },
         q11: {
-            pergunta: ``,
+            pergunta: `Qual a magnitude máxima possível de Probabilidade de Sismo (PSS)  que se pode definir na região, utilizando um discernimento conservador?`,
 
             alternativas: {
-                0: ``,
+                0: `Valor de  mb 7,8 ou 8,0`,
 
-                1: ``,
+                1: `Valor de  mb 5,8 ou 6,0`,
 
-                2: ``,
+                2: `Valor de  mb 6,8 ou 7,0`,
 
-                3: ``,
+                3: `Valor de  mb 6,8 ou 7,8`,
 
-                4: ``
+                4: `Valor de  mb 7,0 ou 6,8`
             },
 
-            resposta: ``,
+            resposta: `Valor de  mb 7,0 ou 6,8`,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -414,21 +418,21 @@ Instalações próximas.
             }
         },
         q12: {
-            pergunta: ``,
+            pergunta: `Qual o valor que se pode concluir de sismo básico de projeto recomendado para uma instalação nuclear do CEA?`,
 
             alternativas: {
-                0: ``,
+                0: `Probabilidade anual de 10<sup>-5</sup> `,
 
-                1: ``,
+                1: `Probabilidade anual de 10<sup>-4</sup> `,
 
-                2: ``,
+                2: `Probabilidade anual de 10<sup>-3</sup> `,
 
-                3: ``,
+                3: `Probabilidade anual de 10<sup>-8</sup> `,
 
-                4: ``
+                4: `Probabilidade anual de 10<sup>-2</sup> `
             },
 
-            resposta: ``,
+            resposta: `Probabilidade anual de 10<sup>-4</sup> `,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -439,21 +443,21 @@ Instalações próximas.
             }
         },
         q13: {
-            pergunta: ``,
+            pergunta: `Qual o documento tomado como base para o regulamento de procedimentos para a identificação e caracterização de fontes sísmicas e para a determinação do nível de movimento do terreno?`,
 
             alternativas: {
-                0: ``,
+                0: `CNEN NN 8.01`,
 
-                1: ``,
+                1: `RFAS`,
 
-                2: ``,
+                2: `IAEA 1.165`,
 
-                3: ``,
+                3: `Regulatory Guide 1.165`,
 
-                4: ``
+                4: `NRC Guide 6.265`
             },
 
-            resposta: ``,
+            resposta: `Regulatory Guide 1.165`,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -464,21 +468,34 @@ Instalações próximas.
             }
         },
         q14: {
-            pergunta: ``,
+            pergunta: `Como é demarcado a distribuição da população?`,
 
             alternativas: {
-                0: ``,
+                0: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
 
-                1: ``,
+                Área 2 - População permanente: raio entre 15 e 80 km
+                `,
 
-                2: ``,
+                1: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do ponto central do reator, posteriormente foram estabelecidos círculos concêntricos, com o prédio do LABGENE no ponto central. <br><br>
 
-                3: ``,
+                Área 2 - População permanente: raio entre 15 e 80 km`,
 
-                4: ``
+                2: `Área 1 - População permanente: raio entre 15 e 80 km.<br><br> 
+                
+                Área 2 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central.`,
+
+                3: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
+                
+                Área 2 - População temporária: raio entre 15 e 80 km`,
+
+                4: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o PAC no ponto central. <br><br>
+                
+                Área 2 - População permanente: raio entre 15 e 80 km`
             },
 
-            resposta: ``,
+            resposta: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
+                
+                Área 2 - População permanente: raio entre 15 e 80 km`,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
