@@ -1,64 +1,53 @@
 let perguntas = document.querySelectorAll('.perguntas') // Pega no HTML os campos de questao
 const botaoResposta = document.querySelectorAll ('.chamaResposta')
 
-const quantidadeDeQuestoes = Object.keys(questoes.multipla)
-console.log(quantidadeDeQuestoes)
 
-criarQuestoesNoHTML()
 
-function criarQuestoesNoHTML() {
-    quantidadeDeQuestoes.forEach(numero => {
-        console.log(numero)
-        criarTags(numero)
+console.log(perguntas.length)
+
+
+function insereQuestao() {
+
+    let numeroQuestao = procuraQuestaoNova()
+
+    numeroQuestao.forEach(numero => {
+        InsereAPergunta(numero)
+        // InsereAlternativas(numero)
     })
-}
 
-function criarTags(numero) {
-    var tagsQuestao = []
-    tagsQuestao.push(document.createElement('div'))
-    tagsQuestao.push(document.createElement('span'))
-    tagsQuestao.push(document.createElement('div'))
-    tagsQuestao.push(document.createElement('h4'))
-    tagsQuestao.push(document.createElement('div'))
-    tagsQuestao.push(document.createElement('ul'))
-    tagsQuestao.push(document.createElement('li'))
-    tagsQuestao.push(document.createElement('input'))
-    tagsQuestao.push(document.createElement('label'))
-    tagsQuestao.push(document.createElement('hr'))
-    tagsQuestao.push(document.createElement('li'))
-    tagsQuestao.push(document.createElement('input'))
-    tagsQuestao.push(document.createElement('label'))
-    tagsQuestao.push(document.createElement('hr'))
-    tagsQuestao.push(document.createElement('li'))
-    tagsQuestao.push(document.createElement('input'))
-    tagsQuestao.push(document.createElement('label'))
-    tagsQuestao.push(document.createElement('hr'))
-    tagsQuestao.push(document.createElement('li'))
-    tagsQuestao.push(document.createElement('input'))
-    tagsQuestao.push(document.createElement('label'))
-    tagsQuestao.push(document.createElement('hr'))
-    tagsQuestao.push(document.createElement('li'))
-    tagsQuestao.push(document.createElement('input'))
-    tagsQuestao.push(document.createElement('label'))
-    tagsQuestao.push(document.createElement('p'))
-    tagsQuestao.push(document.createElement('input'))
-    tagsQuestao.push(document.createElement('hr'))
-    montagemDaQuestao(tagsQuestao, numero)
-}
 
-function montagemDaQuestao(tagsQuestao, numero) {
-    
-}
+    function InsereAPergunta(numero) {
+        let i = 0
+        while (i < perguntas.length) {
+            // Inserindo perguntas do banco na página
+            perguntas[i].querySelector('h4').innerHTML = Object.entries(questoes.multipla[numero].pergunta)
 
-function inserePerguntas() {
-    perguntas[0].getElementsByTagName('h4')[0].innerText += questoes.multipla.q1.pergunta 
+            // Inserindo respostas do banco na página
+            console.log(perguntas[i].querySelector('li'))
+            i++
+        }
+        /* campoPergunta.innerHTML = Object.entries(questoes.multipla[numero].pergunta) */
+    }
+
+    //console.log()
 
     perguntas[0].querySelectorAll('li').forEach(completarAlternativas)
 }
 
+// console.log(Object.keys(questoes.multipla).length)
+// console.log(procuraQuestaoNova())
 
 
-
+function procuraQuestaoNova() {
+    let questaoSorteada = []
+    while (questaoSorteada.length < perguntas.length) {
+        var numero = Math.floor(Math.random() * (perguntas.length))
+        if (questaoSorteada.indexOf(numero) == -1) {
+            questaoSorteada.push(numero)
+        }
+    }
+    return questaoSorteada
+}
 
 //console.log(questoes.multipla.q1.alternativas[0])
 
@@ -71,7 +60,7 @@ function organizarQuestao(li, indice) {
     return li.querySelectorAll('label')[0]
 }
 
-inserePerguntas()
+insereQuestao()
 
 botaoResposta.forEach(botao => {
     botao.addEventListener('click', confereResposta)

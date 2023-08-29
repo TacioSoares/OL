@@ -29,7 +29,7 @@ const questoes = {
             pergunta: `Quais os locais de patrimônio histórico que existe na região e que pode ser atingido?`,
 
             alternativas: {
-                0: `Instituto Técnico Federal de São Paulo (IFSP); <br><br>
+                0: `Floresta Nacional de; <br><br>
                 Acervo do Museu de Arte Moderna de São Paulo (AMAMSP).
                 `,
 
@@ -284,51 +284,51 @@ const questoes = {
                 1: `
                 Linhas de transmissão; <br><br>
                 Rotas com potenciais de riscos;<br><br>
-    Gasodutos Bolívia-Brasil;<br><br>
-    Ferrovias e rodovias;<br><br>
-    Instalações do CEA;<br><br>
-    Ocorrências de incêndios;<br><br>
-    Invasões;<br><br>
-    Instalações próximas.`,
+                Gasodutos Bolívia-Brasil;<br><br>
+                Ferrovias e rodovias;<br><br>
+                Instalações do CEA;<br><br>
+                Ocorrências de incêndios;<br><br>
+                Invasões;<br><br>
+                Instalações próximas.`,
 
                 2: `Ocorrências de incêndios;<br><br>
                 Risco de sabotagem; <br><br>
                 Rotas com potenciais de riscos;<br><br>
-    Gasodutos Bolívia-Brasil;<br><br>
-    Ferrovias, rodovias;<br><br>
-    Instalações do CEA;<br><br>
-    Invasões;<br><br>
-    Instalações próximas.`,
+                Gasodutos Bolívia-Brasil;<br><br>
+                Ferrovias, rodovias;<br><br>
+                Instalações do CEA;<br><br>
+                Invasões;<br><br>
+                Instalações próximas.`,
 
                 3: `Ocorrências de incêndios;<br><br>
                 Linhas de transmissão de Internet; <br><br>
                 Rotas com potenciais de riscos;<br><br>
-    Gasodutos Bolívia-Brasil;<br><br>
-    Ferrovias, rodovias;<br><br>
-    Instalações do CEA;<br><br>
-    Invasões;<br><br>
-    Instalações próximas.`,
+                Gasodutos Bolívia-Brasil;<br><br>
+                Ferrovias, rodovias;<br><br>
+                Instalações do CEA;<br><br>
+                Invasões;<br><br>
+                Instalações próximas.`,
 
                 4: `Ocorrências de incêndios;<br><br>
                 Linhas de transmissão de Internet; <br><br>
                 Rotas com potenciais de riscos;<br><br>
-    Gasodutos Bolívia-Brasil;<br><br>
-    Ferrovias, rodovias e hidrovias;<br><br>
-    Instalações do CEA;<br><br>
-    Invasões;<br><br>
-    Instalações próximas.`
+                Gasodutos Bolívia-Brasil;<br><br>
+                Ferrovias, rodovias e hidrovias;<br><br>
+                Instalações do CEA;<br><br>
+                Invasões;<br><br>
+                Instalações próximas.`
             },
 
             resposta: `
             Linhas de transmissão; <br><br>
             Rotas com potenciais de riscos;<br><br>
-Gasodutos Bolívia-Brasil;<br><br>
-Ferrovias e rodovias;<br><br>
-Instalações do CEA;<br><br>
-Ocorrências de incêndios;<br><br>
-Invasões;<br><br>
-Instalações próximas.
-`,
+            Gasodutos Bolívia-Brasil;<br><br>
+            Ferrovias e rodovias;<br><br>
+            Instalações do CEA;<br><br>
+            Ocorrências de incêndios;<br><br>
+            Invasões;<br><br>
+            Instalações próximas.
+            `,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -450,7 +450,7 @@ Instalações próximas.
 
                 1: `RFAS`,
 
-                2: `IAEA 1.165`,
+                2: `IAEA 1.155`,
 
                 3: `Regulatory Guide 1.165`,
 
