@@ -346,11 +346,11 @@ const questoes = {
                 
                 Portanto, não é necessário nenhuma medida pois não existe risco de inundação no rio`,
 
-                1: ``,
+                1: `As canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
                 2: `Serão feitas barreiras físicas no sistema viário no LABGENE com declividades, guias e sarjetas. serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
-                3: `As canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
+                3: `As canaletas de drenagem e o sistema viário no LABGENE com inclinações e canaletas de água serão recalculados para lidar com chuvas extremamentas e para garantir que o fluxo de tráfego seja mantido no local.`,
 
                 4: `Mesmo ocorrendo a vazão máxima provável, o transbordamento da calha do rio nas proximidades do LABGENE não será capaz de atingi-la.<br><br>
                 
