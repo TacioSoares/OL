@@ -25,6 +25,22 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.botao-simulado {
+    display: block;
+    margin: auto;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: desafio;
+    font-weight: bold;
+    box-shadow: 2px 3px 10px;
+    cursor: pointer;
+}
+section a {
+    text-decoration: none;
+}
 .cls-44 {
     animation: show 1.5s ease-in-out infinite alternate 3.5s;
 }
