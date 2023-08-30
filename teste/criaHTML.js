@@ -70,7 +70,7 @@ function montagemEIdentificaDaQuestao(tagsQuestao, numero, indice) {
     adicionaAtributo(tagsQuestao[7], numero, 'type', 'radio')
     adicionaAtributo(tagsQuestao[7], numero, 'name', numero)
     adicionaAtributo(tagsQuestao[7], numero, 'id', numero+'-01')
-
+    adicionaClass(tagsQuestao[7], numero, 'input-radio')
 
     tagsQuestao[6].append(tagsQuestao[8]) // inserindo label dentro da li
     
@@ -84,6 +84,7 @@ function montagemEIdentificaDaQuestao(tagsQuestao, numero, indice) {
     adicionaAtributo(tagsQuestao[11], numero, 'type', 'radio')
     adicionaAtributo(tagsQuestao[11], numero, 'name', numero)
     adicionaAtributo(tagsQuestao[11], numero, 'id', numero+'-02')
+    adicionaClass(tagsQuestao[11], numero, 'input-radio')
 
     tagsQuestao[10].append(tagsQuestao[12]) // inserindo label dentro da segunda li
 
@@ -96,6 +97,7 @@ function montagemEIdentificaDaQuestao(tagsQuestao, numero, indice) {
     adicionaAtributo(tagsQuestao[15], numero, 'type', 'radio')
     adicionaAtributo(tagsQuestao[15], numero, 'name', numero)
     adicionaAtributo(tagsQuestao[15], numero, 'id', numero+'-03')
+    adicionaClass(tagsQuestao[15], numero, 'input-radio')
 
     tagsQuestao[14].append(tagsQuestao[16]) // inserindo label dentro da li
 
@@ -109,6 +111,7 @@ function montagemEIdentificaDaQuestao(tagsQuestao, numero, indice) {
     adicionaAtributo(tagsQuestao[19], numero, 'type', 'radio')
     adicionaAtributo(tagsQuestao[19], numero, 'name', numero)
     adicionaAtributo(tagsQuestao[19], numero, 'id', numero+'-04')
+    adicionaClass(tagsQuestao[19], numero, 'input-radio')
 
     tagsQuestao[18].append(tagsQuestao[20]) // inserindo label dentro da li
 
@@ -122,6 +125,8 @@ function montagemEIdentificaDaQuestao(tagsQuestao, numero, indice) {
     adicionaAtributo(tagsQuestao[23], numero, 'type', 'radio')
     adicionaAtributo(tagsQuestao[23], numero, 'name', numero)
     adicionaAtributo(tagsQuestao[23], numero, 'id', numero+'-05')
+    adicionaClass(tagsQuestao[23], numero, 'input-radio')
+
 
     tagsQuestao[22].append(tagsQuestao[24]) // inserindo label dentro da li
 
@@ -134,6 +139,8 @@ function montagemEIdentificaDaQuestao(tagsQuestao, numero, indice) {
     adicionaAtributo(tagsQuestao[26], numero, 'type', 'button')
     adicionaAtributo(tagsQuestao[26], numero, 'value', 'Resposta')
     adicionaAtributo(tagsQuestao[26], numero, 'class', 'chamaResposta')
+    adicionaClass(tagsQuestao[26], numero, 'input-radio')
+
 
     tagsQuestao[2].append(tagsQuestao[27]) // inserindo hr no Final de cada pergunta
 }

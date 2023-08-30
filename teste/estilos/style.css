@@ -11,6 +11,14 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+li {
+    display: flex;
+    align-items: flex-start;
+}
+.input-radio {
+    margin-right: 25px;
+}
 html {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 10px;
