@@ -59,16 +59,7 @@ const questoes = {
             pergunta: `Quais os principais problemas socioambientais preexistentes na região da instalação e quais as consequências deles?`,
 
             alternativas: {
-                0: `
-                
-                Estradas internas - formação de sulcos erosivos;<br><br>
-
-                Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br>
-
-                Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br>
-
-                Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento. 
-                `,
+                0: 'Estradas internas - formação de sulcos erosivos;<br><br> Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br> Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br> Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento.',
 
                 1: `Oleoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento; <br><br>
 
@@ -105,13 +96,7 @@ const questoes = {
                 Alteração do clima devido ao aquecimento global.`
             },
 
-            resposta: `Estradas internas - formação de sulcos erosivos;<br><br>
-
-                Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br>
-
-                Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br>
-                
-                Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento.`,
+            resposta: 'Estradas internas - formação de sulcos erosivos;<br><br> Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br> Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br> Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -155,22 +140,10 @@ const questoes = {
                 Proximidade com Sorocaba, São Paulo e Campinas; <br><br>
                 Sismologia estável;`,
 
-                4: `Disponibilidade de vias de tráfego. <br><br>
-                Disponibilidade de água; <br><br>
-                Disponibilidade de Energia Elétrica; <br><br>
-                Raio de 100km a partir da USP; <br><br>
-                Cidades de apoio próxima; <br><br>
-                Sismologia estável`
+                4: 'Disponibilidade de vias de tráfego. <br><br> Disponibilidade de água; <br><br> Disponibilidade de Energia Elétrica; <br><br> Raio de 100km a partir da USP; <br><br> Cidades de apoio próxima; <br><br> Sismologia estável',
             },
 
-            resposta: `
-            Disponibilidade de vias de tráfego. <br><br>
-            Disponibilidade de água; <br><br>
-            Disponibilidade de Energia Elétrica; <br><br>
-            Raio de 100km a partir da USP; <br><br>
-            Cidades de apoio próxima; <br><br>
-            Sismologia estável;
-            `,
+            resposta: 'Disponibilidade de vias de tráfego. <br><br> Disponibilidade de água; <br><br> Disponibilidade de Energia Elétrica; <br><br> Raio de 100km a partir da USP; <br><br> Cidades de apoio próxima; <br><br> Sismologia estável',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -234,9 +207,7 @@ const questoes = {
             pergunta: `Como é demarcada a área de exclusão e zona de baixa população do LABGENE?`,
 
             alternativas: {
-                0: `Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 330 metros medidos a partir do marco zero (Área 3) <br><br>
-                A zona de baixa população tem 2200 metros de raio a partir do marco zero (Área 4)..
-                `,
+                0: 'Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 330 metros medidos a partir do marco zero (Área 3) <br><br> A zona de baixa população tem 2200 metros de raio a partir do marco zero (Área 4).',
 
                 1: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
                 Área 2 - População permanente: raio entre 15 e 80 km
@@ -252,8 +223,7 @@ const questoes = {
                 A zona de baixa população tem 2500 metros de raio a partir do marco zero (Área 4).`
             },
 
-            resposta: `Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 330 metros medidos a partir do marco zero (Área 3) <br><br>
-            A zona de baixa população tem 2200 metros de raio a partir do marco zero (Área 4).`,
+            resposta: 'Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 330 metros medidos a partir do marco zero (Área 3) <br><br> A zona de baixa população tem 2200 metros de raio a partir do marco zero (Área 4).',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -276,15 +246,7 @@ const questoes = {
                 Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa
                 `,
 
-                1: `
-                Linhas de transmissão; <br><br>
-                Rotas com potenciais de riscos;<br><br>
-                Gasodutos Bolívia-Brasil;<br><br>
-                Ferrovias e rodovias;<br><br>
-                Instalações do CEA;<br><br>
-                Ocorrências de incêndios;<br><br>
-                Invasões;<br><br>
-                Instalações próximas.`,
+                1: 'Linhas de transmissão; <br><br> Rotas com potenciais de riscos;<br><br> Gasodutos Bolívia-Brasil;<br><br> Ferrovias e rodovias;<br><br> Instalações do CEA;<br><br> Ocorrências de incêndios;<br><br> Invasões;<br><br> Instalações próximas.',
 
                 2: `Ocorrências de incêndios;<br><br>
                 Risco de sabotagem; <br><br>
@@ -314,16 +276,7 @@ const questoes = {
                 Instalações próximas.`
             },
 
-            resposta: `
-            Linhas de transmissão; <br><br>
-            Rotas com potenciais de riscos;<br><br>
-            Gasodutos Bolívia-Brasil;<br><br>
-            Ferrovias e rodovias;<br><br>
-            Instalações do CEA;<br><br>
-            Ocorrências de incêndios;<br><br>
-            Invasões;<br><br>
-            Instalações próximas.
-            `,
+            resposta: 'Linhas de transmissão; <br><br> Rotas com potenciais de riscos;<br><br> Gasodutos Bolívia-Brasil;<br><br> Ferrovias e rodovias;<br><br> Instalações do CEA;<br><br> Ocorrências de incêndios;<br><br> Invasões;<br><br> Instalações próximas.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -466,7 +419,7 @@ const questoes = {
             pergunta: `Como é demarcado a distribuição da população?`,
 
             alternativas: {
-                0: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
+                0: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do centro do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
 
                 Área 2 - População permanente: raio entre 15 e 80 km
                 `,
@@ -479,18 +432,14 @@ const questoes = {
                 
                 Área 2 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central.`,
 
-                3: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
-                
-                Área 2 - População temporária: raio entre 15 e 80 km`,
+                3: 'Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br> Área 2 - População permanente: raio entre 15 e 80 km',
 
                 4: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o PAC no ponto central. <br><br>
                 
                 Área 2 - População permanente: raio entre 15 e 80 km`
             },
 
-            resposta: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
-                
-                Área 2 - População permanente: raio entre 15 e 80 km`,
+            resposta: 'Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br> Área 2 - População permanente: raio entre 15 e 80 km',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
