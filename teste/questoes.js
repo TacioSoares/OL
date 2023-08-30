@@ -395,7 +395,7 @@ const questoes = {
 
                 1: `Valor de  mb 5,8 ou 6,0`,
 
-                2: `Valor de  mb 6,8 ou 7,0`,
+                2: `Valor de  mb 6,8 ou 7,2`,
 
                 3: `Valor de  mb 6,8 ou 7,8`,
 
