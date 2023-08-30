@@ -4,7 +4,7 @@ const questoes = {
             pergunta: 'Qual o tipo de vegetação da região do LABGENE?',
 
             alternativas: {
-                0: 'A região está inserida no bioma Árido, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Mista (Ou floresta tropical)',
+                0: `A região está inserida no bioma Árido, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Mista (Ou floresta tropical)`,
 
                 1: 'A região está inserida no bioma Caatiga, em maior porção, e menos expressivamente na Floresta Amazônia, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial)',
 
@@ -506,50 +506,80 @@ const questoes = {
         let arrayDeNumeros = arrayDeNumerosSorteados()
         
         let questoesDeMultiplaEscolha = Object.entries(questoes.multipla)
-        console.log(questoes.multipla.q1.alternativas[0])
+        
         let w = 0
-        while (w < 5) {
-            questoes.multipla.q1.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        while (w < 4) {
+            [questoes.multipla.q1.alternativas[w], questoes.multipla.q1.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q1.alternativas[arrayDeNumeros[w]], questoes.multipla.q1.alternativas[w]]
             w ++
         }
-        while (w < 5) {
-            questoes.multipla.q2.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q2.alternativas[w], questoes.multipla.q2.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q2.alternativas[arrayDeNumeros[w]], questoes.multipla.q2.alternativas[w]] 
             w ++
-        }while (w < 5) {
-            questoes.multipla.q3.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q3.alternativas[w], questoes.multipla.q3.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q3.alternativas[arrayDeNumeros[w]], questoes.multipla.q3.alternativas[w]]
             w ++
-        }while (w < 5) {
-            questoes.multipla.q4.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q4.alternativas[w], questoes.multipla.q4.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q4.alternativas[arrayDeNumeros[w]], questoes.multipla.q4.alternativas[w]]
             w ++
-        }while (w < 5) {
-            questoes.multipla.q5.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {/* 
+            questoes.multipla.q5.alternativas[w] = questoes.multipla.q5.alternativas[arrayDeNumeros[w]] 
+ */
+            [questoes.multipla.q5.alternativas[w], questoes.multipla.q5.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q5.alternativas[arrayDeNumeros[w]], questoes.multipla.q5.alternativas[w]]
+            /* console.log(arrayDeNumeros)
+            console.log(questoes.multipla.q5.alternativas[w])
+            console.log(questoes.multipla.q5.alternativas[arrayDeNumeros[w]]) */
             w ++
-        }while (w < 5) {
-            questoes.multipla.q6.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q6.alternativas[w], questoes.multipla.q6.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q6.alternativas[arrayDeNumeros[w]], questoes.multipla.q6.alternativas[w]]
             w ++
-        }while (w < 5) {
-            questoes.multipla.q7.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q7.alternativas[w], questoes.multipla.q7.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q7.alternativas[arrayDeNumeros[w]], questoes.multipla.q7.alternativas[w]]
             w ++
-        }while (w < 5) {
-            questoes.multipla.q8.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q8.alternativas[w], questoes.multipla.q8.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q8.alternativas[arrayDeNumeros[w]], questoes.multipla.q8.alternativas[w]]
             w ++
-        }while (w < 5) {
-            questoes.multipla.q9.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q9.alternativas[w], questoes.multipla.q9.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q9.alternativas[arrayDeNumeros[w]], questoes.multipla.q9.alternativas[w]]
             w ++
-        }while (w < 5) {
-            questoes.multipla.q10.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q10.alternativas[w], questoes.multipla.q10.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q10.alternativas[arrayDeNumeros[w]], questoes.multipla.q10.alternativas[w]] 
             w ++
-        }while (w < 5) {
-            questoes.multipla.q11.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q11.alternativas[w], questoes.multipla.q11.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q11.alternativas[arrayDeNumeros[w]], questoes.multipla.q11.alternativas[w]] 
             w ++
-        }while (w < 5) {
-            questoes.multipla.q12.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q12.alternativas[w], questoes.multipla.q12.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q12.alternativas[arrayDeNumeros[w]], questoes.multipla.q12.alternativas[w]] 
             w ++
-        }while (w < 5) {
-            questoes.multipla.q13.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q13.alternativas[w], questoes.multipla.q13.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q13.alternativas[arrayDeNumeros[w]], questoes.multipla.q13.alternativas[w]] 
             w ++
-        }while (w < 5) {
-            questoes.multipla.q14.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q14.alternativas[w], questoes.multipla.q14.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q14.alternativas[arrayDeNumeros[w]], questoes.multipla.q14.alternativas[w]] 
             w ++
         }
     },
