@@ -500,5 +500,71 @@ const questoes = {
                 }
             }
         },
-    }
+    },
+    
+    embaralhar() {
+        let arrayDeNumeros = arrayDeNumerosSorteados()
+        
+        let questoesDeMultiplaEscolha = Object.entries(questoes.multipla)
+        console.log(questoes.multipla.q1.alternativas[0])
+        let w = 0
+        while (w < 5) {
+            questoes.multipla.q1.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }
+        while (w < 5) {
+            questoes.multipla.q2.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q3.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q4.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q5.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q6.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q7.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q8.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q9.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q10.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q11.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q12.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q13.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }while (w < 5) {
+            questoes.multipla.q14.alternativas[w] = questoes.multipla.q1.alternativas[arrayDeNumeros[w]] 
+            w ++
+        }
+    },
+
+    
+    
 }
+function arrayDeNumerosSorteados() {
+    let questaoSorteada = []
+    while (questaoSorteada.length < 5) {
+        var numero = Math.floor(Math.random() * (5))
+        if (questaoSorteada.indexOf(numero) == -1) {
+            questaoSorteada.push(numero)
+        }
+    }
+    return questaoSorteada
+}
+questoes.embaralhar()

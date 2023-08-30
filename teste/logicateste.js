@@ -1,6 +1,5 @@
 const botaoResposta = document.querySelectorAll ('.chamaResposta')
 
-console.log(ordemDasQuestoes)
 
 botaoResposta.forEach(botao => {
     botao.addEventListener('click', confereResposta)
@@ -24,7 +23,6 @@ function confereResposta(event) {
     let erro = 0
     inputs.forEach(input => {
         if(input.checked) {
-            console.log(input.nextElementSibling.innerText)
             if(questaoClicada.responder((input.nextElementSibling.innerHTML))) {
                 return mensagem(true, botao, questaoClicada)
             } else {
