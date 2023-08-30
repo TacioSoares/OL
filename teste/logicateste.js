@@ -8,11 +8,11 @@ botaoResposta.forEach(botao => {
 
 function mensagem(feedback, botao, questaoClicada) {
     if(feedback) {
-        botao.parentNode.innerHTML = `<p>Resposta Correta`
+        botao.parentNode.innerHTML = `<p class="veredito-positivo">Resposta Correta`
     } else {
-        botao.parentNode.innerHTML = `<p>Resposta Incorreta! <br><br></P
+        botao.parentNode.innerHTML = `<p class="veredito-negativo">Resposta Incorreta <br><br></P
         <p>A resposta certa é:<br><br></p>
-        <p>${questaoClicada.resposta}</p>`
+        <p class="resposta-correta">${questaoClicada.resposta}</p>`
     }
 }
 

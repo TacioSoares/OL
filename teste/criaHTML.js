@@ -139,7 +139,6 @@ function montagemEIdentificaDaQuestao(tagsQuestao, numero, indice) {
     adicionaAtributo(tagsQuestao[26], numero, 'type', 'button')
     adicionaAtributo(tagsQuestao[26], numero, 'value', 'Resposta')
     adicionaAtributo(tagsQuestao[26], numero, 'class', 'chamaResposta')
-    adicionaClass(tagsQuestao[26], numero, 'input-radio')
 
 
     tagsQuestao[2].append(tagsQuestao[27]) // inserindo hr no Final de cada pergunta

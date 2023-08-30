@@ -33,6 +33,20 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.veredito-positivo {
+    color: green;
+    font-weight: bold;
+}
+.veredito-negativo {
+    color: red;
+    font-weight: bold;
+}
+
+.resposta-correta {
+    font-style: italic;
+}
+
 .cls-44 {
     animation: show 1.5s ease-in-out infinite alternate 3.5s;
 }
