@@ -1,0 +1,38 @@
+const botaoResposta = document.querySelectorAll ('.chamaResposta')
+
+
+botaoResposta.forEach(botao => {
+    botao.addEventListener('click', confereResposta)
+});
+
+function mensagem(feedback, botao, questaoClicada) {
+    if(feedback) {
+        botao.parentNode.innerHTML = `<p class="veredito-positivo">Resposta Correta`
+    } else {
+        botao.parentNode.innerHTML = `<p class="veredito-negativo">Resposta Incorreta <br><br></P
+        <p>A resposta certa é:<br><br></p>
+        <p class="resposta-correta">${questaoClicada.resposta}</p>`
+    }
+}
+
+function confereResposta(event) {
+    let botao = event.target
+    let inputs = event.target.parentNode.parentNode.querySelectorAll('input')
+    let numeroClicada = botao.parentNode.parentNode.parentNode.querySelector('span').innerHTML.substring(8)
+    let questaoClicada = ordemDasQuestoes[numeroClicada-1]
+    let erro = 0
+    inputs.forEach(input => {
+        if(input.checked) {
+            if(questaoClicada.responder((input.nextElementSibling.innerHTML))) {
+                return mensagem(true, botao, questaoClicada)
+            } else {
+                return mensagem(false, botao, questaoClicada)
+            }
+        } else {
+            erro += 1
+        }
+    })
+
+}
+
+// input.nextElementSibling
