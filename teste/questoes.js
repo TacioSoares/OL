@@ -500,6 +500,109 @@ const questoes = {
                 }
             }
         },
+        q15: {
+            pergunta: `Qual é a norma que estabelece as orientações para a concessão de licenças a instalações nucleares e requer uma avaliação inicial da possível influência no ambiente?`,
+
+            alternativas: {
+                0: `U.S. Nuclear Regulatory Commission 1.04`,
+
+                1: `Norma CNEN 1.04`,
+
+                2: `ABNT 1.22`,
+
+                3: `NRC Regulatory Guide 1.04`,
+
+                4: `Norma CNEN 1.22`
+            },
+
+            resposta: `Norma CNEN 1.04`,
+
+            responder(alternativa) {
+                if (alternativa == this.resposta) {
+                    return true;
+                } else {
+                    return false
+                }
+            }
+        },
+        q16: {
+            pergunta: `
+            Com que frequência as informações meteorológicas precisam ser atualizadas para a CNEN?`,
+
+            alternativas: {
+                0: `A cada 6 meses`,
+
+                1: `Anualmente`,
+
+                2: `A cada 4 anos`,
+
+                3: `A cada 3 anos`,
+
+                4: `A cada 2 anos`
+            },
+
+            resposta: `A cada 2 anos`,
+
+            responder(alternativa) {
+                if (alternativa == this.resposta) {
+                    return true;
+                } else {
+                    return false
+                }
+            }
+        },
+        q17: {
+            pergunta: `
+            Qual é a relevância da vigilância pós-descomissionamento de uma instalação nuclear e qual norma aborda esse tópico?`,
+
+            alternativas: {
+                0: `O monitoramento após o descomissionamento é realizado apenas para cumprir formalidades burocráticas, sem considerar qualquer potencial impacto. A orientação é dada na CNEN 7.32.`,
+
+                1: `A vigilância pós-descomissionamento é apenas para fins estatísticos e não tem relação com impactos ambientais ou públicos. A norma relevante é a CNEN 5.67.`,
+
+                2: `A principal razão para o monitoramento pós-descomissionamento é determinar o valor histórico da instalação, e isso é regulamentado pela CNEN 3.14.`,
+
+                3: `Para avaliar possíveis impactos ambientais e/ou ao público. A norma é a CNEN 9.01`,
+
+                4: `A CNEN não possui diretrizes específicas para o monitoramento pós-descomissionamento, pois esse processo não é considerado relevante para instalações já desativadas.`
+            },
+
+            resposta: `Para avaliar possíveis impactos ambientais e/ou ao público. A norma é a CNEN 9.01`,
+
+            responder(alternativa) {
+                if (alternativa == this.resposta) {
+                    return true;
+                } else {
+                    return false
+                }
+            }
+        },
+        q18: {
+            pergunta: `
+            Quais são os fenômenos meteorológicos sinóticos predominantes na região que são comunicados à CNEN?`,
+
+            alternativas: {
+                0: `Os eventos de furacões, chuvas torrenciais e deslizamentos de terra são os principais fenômenos reportados à CNEN como parte de suas atividades de vigilância.`,
+
+                1: `A CNEN prioriza o monitoramento de atividades sísmicas, erupções vulcânicas e mudanças de marés como os principais fenômenos sinóticos da região.`,
+
+                2: `Frentes frias, zona de convergência do atlântico sul e bloqueios atmosféricos.`,
+
+                3: `As condições climáticas normais, chuvas leves e nevoeiros são os principais fenômenos meteorológicos sinóticos reportados à CNEN.`,
+
+                4: `A CNEN concentra-se principalmente em monitorar padrões de tráfego aéreo e condições atmosféricas para fins de aviação, sem considerar fenômenos sinóticos específicos.`
+            },
+
+            resposta: `Frentes frias, zona de convergência do atlântico sul e bloqueios atmosféricos.`,
+
+            responder(alternativa) {
+                if (alternativa == this.resposta) {
+                    return true;
+                } else {
+                    return false
+                }
+            }
+        },
     },
     
     embaralhar() {
@@ -580,6 +683,26 @@ const questoes = {
         w = 0
         while (w < 4) {
             [questoes.multipla.q14.alternativas[w], questoes.multipla.q14.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q14.alternativas[arrayDeNumeros[w]], questoes.multipla.q14.alternativas[w]] 
+            w ++
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q15.alternativas[w], questoes.multipla.q15.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q15.alternativas[arrayDeNumeros[w]], questoes.multipla.q15.alternativas[w]] 
+            w ++
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q16.alternativas[w], questoes.multipla.q16.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q16.alternativas[arrayDeNumeros[w]], questoes.multipla.q16.alternativas[w]] 
+            w ++
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q17.alternativas[w], questoes.multipla.q17.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q17.alternativas[arrayDeNumeros[w]], questoes.multipla.q17.alternativas[w]] 
+            w ++
+        }
+        w = 0
+        while (w < 4) {
+            [questoes.multipla.q18.alternativas[w], questoes.multipla.q18.alternativas[arrayDeNumeros[w]]] = [questoes.multipla.q18.alternativas[arrayDeNumeros[w]], questoes.multipla.q18.alternativas[w]] 
             w ++
         }
     },
