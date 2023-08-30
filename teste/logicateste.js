@@ -24,8 +24,8 @@ function confereResposta(event) {
     let erro = 0
     inputs.forEach(input => {
         if(input.checked) {
-
-            if(questaoClicada.responder((input.nextElementSibling.innerText))) {
+            console.log(input.nextElementSibling.innerText)
+            if(questaoClicada.responder((input.nextElementSibling.innerHTML))) {
                 return mensagem(true, botao, questaoClicada)
             } else {
                 return mensagem(false, botao, questaoClicada)

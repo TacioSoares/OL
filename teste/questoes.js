@@ -29,7 +29,7 @@ const questoes = {
             pergunta: `Quais os locais de patrimônio histórico que existe na região e que pode ser atingido?`,
 
             alternativas: {
-                0: `Floresta Nacional de; <br><br>
+                0: `Floresta Nacional; <br><br>
                 Acervo do Museu de Arte Moderna de São Paulo (AMAMSP).
                 `,
 
@@ -39,18 +39,13 @@ const questoes = {
                 2: `Instituto Chico Mendes da Conservação do Biodiesel (ICMBio); <br><br>
                 Sítio histórico tombado pelo Instituto do Paraná Histórico e Artístico Nacional (IPHAN)`,
 
-                3: `Sítio histórico tombado pelo Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN);<br><br>
-                
-                Instituto Chico Mendes da Conservação da Biodiversidade (ICMBio).
-                `,
+                3: 'Sítio histórico tombado pelo Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN);<br><br>Instituto Chico Mendes da Conservação da Biodiversidade (ICMBio)',
 
                 4: `Fundação Pátria; <br><br>
                 Reator Multipropósito Brasileiro (RMB)`
             },
 
-            resposta: `Sítio histórico tombado pelo Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN);<br><br>
-                
-            Instituto Chico Mendes da Conservação da Biodiversidade (ICMBio)`,
+            resposta: 'Sítio histórico tombado pelo Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN);<br><br>Instituto Chico Mendes da Conservação da Biodiversidade (ICMBio)',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -218,14 +213,14 @@ const questoes = {
 
                 1: `Responsabilidade do Diretor do LABGENE `,
 
-                2: `Responsabilidade do Diretor do CTMSP `,
+                2: `Responsabilidade do Diretor do CTMSP`,
 
                 3: `Responsabilidade do Diretor do CEA `,
 
                 4: `Responsabilidade do Diretor de ARAMAR `
             },
 
-            resposta: `Responsabilidade do Diretor do CTMSP `,
+            resposta: `Responsabilidade do Diretor do CTMSP`,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -350,7 +345,7 @@ const questoes = {
 
                 2: `Serão feitas barreiras físicas no sistema viário no LABGENE com declividades, guias e sarjetas. serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
-                3: `As canaletas de drenagem e o sistema viário no LABGENE com inclinações e canaletas de água serão recalculados para lidar com chuvas extremamentas e para garantir que o fluxo de tráfego seja mantido no local.`,
+                3: `As canaletas de drenagem e o sistema viário no LABGENE com inclinações e canaletas de água serão recalculados para lidar com chuvas extremas e para garantir que o fluxo de tráfego seja mantido no local.`,
 
                 4: `Mesmo ocorrendo a vazão máxima provável, o transbordamento da calha do rio nas proximidades do LABGENE não será capaz de atingi-la.<br><br>
                 
