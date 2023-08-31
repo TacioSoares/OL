@@ -296,7 +296,7 @@ const questoes = {
 
                 1: `As canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
-                2: `Serão feitas barreiras físicas no sistema viário no LABGENE com declividades, guias e sarjetas. serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
+                2: `Serão feitas barreiras físicas no sistema viário no LABGENE com declividades, guias e sarjetas serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
 
                 3: `As canaletas de drenagem e o sistema viário no LABGENE com inclinações e canaletas de água serão recalculados para lidar com chuvas extremas e para garantir que o fluxo de tráfego seja mantido no local.`,
 
