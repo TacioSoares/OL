@@ -79,7 +79,7 @@ const questoes = {
                 Estradas internas - formação de sulcos erosivos.
                 `,
 
-                3: `Curvas Sinuosas na Estrada - causa de acidentes automobilístico anual acima da média;<br><br>
+                3: `Curvas sinuosas na Estrada - causa de acidentes automobilístico anual acima da média;<br><br>
 
                 Áreas de industrias química - afeta o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br>
 
