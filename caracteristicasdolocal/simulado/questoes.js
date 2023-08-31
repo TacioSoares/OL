@@ -419,9 +419,9 @@ const questoes = {
             pergunta: `Como é demarcado a distribuição da população?`,
 
             alternativas: {
-                0: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do centro do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
+                0: `Área 2 - População permanente: raio de 15 km a partir das coordenadas do centro do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
 
-                Área 2 - População permanente: raio entre 15 e 80 km
+                Área 1 - População permanente: raio entre 15 e 80 km
                 `,
 
                 1: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do ponto central do reator, posteriormente foram estabelecidos círculos concêntricos, com o prédio do LABGENE no ponto central. <br><br>
@@ -434,9 +434,9 @@ const questoes = {
 
                 3: 'Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br> Área 2 - População permanente: raio entre 15 e 80 km',
 
-                4: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o PAC no ponto central. <br><br>
+                4: `Área 2 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o PAC no ponto central. <br><br>
                 
-                Área 2 - População permanente: raio entre 15 e 80 km`
+                Área 1 - População permanente: raio entre 15 e 80 km`
             },
 
             resposta: 'Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br> Área 2 - População permanente: raio entre 15 e 80 km',
