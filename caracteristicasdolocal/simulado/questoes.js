@@ -8,14 +8,14 @@ const questoes = {
 
                 1: 'A região está inserida no bioma Caatiga, em maior porção, e menos expressivamente na Floresta Amazônia, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial)',
 
-                2: 'A região está inserida no bioma Cerrado, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial)',
+                2: 'A região está inserida no bioma Cerrado, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial) e floresta estacional semidecidual.',
 
                 3: 'A região está inserida no bioma Seco, em maior porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Amazônica',
 
                 4: 'A região está inserida mais expressivamente na Mata Atlântica, em menor porção, no bioma Cerrado, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial)'
             },
 
-            resposta: `A região está inserida no bioma Cerrado, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial)`,
+            resposta: `A região está inserida no bioma Cerrado, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial) e floresta estacional semidecidual.`,
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
