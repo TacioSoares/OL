@@ -1,21 +1,21 @@
 const questoes = {
     multipla: {
         q1: {
-            pergunta: 'Qual o tipo de vegetação da região do LABGENE?',
+            pergunta: 'Marque a alternativa verdadeira',
 
             alternativas: {
-                0: `A região está inserida no bioma Árido, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Mista (Ou floresta tropical)`,
+                0: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam menores, o que por sua vez proporciona uma maior liberação de gases de fissão',
 
-                1: 'A região está inserida no bioma Caatiga, em maior porção, e menos expressivamente na Floresta Amazônia, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial)',
+                1: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam menores, o que por sua vez proporciona uma menor liberação de gases de fissão',
 
-                2: 'A região está inserida no bioma Cerrado, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial) e floresta estacional semidecidual.',
+                2: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam maiores, o que por sua vez proporciona uma menor liberação de gases de fissão',
 
-                3: 'A região está inserida no bioma Seco, em maior porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Amazônica',
+                3: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam maior, o que por sua vez proporciona uma maior liberação de gases de fissão',
 
-                4: 'A região está inserida mais expressivamente na Mata Atlântica, em menor porção, no bioma Cerrado, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial)'
+                4: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam menores, o que por sua vez proporciona uma maior liberação de corrosão'
             },
 
-            resposta: `A região está inserida no bioma Cerrado, em menor porção, e mais expressivamente na Mata Atlântica, onde a cobertura vegetal de maior ocorrência é a Floresta Ombrófila Densa (Ou floresta tropical pluvial) e floresta estacional semidecidual.`,
+            resposta: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam menores, o que por sua vez proporciona uma menor liberação de gases de fissão',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -26,26 +26,22 @@ const questoes = {
             }
         },
         q2: {
-            pergunta: `Quais os locais de patrimônio histórico que existe na região e que pode ser atingido?`,
+            pergunta: `Qual a potência elétrica aproximada e a potência térmica prevista no LABGENE?`,
 
             alternativas: {
-                0: `Floresta Nacional; <br><br>
-                Acervo do Museu de Arte Moderna de São Paulo (AMAMSP).
+                0: `8,3 KW elétricos e 48KWt.
                 `,
 
-                1: `Mercado Municipal de Iperó; <br><br>
-                Estrada Vicinal Iperó-Sorocaba`,
+                1: `8,3 KW elétricos e 48MWt`,
 
-                2: `Instituto Chico Mendes da Conservação do Biodiesel (ICMBio); <br><br>
-                Sítio histórico tombado pelo Instituto do Paraná Histórico e Artístico Nacional (IPHAN)`,
+                2: `8,3 MWt e 48KW elétricos`,
 
-                3: 'Sítio histórico tombado pelo Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN);<br><br>Instituto Chico Mendes da Conservação da Biodiversidade (ICMBio)',
+                3: '48MWt e 8,3 MW elétricos',
 
-                4: `Fundação Pátria; <br><br>
-                Reator Multipropósito Brasileiro (RMB)`
+                4: `48 MW elétricos e 8,3MWt`
             },
 
-            resposta: 'Sítio histórico tombado pelo Instituto de Patrimônio Histórico e Artístico Nacional (IPHAN);<br><br>Instituto Chico Mendes da Conservação da Biodiversidade (ICMBio)',
+            resposta: '48MWt e 8,3 MW elétricos',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -56,47 +52,21 @@ const questoes = {
             }
         },
         q3: {
-            pergunta: `Quais os principais problemas socioambientais preexistentes na região da instalação e quais as consequências deles?`,
+            pergunta: `Marque a alternativa FALSA`,
 
             alternativas: {
-                0: 'Estradas internas - formação de sulcos erosivos;<br><br> Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br> Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br> Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento.',
+                0: 'Com o reator a 100% de potência, a diferença de temperatura entre a entrada e a saída do fluido refrigerante no reator é de 20,4°C',
 
-                1: `Oleoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento; <br><br>
+                1: 'O LABGENE irá operar na maior parte do tempo à 30% de potência e deverá ter a capacidade de atingir 100% da potência total em um curso espaço de tempo.',
 
-                Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br>
+                2: 'O LABGENE foi projetado considerando um programa de operação com potência média de 8,3MWt, 30% da sua potência nominal.',
 
-                Estradas internas - formação de sulcos erosivos;<br><br>
+                3: '28 varetas absorvedoras compõe uma barra de segurança/controle',
 
-                Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa.
-                `,
-
-                2: `Aceiros - permitem a propagação de incêndios e propiciam a formação de sulcos erosivos;<br><br>
-
-                Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa;<br><br>
-
-                Oleoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento; <br><br>
-
-                Estradas internas - formação de sulcos erosivos.
-                `,
-
-                3: `Curvas sinuosas na Estrada - causa de acidentes automobilístico anual acima da média;<br><br>
-
-                Áreas de industrias química - afeta o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br>
-
-                Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br>
-                
-                Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento.`,
-
-                4: `Animais peçonhentos - constantes ataques de animais selvagens na região;<br><br>
-
-                Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br>
-
-                Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br>
-                
-                Alteração do clima devido ao aquecimento global.`
+                4: 'O LABGENE apresenta menor oscilação espacial de Xenônio do que plantas PWR comerciais o contribui na estabilidade e segurança da planta.'
             },
 
-            resposta: 'Estradas internas - formação de sulcos erosivos;<br><br> Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa <br><br> Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br> Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento.',
+            resposta: 'O LABGENE foi projetado considerando um programa de operação com potência média de 8,3MWt, 30% da sua potência nominal.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -107,43 +77,21 @@ const questoes = {
             }
         },
         q4: {
-            pergunta: `Quais foram os parâmetros para a escolha do local atual do LABGENE?`,
+            pergunta: 'Qual condição determina o fim do ciclo de um núcleo do LABGENE?',
 
             alternativas: {
-                0: `Disponibilidade de vias de tráfego. <br><br>
-                Disponibilidade de água; <br><br>
-                Disponibilidade de Energia Elétrica; <br><br>
-                Disponibilidade de vias de desembarque de tropa; <br><br>
-                Cidades de apoio próxima; <br><br>
-                Sismologia estável;`,
+                0: 'Quando atinge-se 3,2 anos de operação',
 
-                1: `Disponibilidade de vias de tráfego. <br><br>
-                Disponibilidade de água potável; <br><br>
-                Disponibilidade de Energia Elétrica; <br><br>
-                Raio de 100km a partir da USP; <br><br>
-                Cidades de apoio próxima; <br><br>
-                Sismologia estável`,
+                1: 'Quandão não tiver reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio.',
 
-                2: `
-                Disponibilidade de vias de tráfego. <br><br>
-                Disponibilidade de água; <br><br>
-                Sismologia maleável;<br><br>
-                Disponibilidade de Energia Elétrica; <br><br>
-                Disponibilidade de vias de desembarque de tropa; <br><br>
-                Cidades de apoio próxima;
-                ;`,
+                2: 'Quandão não tiver reatividade suficiente para permitir o religamento, após o pico de Xenônio.',
 
-                3: `Disponibilidade de vias de tráfego. <br><br>
-                Disponibilidade de água; <br><br>
-                Disponibilidade de Energia Elétrica; <br><br>
-                Raio de 100km a partir da USP; <br><br>
-                Proximidade com Sorocaba, São Paulo e Campinas; <br><br>
-                Sismologia estável;`,
+                3: 'Quando atinge-se 2,3 anos de operação',
 
-                4: 'Disponibilidade de vias de tráfego. <br><br> Disponibilidade de água; <br><br> Disponibilidade de Energia Elétrica; <br><br> Raio de 100km a partir da USP; <br><br> Cidades de apoio próxima; <br><br> Sismologia estável',
+                4: 'Quando atinge-se 0,96 anos de operação caso esteja com 100%',
             },
 
-            resposta: 'Disponibilidade de vias de tráfego. <br><br> Disponibilidade de água; <br><br> Disponibilidade de Energia Elétrica; <br><br> Raio de 100km a partir da USP; <br><br> Cidades de apoio próxima; <br><br> Sismologia estável',
+            resposta: 'Quandão não tiver reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -154,21 +102,21 @@ const questoes = {
             }
         },
         q5: {
-            pergunta: `Qual a fonte principal de suprimento de água do LABGENE?`,
+            pergunta: 'Qual propriedade que o revestimento da vareta combustível NÃO deve possuir?',
 
             alternativas: {
-                0: `Rio Sorocaba`,
+                0: 'Alta confiabilidade',
 
-                1: `Rio Tietê`,
+                1: 'Alta economia de nêutrons',
 
-                2: `Rio Tatuí`,
+                2: 'Alta resistência mecânica',
 
-                3: `Rio Ipanema`,
+                3: 'Alta resistência à corrosão',
 
-                4: `Rio Sarapuí`
+                4: 'Alta seção de choque de absorção de nêutrons',
             },
 
-            resposta: `Rio Ipanema`,
+            resposta: 'Alta seção de choque de absorção de nêutrons',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -179,21 +127,21 @@ const questoes = {
             }
         },
         q6: {
-            pergunta: `De quem é a responsabilidade do controle da Área de Exclusão do LABGENE?`,
+            pergunta: `Qual a diferença entre o zircaloy e o aço inoxidável austenítico para revestimento da vareta combustível?`,
 
             alternativas: {
-                0: `Responsabilidade do Diretor do CINA `,
+                0: 'O aço é mais susceptível à corrosão sob tensão por produtos de fissão que o zircaloy.',
 
-                1: `Responsabilidade do Diretor do LABGENE `,
+                1: 'O aço inoxidável austenítico apresenta uma maior temperatura de fusão.',
 
-                2: `Responsabilidade do Diretor do CTMSP`,
+                2: 'O zircaloy é largamente utilizado em reatores comerciais em relação ao aço inoxidável.',
 
-                3: `Responsabilidade do Diretor do CEA `,
+                3: 'O aço inoxidável austenítico apresenta a desvantagem de possuir uma menor seção de choque de absorção para nêutrons térmicos.',
 
-                4: `Responsabilidade do Diretor de ARAMAR `
+                4: 'Durante acidentes onde a temperatura do revestimento permanece abaixo de 1.200 °C, o zircaloy exibe taxa de reação metal-vapor, cuja a quantidade de Hidrogênio liberada e o calor de reação são menores que os do aço.'
             },
 
-            resposta: `Responsabilidade do Diretor do CTMSP`,
+            resposta: 'O zircaloy é largamente utilizado em reatores comerciais em relação ao aço inoxidável.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -204,26 +152,21 @@ const questoes = {
             }
         },
         q7: {
-            pergunta: `Como é demarcada a área de exclusão e zona de baixa população do LABGENE?`,
+            pergunta: 'Qual dos motivos abaixo pode ser a causa de tensões mecânicas impostas ao revestimento do combustível.',
 
             alternativas: {
-                0: 'Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 330 metros medidos a partir do marco zero (Área 3) <br><br> A zona de baixa população tem 2200 metros de raio a partir do marco zero (Área 4).',
+                0: 'Baixas temperaturas.',
 
-                1: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
-                Área 2 - População permanente: raio entre 15 e 80 km
-                `,
+                1: 'Vibração induzida pelo fluxo magnético.',
 
-                2: `Conforme Resolução CNEN 9/66 e 10CFR part 100 a área de exclusão tem raio 330 metros medidos a partir do marco zero (Área 2) <br><br>
-                A zona de baixa população tem 2200 metros de raio a partir do marco zero (Área 3).`,
+                2: 'Diferença entre a pressão do refrigerante e a pressão interna da vareta.',
 
-                3: `Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 220 metros medidos a partir do marco zero (Área 3) <br><br>
-                A zona de baixa população tem 3300 metros de raio a partir do marco zero (Área 4).`,
+                3: 'Interação com o MAB causada pela liberação do fuso a partir de um SCRAM.',
 
-                4: `Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 360 metros medidos a partir do marco zero (Área 3) <br><br>
-                A zona de baixa população tem 2500 metros de raio a partir do marco zero (Área 4).`
+                4: 'Aumento da difença de temperatura entre a perna quente e a perna fria.',
             },
 
-            resposta: 'Conforme Resolução CNEN 9/69 e 10CFR part 100 a área de exclusão tem raio 330 metros medidos a partir do marco zero (Área 3) <br><br> A zona de baixa população tem 2200 metros de raio a partir do marco zero (Área 4).',
+            resposta: 'Diferença entre a pressão do refrigerante e a pressão interna da vareta.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -234,49 +177,21 @@ const questoes = {
             }
         },
         q8: {
-            pergunta: `Quais os potenciais riscos na proximidade do sítio?`,
+            pergunta: 'Qual dessas é uma função do gás hélio no tubo de revestimento?',
 
             alternativas: {
-                0: `Gasoduto - causou alteração no curso do rio Ipanema, erosões e assoreamento; <br><br>
+                0: 'Manter uma pressão interna no revestimento ligeiramente inferior a pressão externa.',
 
-                Aceiros - impedem propagação de incêndios, mas propiciam a formação de sulcos erosivos;<br><br>
+                1: 'Aumentar a temperatura do combustível transferindo mais da calor para a água.',
 
-                Estradas internas - formação de sulcos erosivos;<br><br>
+                2: 'Servir de isolante químico, evitando a corrosão do material em contato com a água.',
 
-                Áreas de mineração ativas ou não - bota-fora da empresa Holdercim que afetou o ribeirão do Ferro, causando estrangulação do leito e formação de lagoa
-                `,
+                3: 'Confinar os gases de produtos de fissão.',
 
-                1: 'Linhas de transmissão; <br><br> Rotas com potenciais de riscos;<br><br> Gasodutos Bolívia-Brasil;<br><br> Ferrovias e rodovias;<br><br> Instalações do CEA;<br><br> Ocorrências de incêndios;<br><br> Invasões;<br><br> Instalações próximas.',
-
-                2: `Ocorrências de incêndios;<br><br>
-                Risco de sabotagem; <br><br>
-                Rotas com potenciais de riscos;<br><br>
-                Gasodutos Bolívia-Brasil;<br><br>
-                Ferrovias, rodovias;<br><br>
-                Instalações do CEA;<br><br>
-                Invasões;<br><br>
-                Instalações próximas.`,
-
-                3: `Ocorrências de incêndios;<br><br>
-                Linhas de transmissão de Internet; <br><br>
-                Rotas com potenciais de riscos;<br><br>
-                Gasodutos Bolívia-Brasil;<br><br>
-                Ferrovias, rodovias;<br><br>
-                Instalações do CEA;<br><br>
-                Invasões;<br><br>
-                Instalações próximas.`,
-
-                4: `Ocorrências de incêndios;<br><br>
-                Linhas de transmissão de Internet; <br><br>
-                Rotas com potenciais de riscos;<br><br>
-                Gasodutos Bolívia-Brasil;<br><br>
-                Ferrovias, rodovias e hidrovias;<br><br>
-                Instalações do CEA;<br><br>
-                Invasões;<br><br>
-                Instalações próximas.`
+                4: 'Possibilitar a execução do ensaio de vazamento.',
             },
 
-            resposta: 'Linhas de transmissão; <br><br> Rotas com potenciais de riscos;<br><br> Gasodutos Bolívia-Brasil;<br><br> Ferrovias e rodovias;<br><br> Instalações do CEA;<br><br> Ocorrências de incêndios;<br><br> Invasões;<br><br> Instalações próximas.',
+            resposta: 'Possibilitar a execução do ensaio de vazamento.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -287,25 +202,21 @@ const questoes = {
             }
         },
         q9: {
-            pergunta: `Quais as medidas tomadas para evitar os riscos de inundação no rio que possa afetar o LABGENE? `,
+            pergunta: 'Quantos EC compõe o núcleo do LABGENE?',
 
             alternativas: {
-                0: `Mesmo ocorrendo a vazão máxima provável, o transbordamento da calha do rio nas proximidades do LABGENE não será capaz de atingi-la.<br><br>
-                
-                Portanto, não é necessário nenhuma medida pois não existe risco de inundação no rio`,
+                0: '23 elementos combustíveis',
 
-                1: `As canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
+                1: '21 elementos combustíveis',
 
-                2: `Serão feitas barreiras físicas no sistema viário no LABGENE com declividades, guias e sarjetas serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
+                2: '17 elementos combustíveis',
 
-                3: `As canaletas de drenagem e o sistema viário no LABGENE com inclinações e canaletas de água serão recalculados para lidar com chuvas extremas e para garantir que o fluxo de tráfego seja mantido no local.`,
+                3: '20 elementos combustíveis',
 
-                4: `Mesmo ocorrendo a vazão máxima provável, o transbordamento da calha do rio nas proximidades do LABGENE não será capaz de atingi-la.<br><br>
-                
-                Mesmo assim, as canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão superdimensionadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`
+                4: '28 elementos combustíveis',
             },
 
-            resposta: `As canaletas de drenagem e o sistema viário no LABGENE com declividades, guias e sarjetas existentes serão verificadas/recalculadas para a drenagem da água proveniente de uma chuva de grande intensidade além de escoamento adequado ao fluxo no local.`,
+            resposta: '21 elementos combustíveis',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -316,21 +227,21 @@ const questoes = {
             }
         },
         q10: {
-            pergunta: `Qual é o posto fluviométrico mais próximo de Aramar?`,
+            pergunta: 'Marque a alternativa correta',
 
             alternativas: {
-                0: `Estação Corumbá`,
+                0: 'O LABGENE possui 5440 pastilhas combustíveis',
 
-                1: `Estação Araçoiaba`,
+                1: 'O comprimento ativo da vareta combustível é de 98,7 cm',
 
-                2: `Estação Usexa`,
+                2: 'As pastilhas possuem concavidades nas bordas para diminuir a probabilidade da interação mecânica entre a pastilha e o revestimento durante a operação do reator',
 
-                3: `Estação Ipanema`,
+                3: 'O bocal lateral também funciona como um filtro de detritos',
 
-                4: `Estação Tupinambá`
+                4: 'As extremidades da pastilha possuem chanfros para evitar maiores expansões axiais no seu centro',
             },
 
-            resposta: `Estação Corumbá`,
+            resposta: 'O comprimento ativo da vareta combustível é de 98,7 cm',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -341,21 +252,21 @@ const questoes = {
             }
         },
         q11: {
-            pergunta: `Qual a magnitude máxima possível de Probabilidade de Sismo (PSS)  que se pode definir na região, utilizando um discernimento conservador?`,
+            pergunta: 'Que parte do esqueleto do EC auxilia a evitar a ejeção de uma vareta combustível?',
 
             alternativas: {
-                0: `Valor de  mb 7,8 ou 8,0`,
+                0: 'A placa perfurada do bocal superior',
 
-                1: `Valor de  mb 5,8 ou 6,0`,
+                1: 'A placa lateral inferior',
 
-                2: `Valor de  mb 6,8 ou 7,2`,
+                2: 'A mola do plenum',
 
-                3: `Valor de  mb 6,8 ou 7,8`,
+                3: 'Tubo guia',
 
-                4: `Valor de  mb 7,0 ou 6,8`
+                4: 'Grade espaçadora',
             },
 
-            resposta: `Valor de  mb 7,0 ou 6,8`,
+            resposta: 'A placa perfurada do bocal superior',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -366,21 +277,21 @@ const questoes = {
             }
         },
         q12: {
-            pergunta: `Qual o valor que se pode concluir de sismo básico de projeto recomendado para uma instalação nuclear do CEA?`,
+            pergunta: 'A parte inferior do tubo guia do elemento de controle/segurança tem uma particularidade para amortecedor a barra de controle durante um "SCRAM". Que particularidade é essa?',
 
             alternativas: {
-                0: `Probabilidade anual de 10<sup>-5</sup> `,
+                0: 'O tubo guia é inundado com água',
 
-                1: `Probabilidade anual de 10<sup>-4</sup> `,
+                1: 'Possui uma mola no plenum',
 
-                2: `Probabilidade anual de 10<sup>-3</sup> `,
+                2: 'Possui um diâmetro interno reduzido',
 
-                3: `Probabilidade anual de 10<sup>-8</sup> `,
+                3: 'Possui um freio mecânico',
 
-                4: `Probabilidade anual de 10<sup>-2</sup> `
+                4: 'Possui uma trava hidráulica'
             },
 
-            resposta: `Probabilidade anual de 10<sup>-4</sup> `,
+            resposta: 'Possui um diâmetro interno reduzido',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -391,21 +302,21 @@ const questoes = {
             }
         },
         q13: {
-            pergunta: `Qual o documento tomado como base para o regulamento de procedimentos para a identificação e caracterização de fontes sísmicas e para a determinação do nível de movimento do terreno?`,
+            pergunta: 'Como será exercido o controle de reatividade do LABGENE?',
 
             alternativas: {
-                0: `CNEN NN 8.01`,
+                0: 'Será exercido apenas por meio de elementos de controle e de segurança contendo varetas absorvedoras de nêutrons. Não haverá controle de reatividade por diluição de boro',
 
-                1: `RFAS`,
+                1: 'Será exercido por meio de elementos de controle e de segurança contendo varetas absorvedoras de nêutrons e também por meio de varetas de veneno queimável.',
 
-                2: `IAEA 1.155`,
+                2: 'Será exercido por meio de elementos de controle e de segurança contendo varetas absorvedoras de nêutrons e diluição de boro.',
 
-                3: `Regulatory Guide 1.165`,
+                3: 'Será exercido por meio de elementos de segurança contendo varetas absorvedoras de nêutrons.',
 
-                4: `NRC Guide 6.265`
+                4: 'Será exercido apenas pela movimentação dos bancos de controle.',
             },
 
-            resposta: `Regulatory Guide 1.165`,
+            resposta: 'Será exercido por meio de elementos de controle e de segurança contendo varetas absorvedoras de nêutrons e também por meio de varetas de veneno queimável.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -416,30 +327,21 @@ const questoes = {
             }
         },
         q14: {
-            pergunta: `Como é demarcado a distribuição da população?`,
+            pergunta: 'Serão usadas para diminuir a reatividade inicial do Reator e também para se obter uma distribuição mais homogênea no perfil radial do fluxo de nêutrons no núcleo:',
 
             alternativas: {
-                0: `Área 2 - População permanente: raio de 15 km a partir das coordenadas do centro do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br>
+                0: 'As barras de controle',
 
-                Área 1 - População permanente: raio entre 15 e 80 km
-                `,
+                1: 'As varetas de veneno queimável',
 
-                1: `Área 1 - População permanente: raio de 15 km a partir das coordenadas do ponto central do reator, posteriormente foram estabelecidos círculos concêntricos, com o prédio do LABGENE no ponto central. <br><br>
+                2: 'As barras de segurança',
 
-                Área 2 - População permanente: raio entre 15 e 80 km`,
+                3: 'As injeções de boro',
 
-                2: `Área 1 - População permanente: raio entre 15 e 80 km.<br><br> 
-                
-                Área 2 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central.`,
-
-                3: 'Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br> Área 2 - População permanente: raio entre 15 e 80 km',
-
-                4: `Área 2 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o PAC no ponto central. <br><br>
-                
-                Área 1 - População permanente: raio entre 15 e 80 km`
+                4: 'As placas refletoras',
             },
 
-            resposta: 'Área 1 - População permanente: raio de 15 km a partir das coordenadas do prédio do LABGENE, posteriormente foram estabelecidos círculos concêntricos, com o Reator no ponto central. <br><br> Área 2 - População permanente: raio entre 15 e 80 km',
+            resposta: 'As varetas de veneno queimável',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -450,21 +352,21 @@ const questoes = {
             }
         },
         q15: {
-            pergunta: `Qual é a norma que estabelece as orientações para a concessão de licenças a instalações nucleares e requer uma avaliação inicial da possível influência no ambiente?`,
+            pergunta: 'O que é um banco de controle?',
 
             alternativas: {
-                0: `U.S. Nuclear Regulatory Commission 1.04`,
+                0: 'Elemento mecânico utilizado para movimentar o conjunto das 28 varetas absorvedoras de um Elemento combustível',
 
-                1: `Norma CNEN 1.04`,
+                1: 'Conjunto de barras de controle que são movimentadas em conjunto durante a operação do Reator',
 
-                2: `ABNT 1.22`,
+                2: 'Elemento mecânico utilizado para movimentar o conjunto das 28 barras de controle absorvedoras de um Elemento combustível',
 
-                3: `NRC Regulatory Guide 1.04`,
+                3: 'Conjunto de barras de controle que são fixadas em conjunto durante a operação do Reator',
 
-                4: `Norma CNEN 1.22`
+                4: 'Elemento mecânico utilizado para movimentar a aranha'
             },
 
-            resposta: `Norma CNEN 1.04`,
+            resposta: 'Conjunto de barras de controle que são movimentadas em conjunto durante a operação do Reator',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -475,22 +377,21 @@ const questoes = {
             }
         },
         q16: {
-            pergunta: `
-            Com que frequência as informações meteorológicas precisam ser atualizadas para a CNEN?`,
+            pergunta: 'Existe dependência no movimento entre as barras de controle e as barras de segurança?',
 
             alternativas: {
-                0: `A cada 6 meses`,
+                0: 'As barras de controle e segurança são mecanicamente dependentes entre si.',
 
-                1: `Anualmente`,
+                1: 'As barras de controle e segurança são mecanicamente independentes entre si, e a lógica de funcionamento mantêm as barras de um mesmo banco com um ajuste necessário para evitar distribuição anormal de fluxo de potência.',
 
-                2: `A cada 4 anos`,
+                2: 'As barras de controle e segurança são mecanicamente independentes entre si, no entanto, a lógica de funcionamento mantêm as barras de todos os bancos alinhados com uma determinada tolerância.',
 
-                3: `A cada 3 anos`,
+                3: 'As barras de controle e segurança são eletricamente dependentes por isso, a lógica de funcionamento mantêm as barras de um mesmo banco alinhadas.',
 
-                4: `A cada 2 anos`
+                4: 'As barras de controle e segurança são mecanicamente independentes entre si, no entanto, a lógica de funcionamento mantêm as barras de um mesmo banco alinhados com uma determinada tolerância.',
             },
 
-            resposta: `A cada 2 anos`,
+            resposta: 'As barras de controle e segurança são mecanicamente independentes entre si, no entanto, a lógica de funcionamento mantêm as barras de um mesmo banco alinhados com uma determinada tolerância.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -501,22 +402,21 @@ const questoes = {
             }
         },
         q17: {
-            pergunta: `
-            Qual é a relevância da vigilância pós-descomissionamento de uma instalação nuclear e qual norma aborda esse tópico?`,
+            pergunta: 'Qual a responsabilidade do banco C?',
 
             alternativas: {
-                0: `O monitoramento após o descomissionamento é realizado apenas para cumprir formalidades burocráticas, sem considerar qualquer potencial impacto. A orientação é dada na CNEN 7.32.`,
+                0: 'É utilizado para manter o reator crítico ele compensa as variações de reatividade no núcleo devido, por exemplo, a manobras de potência, e é movimentado automaticamente pelo SDCP de forma a manter a temperatura média do moderador aproximadamente constante',
 
-                1: `A vigilância pós-descomissionamento é apenas para fins estatísticos e não tem relação com impactos ambientais ou públicos. A norma relevante é a CNEN 5.67.`,
+                1: 'É utilizado para compensar a queima do combustível e do veneno queimável.',
 
-                2: `A principal razão para o monitoramento pós-descomissionamento é determinar o valor histórico da instalação, e isso é regulamentado pela CNEN 3.14.`,
+                2: 'Tem a função de desligamento.',
 
-                3: `Para avaliar possíveis impactos ambientais e/ou ao público. A norma é a CNEN 9.01`,
+                3: 'Juntamente com o banco A2 são utilizados para compensar a queima do combustível e do veneno queimável e são reposicionados de tempos em tempos.',
 
-                4: `A CNEN não possui diretrizes específicas para o monitoramento pós-descomissionamento, pois esse processo não é considerado relevante para instalações já desativadas.`
+                4: 'É utilizado para compensar a queima do combustível e do veneno queimável e é reposicionado de tempos em tempos.',
             },
 
-            resposta: `Para avaliar possíveis impactos ambientais e/ou ao público. A norma é a CNEN 9.01`,
+            resposta: 'É utilizado para compensar a queima do combustível e do veneno queimável.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
@@ -527,22 +427,21 @@ const questoes = {
             }
         },
         q18: {
-            pergunta: `
-            Quais são os fenômenos meteorológicos sinóticos predominantes na região que são comunicados à CNEN?`,
+            pergunta: 'Marque a opção verdadeira',
 
             alternativas: {
-                0: `Os eventos de furacões, chuvas torrenciais e deslizamentos de terra são os principais fenômenos reportados à CNEN como parte de suas atividades de vigilância.`,
+                0: 'Elementos de controle e de segurança são idênticos nos aspectos geométricos e dimensionais, diferindo somente nos materiais do interior das varetas absorvedoras de nêutrons',
 
-                1: `A CNEN prioriza o monitoramento de atividades sísmicas, erupções vulcânicas e mudanças de marés como os principais fenômenos sinóticos da região.`,
+                1: 'Os bancos A1 e A2, têm a função de desligamento e permanecem fora do núcleo durante a operação do reator sendo inseridos conforme os venenos queimáveis vão sendo consumidos.',
 
-                2: `Frentes frias, zona de convergência do atlântico sul e bloqueios atmosféricos.`,
+                2: 'O Sistema de Injeção de Boro no LABGENE é ativado pelo Sistema de Proteção do Protótipo. Esse sistema atua apenas nos casos de desligamento rápido da planta.',
 
-                3: `As condições climáticas normais, chuvas leves e nevoeiros são os principais fenômenos meteorológicos sinóticos reportados à CNEN.`,
+                3: 'O carregamento do combustível com os elementos de controle e segurança é considerado um erro na sequência de carregamento.',
 
-                4: `A CNEN concentra-se principalmente em monitorar padrões de tráfego aéreo e condições atmosféricas para fins de aviação, sem considerar fenômenos sinóticos específicos.`
+                4: 'A configuração é mantida estruturalmente pelos tubos guias, grades espaçadoras e bocais de extremidades é: 260 varetas combustíveis, 17 tubos guias e 1 tubo de instrumentação, sendo esses colocados em um reticulado quadrado de 28x28.',
             },
 
-            resposta: `Frentes frias, zona de convergência do atlântico sul e bloqueios atmosféricos.`,
+            resposta: 'Elementos de controle e de segurança são idênticos nos aspectos geométricos e dimensionais, diferindo somente nos materiais do interior das varetas absorvedoras de nêutrons',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
