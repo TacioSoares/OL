@@ -10,7 +10,7 @@ const questoes = {
 
                 2: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam maiores, o que por sua vez proporciona uma menor liberação de gases de fissão',
 
-                3: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam maior, o que por sua vez proporciona uma maior liberação de gases de fissão',
+                3: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam maiores, o que por sua vez proporciona uma maior liberação de gases de fissão',
 
                 4: 'Com a melhora na transferência de calor, as temperaturas no combustível se tornam menores, o que por sua vez proporciona uma maior liberação de corrosão'
             },
@@ -63,7 +63,7 @@ const questoes = {
 
                 3: '28 varetas absorvedoras compõe uma barra de segurança/controle',
 
-                4: 'O LABGENE apresenta menor oscilação espacial de Xenônio do que plantas PWR comerciais o contribui na estabilidade e segurança da planta.'
+                4: 'O LABGENE apresenta menor oscilação espacial de Xenônio do que plantas PWR comerciais o que contribui na estabilidade e segurança da planta.'
             },
 
             resposta: 'O LABGENE foi projetado considerando um programa de operação com potência média de 8,3MWt, 30% da sua potência nominal.',
@@ -182,7 +182,7 @@ const questoes = {
             alternativas: {
                 0: 'Manter uma pressão interna no revestimento ligeiramente inferior a pressão externa.',
 
-                1: 'Aumentar a temperatura do combustível transferindo mais da calor para a água.',
+                1: 'Aumentar a temperatura do combustível transferindo mais calor para a água.',
 
                 2: 'Servir de isolante químico, evitando a corrosão do material em contato com a água.',
 
@@ -277,7 +277,7 @@ const questoes = {
             }
         },
         q12: {
-            pergunta: 'A parte inferior do tubo guia do elemento de controle/segurança tem uma particularidade para amortecedor a barra de controle durante um "SCRAM". Que particularidade é essa?',
+            pergunta: 'A parte inferior do tubo guia do elemento de controle/segurança tem uma particularidade para amortecer a queda da barra de controle durante um "SCRAM". Que particularidade é essa?',
 
             alternativas: {
                 0: 'O tubo guia é inundado com água',
