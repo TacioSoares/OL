@@ -68,7 +68,6 @@ section a {
     justify-content: center;
     align-items: end;
 }
-
 .material-symbols-outlined {
     margin-bottom: 10px;
     color: white;
@@ -385,6 +384,11 @@ li {
 }
 .perguntasF, .perguntasG {
     background-color: rgb(241, 241, 202);
+}
+.questãoSecaoC img {
+    display: block;
+    width: 80%;
+    margin: auto;
 }
 .marqueX {
     margin-right: 20px;

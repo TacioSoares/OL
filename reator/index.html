@@ -26,16 +26,26 @@
             </span>
             <div id="pergunta1" class="perguntasA">
                 <h4>
-                    O que é o LABGENE e qual a sua potência elétrica aproximada e a potência térmica prevista?
+                    Com relação aos coeficientes de temperatura do moderador e do combustível responda: <br><br>
+                    Qual dos coeficientes de temperatura do LABGENE apresenta os maiores valores em módulo?<br><br>
+
+                    Com relação a idade do núcleo, quando os coeficientes de temperatura são mais negativos?
+
+
                 </h4>
                 <p>
                     <input type="button" class="chamaResposta" value="Resposta">
                 </p>
                 <div id="resp1" class="respostaA">
                     <p>
-                        É um protótipo de uma planta de propulsão naval, dotado dos principais sistemas e equipamentos
-                        necessários, incluindo um reator refrigerado a Água Pressurizado (PWR) de 8,3 MW elétricos e
-                        48MWt.
+                        Os maiores valores em módulo são do coeficiente de temperatura do
+                        moderador. <br><br>
+                        Conforme o núcleo envelhece o coeficiente de temperatura do
+                        combustível torna-se mais negativo, já o coeficiente de temperatura do
+                        moderador é mais negativo no início de vida, ficando menos negativo
+                        conforme o núcleo aproxima-se do fim de vida.
+
+
                     </p>
                 </div>
             </div>
@@ -49,15 +59,22 @@
             </span>
             <div id="pergunta2" class="perguntasA">
                 <h4>
-                    Quantos elementos combustível tem no LABGENE e qual a altura ativa do núcleo?
+                    Devido a questões administrativas, o período de recarregamento do LABGENE deverá ser adiado em um
+                    mês. Visando não atrasar a rotina de testes propostos, foi autorizado pelo departamento de
+                    neutrônica da
+                    instalação e pelo regulador, a operação da planta por um mês além do previsto para ciclo, com uma
+                    nova margem de operação de 350pcm. Ciente
+                    disso, qual deve ser o requisito de reatividade mínimo para a operação do
+                    reator durante esse período adicional? <br><br>
+                    Obs.: Considere a reatividade devida ao pico de xenônio após trip a 100% de
+                    potência igual a 2770 pcm e o defeito de potência de 0 a 100% igual a 800 pcm.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp2" class="respostaA">
                     <p>
-                        21 elementos combustíveis <br>
-                        Altura ativa do núcleo é aproximadamento 1 metro.
+                        &rho;exc= 2770+800+350 = 3920 pcm
                     </p>
                 </div>
             </div>
@@ -74,8 +91,7 @@
             </span>
             <div id="pergunta3" class="perguntasA">
                 <h4>
-                    Qual o valor da temperatura que busca ser mantida constante entre a entrada e a saída do fluido refrigerante
-                    no reator e qual a diferença entre as duas temperaturas a 100% de potência nominal?
+                    Calcule a densidade linear de potência média do LABGENE a 100% e a 30% de potência nominal (48MWt).
                 </h4>
 
                 <p>
@@ -83,10 +99,11 @@
                 </p>
                 <div id="resp3" class="respostaA">
                     <p>
-                        A estratégia de operação da instalação é tal que se busca manter a temperatura média constante
-                        igual a 275°C.<br><br>
+                        Número de varetas combustíveis:(17 * 17 * 21) - 21 - 20 - (28*21) = 5440 <br>
+                        Comprimento ativo da vareta: 98,7 cm<br>
+                        Potência do reator: 48MW<br>
+                        DLP = 48MW / (98,7*5440) = 89,4 W/cm = 8,94 kW/m
 
-                        A diferença entre as duas temperaturas é de 20,4°C a 100% de potência nominal.
                     </p>
                 </div>
             </div>
@@ -103,17 +120,24 @@
             </span>
             <div class="perguntasA" id="quest04">
                 <h4>
-                    Por que é importante que o reator do LABGENE tenha capacidade e disponibilidade para manobras
-                    rápidas de potência durante a operação?
+                    O reator do LABGENE está a uma potência 35MW com fator de pico de 2,8 e fator de canal quente 1,2.
+                    Qual a densidade linear de potência máxima? Qual
+                    a máxima potência gerada por uma única vareta combustível? <br><br>
+                    Dados:<br><br>
+                    Número de varetas combustíveis: 5440<br>
+                    Comprimento ativo da vareta: 99 cm
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp4" class="respostaA">
                     <p>
-                        Para servir como teste para propulsão naval, uma vez que o reator irá operar na maior parte do
-                        tempo à 30% de potência e deverá ter a capacidade de atingir 100% da potência total em um curso
-                        espaço de tempo.
+                        DLPMED=P / NVCxLVC = 35000 / 5440x0,99 <br>
+                        DLPMED = 6,5 kW / m<br>
+                        FP = DLPMAX/DLPMED = 2,8<br>
+                        DLPMAX=2 ,8x6 ,5=18 ,2 kW / m<br>
+                        FQ=PMAX/PMED PMED=35000 / 5440= 6,43 kw<br>
+                        PMAX = 1,2x6,43 = 7,72 kW
                     </p>
                 </div>
             </div>
@@ -127,15 +151,20 @@
             </span>
             <div class="perguntasA" id="quest05">
                 <h4>
-                    O LABGENE foi projetado considerando um programa de operação com potência média de qual valor?
-
+                    O LABGENE está operando com Densidade linear de potência máxima= 162 W/cm e potência nuclear de 30
+                    MW. Qual o fator de pico? Considere o
+                    comprimento ativo da vareta igual 99 cm.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp5" class="respostaA">
                     <p>
-                        14,4MWt, 30% da sua potência nominal.
+                        DLPMED= P / NVC x LVC
+                        DLPMED=30000 / 5440 x 0,99 = 5,57 kW / m
+                        FP = DLPMAX / DLPMED
+                        FP = 16,2 / 5,57 = 2,91
+
                     </p>
                 </div>
             </div>
@@ -149,21 +178,17 @@
             </span>
             <div class="perguntasA" id="quest06">
                 <h4>
-                    A carga de combustível para o núcleo deve ser capaz de gerar uma potência de 6,22 MWd/kgU sob uma
-                    potência média de 30% da nominal. Qual a importância desse valor?
+                    O SDNI além de apresentar dados relativos ao fluxo de nêutrons, auxilia na medição de que
+                    outros parâmetros do reator?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp6" class="respostaA">
                     <p>
-                        É o valor com suficiente reatividade para permitir o religamento mesmo nas condições mais
-                        adversas de concentração de Xenônio, obedecendo aos requisitos de segurança que incluem as
-                        temperaturas máximas permitidas, mínimo DNBR, limites em condições de acidentes e margens de
-                        segurança.<br>
-                        Ou seja, o critério que limita a queima do combustível é a reatividade final que o núcleo deve
-                        ter para compensar a produção do Xenônio e dos demais produtos de fissão e permitir as manobras
-                        de potência
+                        O SDNI também tem como função apresentar valores da temperatura do refrigerante na saída
+                        de cada Elemento Combustível e contribuir com dados sobre o nível do refrigerante no vaso do
+                        Reator.
                     </p>
                 </div>
             </div>
@@ -177,17 +202,15 @@
             </span>
             <div class="perguntasC" id="quest07">
                 <h4>
-                    Quantas varetas absorvedoras compõe uma barra de segurança/controle e quais bancos de segurança/controle são compostos pelo maior e pelo
-                    menor número de barras?
+                    O SDNE é classificado como sistema 1E ou N1E?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp07" class="respostaC">
                     <p>
-                        28 varetas. <br><br>
+                        O SDNE é classificado como sistema 1E.
 
-                        O banco com maior número de barras é o banco A2 com 8 barras e aquele com menor número de barras é o banco D com apenas 1 barra.
                     </p>
                 </div>
             </div>
@@ -200,9 +223,8 @@
             </span>
             <div class="perguntasB" id="quest08">
                 <h4>
-                    Em reatores PWRs comerciais a altura ativa do núcleo é de aproximadamente 4 metros, enquanto que no
-                    LABGENE essa altura ativa é inferior. No que implica essa diferença de altura para o LABGENE quando
-                    comparado a outros reatores do tipo PWR com altura ativa de 4 metros?
+                    Quando há a sobreposição das faixas intermediária e de potência do SDNE, as medições estão
+                    sendo realizadas em quais alturas da parte ativa do núcleo?
 
                 </h4>
                 <p>
@@ -210,11 +232,12 @@
                 </p>
                 <div id="resp8" class="respostaB">
                     <p>
-                        A diferença existente favorece o Reator do LABGENE no comportamento do Xenônio durante a
-                        operação.<br>
-                        Os reatores compactos não apresentam a oscilação espacial do Xenônio, contribuindo na
-                        estabilidade e segurança da planta.
-
+                        Sob essa condição estarão ocorrendo detecções na parte inferior, no centro e na parte superior
+                        no núcleo, a 1/4, 1/2 e 3/4 da altura ativa do núcleo. As medições na parte superior e inferior
+                        (1/4
+                        e 3/4 respectivamente) são feitas pela faixa de potência, enquanto que a medição na parte
+                        central
+                        será realizada pela faixa intermediária.
                     </p>
                 </div>
             </div>
@@ -228,18 +251,19 @@
             </span>
             <div class="perguntasB" id="quest09">
                 <h4>
-                    Qual a diferença estrutural existente no na vareta combustível do LABGENE em relação a outros
-                    reatores PWR e qual a vantagem de ter essa diferença no LABGENE?
+                    Com relação as indicações do IPMAB e do EXMAB, qual dos dois apresenta as medições mais precisas a
+                    cerca da posição das barras de controle e segurança e qual dos dois apresenta as medições mais
+                    confiáveis a cerca da posição das barras de controle e
+                    segurança??
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp9" class="respostaB">
                     <p>
-                        Possui 6 grades espaçadoras ao longo da vareta, o que favorece a estrutura e tona o Elemento
-                        Combustível mais rígido que o de outros reatores PWRs, suportando condições de choque e
-                        carregamentos mecânicos.
-
+                        O EXMAB tem uma precisão de 0,25 mm, sendo bem mais preciso que o IPMAB, cuja precisão é de
+                        15 mm. Por outro lado, embora o IPMAB tenha menor precisão, é mais confiável, sendo,
+                        inclusive, classificado como equipamento Classe 1E.
                     </p>
                 </div>
             </div>
@@ -253,17 +277,17 @@
             </span>
             <div class="perguntasB" id="quest10">
                 <h4>
-                    Qual o motivo do LABGENE não utilizar elementos combustíveis com enriquecimentos diferentes dentro
-                    do núcleo?
+                    Qual condição determina o fim do ciclo de um núcleo do LABGENE?
+
+                    
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp10" class="respostaB">
                     <p>
-                        No LABGENE, o critério de economicidade e otimização do uso do combustível não é aplicável
-                        devido os objetivos da instalação. Dessa forma, os combustíveis possuem apenas um nível de
-                        enriquecimento, 4,3% em peso de U-235 e todo o núcleo é trocado ao final do ciclo.
+                        LABGENE, durante sua operação, deve ter reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio. A impossibilidade de atender a esse requisito coincide com o fim do ciclo de operação do núcleo do reator.
+
                     </p>
                 </div>
             </div>
@@ -271,23 +295,21 @@
             <hr>
         </div>
 
-        <div id="onze" class="questãoSecaoB">
+        <div id="onze" class="questãoSecaoC">
             <span class="numeroDaQuestão">
                 Questão 11
             </span>
-            <div class="perguntasB" id="quest11">
+            <div class="perguntasC" id="quest11">
                 <h4>
-                    Qual condição determina o fim do ciclo de um núcleo do LABGENE?
+                    Qual a duração em anos de um ciclo do LABGENE considerando que a planta opera com uma potência média
+                    de 30% de sua potência nominal?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp11" class="respostaB">
+                <div id="resp11" class="respostaC">
                     <p>
-                        LABGENE, durante sua operação, deve ter reatividade suficiente para permitir o
-                        religamento, mesmo nas condições mais adversas de concentração de Xenônio. A
-                        impossibilidade de atender a esse requisito coincide com o fim do ciclo de operação do
-                        núcleo do reator.
+                        Atinge-se 3,2 anos de operação com uma potência média de 14,4 MWt, equivalente a 30% da nominal.
                     </p>
                 </div>
             </div>
@@ -299,84 +321,13 @@
             </span>
             <div class="perguntasC" id="quest12">
                 <h4>
-                    Qual a duração em anos de um ciclo do LABGENE considerando que a planta opera com uma potência média
-                    de 30% de sua potência nominal?
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp12" class="respostaC">
-                    <p>
-                        Atinge-se 3,2 anos de operação com uma potência média de 14,4 MWt, equivalente a 30% da nominal.
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div id="treze" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 13
-            </span>
-            <div class="perguntasC" id="quest13">
-                <h4>
-                    Caso a estratégia de opearção do LABGENE fosse operar com 100% da potência durante todo o ciclo de
-                    operação, qual seria a duração aproximada desse ciclo em anos, considerando que o burnup continuasse
-                    igual 6,22 MWd/kg? (condidere a massa do urânio-235 no IV = 2710kg)
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp13" class="respostaC">
-                    <p>
-                        BU = (Pot x t) / m u <br>
-                        6.22 = (48x t) /2710 <br>
-                        t = 351,17 dias = 0,96 ano
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div id="quatorze" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 14
-            </span>
-            <div class="perguntasC" id="quest14">
-                <h4>
-                    Quais propriedades mecânicas o revestimento da vareta combustível deve possuir?
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp14" class="respostaC">
-                    <p>
-                        Alta economia de nêutrons (baixa seção de choque de absorção); <br><br>
-
-                        Alta resistência mecânica (resistir a tensões e
-                        deformações devidas à diferença de pressão e à interação mecânica entre a pastilha e o
-                        revestimento) <br><br>;
-
-                        Alta resistência à corrosão (devido ao refrigerante, ao combustível e aos
-                        produtos de fissão) e <br><br>
-
-                        Alta confiabilidade.
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div id="quinze" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 15
-            </span>
-            <div class="perguntasC" id="quest15">
-                <h4>
                     Frente ao zircaloy, largamente utilizado em reatores comerciais, o aço inoxidável austenítico para
                     revestimento da vareta combustível apresenta algumas diferenças, quais são elas?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp15" class="respostaC">
+                <div id="resp12" class="respostaC">
                     <p>
                         O aço inoxidável austenítico
                         apresenta a desvantagem de possuir uma maior seção de choque de absorção para nêutrons
@@ -399,12 +350,339 @@
             </div>
             <hr>
         </div>
+        <div id="treze" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 13
+            </span>
+            <div class="perguntasC" id="quest13">
+                <h4>
+                    Quantos EC compõe o núcleo do LABGENE?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp13" class="respostaC">
+                    <p>
+                        21 elementos combustíveis
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="quatorze" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 14
+            </span>
+            <div class="perguntasC" id="quest14">
+                <h4>
+                    Como são feitas as acomodações radial e axial das pastilhas de UO<sub>2</sub> dentro da vareta
+                    combustível?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp14" class="respostaC">
+                    <p>
+                        Com relação as expansões radiais, as pastilhas possuem chanfro nas bordas para diminuir a
+                        probabilidade da interação mecânica entre a pastilha e o revestimento durante a operação do
+                        reator. <br><br>
 
-        <div id="dezesseis" class="questãoSecaoC">
+                        Com relação as expansões axiais, a mola de inconel 600 é utilizada para fornecer um espaço vazio
+                        ("plenum") que acomoda a expansão térmica axial das pastilhas e mantém a pressão interna da
+                        vareta dentro dos limites estabelecidos no projeto. <br>
+                        Adicionalmente, as extremidades da pastilha possuem concavidades para evitar maiores expansões
+                        axiais no seu centro.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        <div id="quinze" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 15
+            </span>
+            <div class="perguntasC" id="quest15">
+                <h4>
+                    Caso a estratégia de opearção do LABGENE fosse operar com 100% da potência durante todo o ciclo de
+                    operação, qual seria a duração aproximada desse ciclo em anos, considerando que o burnup continuasse
+                    igual 6,22 MWd/kg? (condidere a massa do urânio-235 no IV = 2710kg)
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp15" class="respostaC">
+                    <p>
+                        BU = (Pot x t) / m u <br>
+                        6.22 = (48x t) /2710 <br>
+                        t = 351,17 dias = 0,96 ano
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="dezeseis" class="questãoSecaoC">
             <span class="numeroDaQuestão">
                 Questão 16
             </span>
             <div class="perguntasC" id="quest16">
+                <h4>
+                    Quantas varetas combustíveis existem no núcleo do LABGENE?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp16" class="respostaC">
+                    <p>
+                        Número de varetas combustíveis:(17 * 17 * 21) - 21 - 20 - (28*21) = 5440
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="dezesete" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 17
+            </span>
+            <div class="perguntasC" id="quest17">
+                <h4>
+                    Quais os possíveis erros de carregamento dos EC no núcleo do LABGENE e quais suas consequências?
+
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp17" class="respostaC">
+                    <p>
+                        O possíveis erros são, na sequência de carregamento, no carregamento sem
+                        elementos de controle e segurança inseridos nos ECs e no posicionamento errado do elemento que
+                        contém as varetas de veneno queimável. <br><br>
+                        Em relação aos erros na sequência de carregamento e o carregamento sem os elementos de controle
+                        e
+                        segurança, esses enganos pode causar criticalidades indesejadas. <br><br>
+                        No tocante ao posicionamento equivocado das varetas de veneno queimável, essa falha pode
+                        ocasionar deslocamentos e aumentos indesejáveis nos valores dos fatores de pico.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="dezoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 18
+            </span>
+            <div class="perguntasC" id="quest18">
+                <h4>
+                    Qual o comprimento ativo da vareta combustível?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp18" class="respostaC">
+                    <p>
+                        98,7 cm
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="vinte" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 20
+            </span>
+            <div class="perguntasC" id="quest20">
+                <h4>
+                    Além de servir de elemento estrutural, que outra função tem o bocal inferior?
+
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp20" class="respostaC">
+                    <p>
+                        O bocal inferior também funciona como um filtro de detritos. A placa perfurada do bocal inferior
+                        contém uma multiplicidade de furos de escoamento que são dimensionados para minimizar a passagem
+                        de
+                        partículas de detritos prejudiciais para a região ativa do núcleo do Reator. Ela também impede
+                        a queda de qualquer vareta combustível para fora do EC.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="vinte-e-um" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 21
+            </span>
+            <div class="perguntasC" id="quest21">
+                <h4>
+                    Quantas varetas absorvedoras compõe uma barra de segurança/controle e quais bancos de
+                    segurança/controle são compostos pelo maior e pelo
+                    menor número de barras?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp21" class="respostaC">
+                    <p>
+                        28 varetas. <br><br>
+
+                        O banco com maior número de barras é o banco A2 com 8 barras e aquele com menor número de barras
+                        é o banco D com apenas 1 barra.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="vinte-e-dois" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 22
+            </span>
+            <div class="perguntasC" id="quest22">
+                <h4>
+                    Baseado na tabela abaixo, responda as seguintes perguntas:<br><br>
+                    Qual o Banco de Controle/Segurança mais reativo? <br><br>
+                    Qual o Banco de Controle/Segurança possui a barra mais reativa (considerando que todas as barras de
+                    um mesmo banco possuem a mesma reatividade)? <br><br>
+                    <img src="./imagens/rabela-reatividade.jpg" alt="tabela de reatividade">
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp22" class="respostaC">
+                    <p>
+                        9-10 &rho;B=38633-19836=18797 pcm <br>
+                        9-11 &rho;C=38633-24409=14224 pcm <br>
+                        9-12 &rho;D=38633-29512=9121 pcm<br>
+                        9-13 &rho;A1=38633-29485=9148 pcm<br>
+                        9-14 &rho;A2=38633-27317=11316 pcm<br><br>
+                        Banco de Controle/Segurança mais reativo é o Banco B. <br><br>
+
+                        &rho;B(por barra)=18797/4= 4699 pcm
+                        &rho;C(por barra)=14224/4=3556 pcm
+                        &rho;D(por barra)= 9121/1=9121 pcm
+                        &rho;A1(por barra)=9148/4=2287 pcm
+                        &rho;A2(por barra)=11316/8=1415 pcm
+                        o banco de Controle/Segurança que possui a barra mais reativa é o Banco D
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="vinte-e-tres" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 23
+            </span>
+            <div class="perguntasC" id="quest23">
+                <h4>
+                    Faça o cálculo da margem de desligamento utilizando os dados da tabela da questão anterior e compare
+                    com o cálculo utilizando os dados do reator a frio no início de vida. Qual resultado é mais
+                    conservativo?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp23" class="respostaC">
+                    <p>
+                        &rho;exc= (1-1,11317) / 1,11317 x 105
+                        &rho;exc=10167pcm <br><br>
+                        MD= 29512 - 10167 = 19345pcm <br><br>
+                        Quando calculado a frio, no IV, o valor
+                        da Margem de Desligamento foi 8960 pcm,
+                        menor, portanto, que o valor calculado acima.
+                        Dessa forma, utilizar a MD calculada quando o
+                        reator está frio é uma abordagem mais
+                        conservativa.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="vinte-e-quatro" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 24
+            </span>
+            <div class="perguntasC" id="quest24">
+                <h4>
+                    Dados os valores de kef nas tabelas abaixo, calcule os valores do coeficiente de
+                    reatividade para IV, MV e FV do LABGENE. <br><br>
+                    <img src="./imagens/tabela-fatores-multiplicacaojpg.jpg" alt="tabela">
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp24" class="respostaC">
+                    <p>
+                        <img src="./imagens/respostaquestao46.jpg" alt="resposta">
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="dezenove" class="questãoSecaoB">
+            <span class="numeroDaQuestão">
+                Questão 25
+            </span>
+            <div class="perguntasB" id="quest25">
+                <h4>
+                    Qual o motivo do LABGENE não utilizar elementos combustíveis com enriquecimentos diferentes dentro
+                    do núcleo?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp25" class="respostaB">
+                    <p>
+                        No LABGENE, o critério de economicidade e otimização do uso do combustível não é aplicável
+                        devido os objetivos da instalação. Dessa forma, os combustíveis possuem apenas um nível de
+                        enriquecimento, 4,3% em peso de U-235 e todo o núcleo é trocado ao final do ciclo.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="quatorze" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 26
+            </span>
+            <div class="perguntasC" id="quest26">
+                <h4>
+                    Quais propriedades mecânicas o revestimento da vareta combustível deve possuir?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp26" class="respostaC">
+                    <p>
+                        Alta economia de nêutrons (baixa seção de choque de absorção); <br><br>
+
+                        Alta resistência mecânica (resistir a tensões e
+                        deformações devidas à diferença de pressão e à interação mecânica entre a pastilha e o
+                        revestimento) <br><br>;
+
+                        Alta resistência à corrosão (devido ao refrigerante, ao combustível e aos
+                        produtos de fissão) e <br><br>
+
+                        Alta confiabilidade.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+
+        <div id="dezesseis" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 27
+            </span>
+            <div class="perguntasC" id="quest27">
                 <h4>
                     Qual a deformação equivalente máxima no revestimento? Cite algumas das possíveis causas de tensões
                     mecânicas impostas ao revestimento.
@@ -412,7 +690,7 @@
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp16" class="respostaC">
+                <div id="resp27" class="respostaC">
                     <p>
                         A deformação equivalente máxima no revestimento deve ser menor do que 1%. <br><br>
                         As tensões mecânicas impostas ao revestimento são causadas principalmente por: <br><br>
@@ -432,16 +710,16 @@
 
         <div id="dezessete" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 17
+                Questão 28
             </span>
-            <div class="perguntasC" id="quest17">
+            <div class="perguntasC" id="quest28">
                 <h4>
                     Como pode ser prevenido o desgaste por fricção do revestimento?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp17" class="respostaC">
+                <div id="resp28" class="respostaC">
                     <p>
                         O desgaste por fricção é prevenido evitando-se o deslizamento da vareta nas molas, o que é
                         assegurado através de uma suficiente rigidez da mola.
@@ -453,9 +731,9 @@
 
         <div id="dezoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 18
+                Questão 29
             </span>
-            <div class="perguntasC" id="quest18">
+            <div class="perguntasC" id="quest29">
                 <h4>
                     A que se deve a bem sucedida utilização de UO<sub>2</sub> como material combustível em reatores de
                     água leve?
@@ -463,7 +741,7 @@
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp18" class="respostaC">
+                <div id="resp29" class="respostaC">
                     <p>
                         A sua bem sucedida utilização em reatores de água leve deve-se às seguintes considerações
                         básicas: <br><br>
@@ -481,9 +759,9 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 19
+                Questão 30
             </span>
-            <div class="perguntasC" id="quest19">
+            <div class="perguntasC" id="quest30">
                 <h4>
                     Qual o motivo para se limitar a razão entre as concentrações de Oxigênio e Urânio (O/U) dentro de
                     uma faixa estreita no combustível?
@@ -491,7 +769,7 @@
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp19" class="respostaC">
+                <div id="resp30" class="respostaC">
                     <p>
                         Para garantir as propriedades básicas do combustível (especialmente a
                         condutividade térmica) e minimizar a oxidação interna do revestimento.
@@ -504,9 +782,9 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 20
+                Questão 31
             </span>
-            <div class="perguntasC" id="quest20">
+            <div class="perguntasC" id="quest31">
                 <h4>
                     O que pode causar uma modificação
                     da geometria da pastilha de UO<sub>2</sub> e qual a consequência dessa modificação?
@@ -514,7 +792,7 @@
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp20" class="respostaC">
+                <div id="resp31" class="respostaC">
                     <p>
                         Quando há aplicação de rampas de potência, um alto gradiente térmico é induzido na pastilha
                         de UO<sub>2</sub>, e isto leva à sua deformação e à formação de rachaduras, com consequente
@@ -532,16 +810,16 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 21
+                Questão 32
             </span>
-            <div class="perguntasC" id="quest21">
+            <div class="perguntasC" id="quest32">
                 <h4>
                     Qual a razão para a vareta combustível ser pressurizada internamente e qual o valor dessa pressão?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp21" class="respostaC">
+                <div id="resp32" class="respostaC">
                     <p>
                         Para reduzir a deformação elástica do tubo de revestimento submetido ao efeito combinado de
                         pressão externa e fluência.<br><br>
@@ -555,9 +833,9 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 22
+                Questão 33
             </span>
-            <div class="perguntasC" id="quest22">
+            <div class="perguntasC" id="quest33">
                 <h4>
                     Além de ser usado para reduzir a deformação
                     elástica do tubo de revestimento, o gás hélio também tem outras funções, quais são elas?
@@ -565,7 +843,7 @@
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp22" class="respostaC">
+                <div id="resp33" class="respostaC">
                     <p>
                         Atua também na melhoria da eficiência na transferência de calor da pastilha combustível para o
                         revestimento, além de possibilitar a execução do ensaio de vazamento.
@@ -578,16 +856,16 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 23
+                Questão 34
             </span>
-            <div class="perguntasC" id="quest23">
+            <div class="perguntasC" id="quest34">
                 <h4>
                     Como é arranjada a maior parte dos Elementos Combustíveis (20/21) contidos no núcleo do reator?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp23" class="respostaC">
+                <div id="resp34" class="respostaC">
                     <p>
                         260 varetas combustíveis, 28 tubos
                         guias e 1 tubo de instrumentação, sendo esses colocados em um reticulado
@@ -600,89 +878,20 @@
         </div>
 
 
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 24
-            </span>
-            <div class="perguntasC" id="quest24">
-                <h4>
-                    Quantos EC compõe o núcleo do LABGENE?
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp24" class="respostaC">
-                    <p>
-                        21 elementos combustíveis
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
+        
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 25
+                Questão 35
             </span>
-            <div class="perguntasC" id="quest25">
-                <h4>
-                    Quais os possíveis erros de carregamento dos EC no núcleo do LABGENE e quais suas consequências?
-
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp25" class="respostaC">
-                    <p>
-                        O possíveis erros são, na sequência de carregamento, no carregamento sem
-                        elementos de controle e segurança inseridos nos ECs e no posicionamento errado do elemento que
-                        contém as varetas de veneno queimável. <br><br>
-                        Em relação aos erros na sequência de carregamento e o carregamento sem os elementos de controle
-                        e
-                        segurança, esses enganos pode causar criticalidades indesejadas. <br><br>
-                        No tocante ao posicionamento equivocado das varetas de veneno queimável, essa falha pode
-                        ocasionar deslocamentos e aumentos indesejáveis nos valores dos fatores de pico.
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 26
-            </span>
-            <div class="perguntasC" id="quest26">
-                <h4>
-                    Quantas varetas combustíveis existem no núcleo do LABGENE?
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp26" class="respostaC">
-                    <p>
-                        Número de varetas combustíveis:(17 * 17 * 21) - 21 - 20 - (28*21) = 5440
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 27
-            </span>
-            <div class="perguntasC" id="quest27">
+            <div class="perguntasC" id="quest35">
                 <h4>
                     Por qual motivo as pastilhas combustível possuem concavidades nas extremidades e chanfro nas bordas?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp27" class="respostaC">
+                <div id="resp35" class="respostaC">
                     <p>
                         As extremidades da pastilha
                         possuem concavidades para evitar maiores expansões axiais no seu centro e chanfro nas bordas
@@ -695,92 +904,20 @@
         </div>
 
 
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 28
-            </span>
-            <div class="perguntasC" id="quest28">
-                <h4>
-                    Qual o comprimento ativo da vareta combustível?
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp28" class="respostaC">
-                    <p>
-                        98,7 cm
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
+        
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 29
+                Questão 36
             </span>
-            <div class="perguntasC" id="quest29">
-                <h4>
-                    Como são feitas as acomodações radial e axial das pastilhas de UO<sub>2</sub> dentro da vareta
-                    combustível?
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp29" class="respostaC">
-                    <p>
-                        Com relação as expansões radiais, as pastilhas possuem chanfro nas bordas para diminuir a
-                        probabilidade da interação mecânica entre a pastilha e o revestimento durante a operação do
-                        reator. <br><br>
-
-                        Com relação as expansões axiais, a mola de inconel 600 é utilizada para fornecer um espaço vazio
-                        ("plenum") que acomoda a expansão térmica axial das pastilhas e mantém a pressão interna da
-                        vareta dentro dos limites estabelecidos no projeto. <br>
-                        Adicionalmente, as extremidades da pastilha possuem concavidades para evitar maiores expansões
-                        axiais no seu centro.
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 30
-            </span>
-            <div class="perguntasC" id="quest30">
-                <h4>
-                    Além de servir de elemento estrutural, que outra função tem o bocal inferior?
-
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp30" class="respostaC">
-                    <p>
-                        O bocal inferior também funciona como um filtro de detritos. A placa perfurada do bocal inferior
-                        contém uma multiplicidade de furos de escoamento que são dimensionados para minimizar a passagem
-                        de
-                        partículas de detritos prejudiciais para a região ativa do núcleo do Reator. Ela também impede
-                        a queda de qualquer vareta combustível para fora do EC.
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 31
-            </span>
-            <div class="perguntasC" id="quest31">
+            <div class="perguntasC" id="quest36">
                 <h4>
                     Que parte do esqueleto do EC auxilia a evitar a ejeção de uma vareta combustível?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp31" class="respostaC">
+                <div id="resp36" class="respostaC">
                     <p>
                         A placa perfurada do bocal superior não permite a ejeção de uma vareta combustível para fora de
                         sua posição. Esta placa recebe a força de compressão exercida pelas molas de fixação e recebe o
@@ -794,16 +931,16 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 32
+                Questão 37
             </span>
-            <div class="perguntasC" id="quest32">
+            <div class="perguntasC" id="quest37">
                 <h4>
                     Por qual razão o diâmetro inferior tubo guia é menor que o observado em sua parte superior?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp32" class="respostaC">
+                <div id="resp37" class="respostaC">
                     <p>
                         A parte inferior do tubo guia do elemento de controle/segurança tem um diâmetro interno
                         reduzido com a finalidade de funcionar como um amortecedor hidráulico de final de curso da barra
@@ -816,16 +953,16 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 33
+                Questão 38
             </span>
-            <div class="perguntasC" id="quest33">
+            <div class="perguntasC" id="quest38">
                 <h4>
                     Como será exercido o controle de reatividade do LABGENE?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp33" class="respostaC">
+                <div id="resp38" class="respostaC">
                     <p>
                         Será exercido por meio de elementos
                         de controle e de segurança contendo varetas absorvedoras de
@@ -838,16 +975,16 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 34
+                Questão 39
             </span>
-            <div class="perguntasC" id="quest34">
+            <div class="perguntasC" id="quest39">
                 <h4>
                     Em que ocasião é ativado o Sistema de Injeção de Boro no LABGENE?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp34" class="respostaC">
+                <div id="resp39" class="respostaC">
                     <p>
                         É ativado pelo Sistema de Proteção do Protótipo. Esse sistema atua apenas
                         nos casos de indisponibilidade dos bancos de controle e segurança para
@@ -860,20 +997,21 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 35
+                Questão 40
             </span>
-            <div class="perguntasC" id="quest35">
+            <div class="perguntasC" id="quest40">
                 <h4>
                     Quais as funções das varetas de veneno queimável no LABGENE?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp35" class="respostaC">
+                <div id="resp40" class="respostaC">
                     <p>
                         Serão usadas para diminuir a
                         reatividade inicial do Reator e também para se obter uma distribuição
-                        mais homogênea no perfil radial do fluxo de nêutrons no núcleo. Ou seja, controlar o fator de pico na
+                        mais homogênea no perfil radial do fluxo de nêutrons no núcleo. Ou seja, controlar o fator de
+                        pico na
                         distribuição de potência do reator.
                     </p>
                 </div>
@@ -881,19 +1019,19 @@
             <hr>
         </div>
 
-        
+
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 36
+                Questão 41
             </span>
-            <div class="perguntasC" id="quest36">
+            <div class="perguntasC" id="quest41">
                 <h4>
                     Qual a diferença entre barra de controle e banco de controle?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp36" class="respostaC">
+                <div id="resp41" class="respostaC">
                     <p>
                         Barra de controle - Elemento mecânico utilizado para movimentar o conjunto das 28 varetas
                         absorvedoras de um Elemento combustível; <br><br>
@@ -908,16 +1046,16 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 37
+                Questão 42
             </span>
-            <div class="perguntasC" id="quest37">
+            <div class="perguntasC" id="quest42">
                 <h4>
                     Existe dependência no movimento entre as barras de controle e as barras de segurança?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp37" class="respostaC">
+                <div id="resp42" class="respostaC">
                     <p>
                         As barras de controle e segurança são mecanicamente independentes entre si, no
                         entanto, a lógica de funcionamento mantêm as barras de um mesmo banco alinhados com uma
@@ -930,9 +1068,9 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 38
+                Questão 43
             </span>
-            <div class="perguntasC" id="quest38">
+            <div class="perguntasC" id="quest43">
                 <h4>
                     Como estão divididos os elementos de controle e quais as responsabilidades de cada um desses bancos
                     de controle?
@@ -940,7 +1078,7 @@
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp38" class="respostaC">
+                <div id="resp43" class="respostaC">
                     <p>
                         Os elementos de controle do reator do LABGENE estão divididos em 3 bancos: B, C e D. <br><br>
 
@@ -965,9 +1103,9 @@
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 39
+                Questão 44
             </span>
-            <div class="perguntasC" id="quest39">
+            <div class="perguntasC" id="quest44">
                 <h4>
                     Como estão divididos os elementos de segurança e quais as responsabilidades de cada um desses
                     bancos?
@@ -975,7 +1113,7 @@
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp39" class="respostaC">
+                <div id="resp44" class="respostaC">
                     <p>
                         divididos nos bancos A1 e A2, têm a função
                         de desligamento e permanecem fora do núcleo durante a operação do
@@ -987,16 +1125,16 @@
         </div>
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 40
+                Questão 45
             </span>
-            <div class="perguntasC" id="quest40">
+            <div class="perguntasC" id="quest45">
                 <h4>
                     Quais as semelhanças e diferenças entre os elementos de controle e de segurança do reator?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp40" class="respostaC">
+                <div id="resp45" class="respostaC">
                     <p>
                         São idênticos nos aspectos geométricos e
                         dimensionais, diferindo somente nos materiais do interior das varetas absorvedoras de nêutrons,
@@ -1009,20 +1147,308 @@
             <hr>
         </div>
 
+
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 46
+            </span>
+            <div class="perguntasC" id="quest46">
+                <h4>
+                    O que é excesso de reatividade e de quanto é esse valor no LABGENE no início de vida a frio?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp46" class="respostaC">
+                    <p>
+                        É a quantidade de reatividade excedente sobre aquela necessária para atingir a criticidade. <br>
+                        no LABGENE é de 14.622 pcm no início de vida a frio.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 47
+            </span>
+            <div class="perguntasC" id="quest47">
+                <h4>
+                    O que é margem de desligamento e de quanto é esse valor no LABGENE no início de vida a frio?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp47" class="respostaC">
+                    <p>
+                        É a reatividade negativa do núcleo quando todos os elementos de controle estiverem inseridos,
+                        exceto a barra com maior reatividade integral, que estará totalmente retirada do núcleo. <br>
+                        no LABGENE é de 8.960 pcm no início de vida a frio.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
         
 
+        
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 48
+            </span>
+            <div class="perguntasC" id="quest48">
+                <h4>
+                    Como os efeitos do moderador afetam a população de nêutrons?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp48" class="respostaC">
+                    <p>
+                        Se há muito moderador, a fuga de nêutrons do núcleo diminui e a absorção de nêutrons no
+                        moderador aumenta ; <br><br>
+                        Se há pouco moderador, o tempo necessário para a termalização dos nêutrons aumenta,
+                        eles ficam mais tempo com energias maiores, e a chance de eles serem absorvidos nas
+                        ressonâncias aumenta ;<br><br>
+                        Logo, efeitos do moderador afetam a população de nêutrons e o Keff e afetam também o coeficiente
+                        de temperatura do moderador !
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 49
+            </span>
+            <div class="perguntasC" id="quest49">
+                <h4>
+                    Para acidentes iniciados por reatividade, qual é a primeira compensação do reator?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp49" class="respostaC">
+                    <p>
+                        Para acidentes iniciados por reatividade, Coeficiente de Temperatura do Combustível é a primeira
+                        e mais importante
+                        resposta do reator - compensação da reatividade positiva inserida.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 50
+            </span>
+            <div class="perguntasC" id="quest50">
+                <h4>
+                    O que é o LABGENE e qual a sua potência elétrica aproximada e a potência térmica prevista?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp50" class="respostaC">
+                    <p>
+                        É um protótipo de uma planta de propulsão naval, dotado dos principais sistemas e equipamentos
+                        necessários, incluindo um reator refrigerado a Água Pressurizado (PWR) de 8,3 MW elétricos e
+                        48MWt.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 49
+            </span>
+            <div class="perguntasC" id="quest49">
+                <h4>
+                    Quantos elementos combustível tem no LABGENE e qual a altura ativa do núcleo?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp49" class="respostaC">
+                    <p>
+                        21 elementos combustíveis <br>
+                        Altura ativa do núcleo é aproximadamento 1 metro.
+
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 50
+            </span>
+            <div class="perguntasC" id="quest50">
+                <h4>
+                    Qual o valor da temperatura que busca ser mantida constante entre a entrada e a saída do fluido
+                    refrigerante no reator e qual a diferença entre as duas temperaturas a 100% de potência nominal?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp50" class="respostaC">
+                    <p>
+                        A estratégia de operação da instalação é tal que se busca manter a temperatura média constante
+                        igual a 275°C.<br><br>
+
+                        A diferença entre as duas temperaturas é de 20,4°C a 100% de potência nominal.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 51
+            </span>
+            <div class="perguntasC" id="quest51">
+                <h4>
+                    Por que é importante que o reator do LABGENE tenha capacidade e disponibilidade para manobras
+                    rápidas de potência durante a operação?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp51" class="respostaC">
+                    <p>
+                        Para servir como teste para propulsão naval, uma vez que o reator irá operar na maior parte do
+                        tempo à 30% de potência e deverá ter a capacidade de atingir 100% da potência total em um curso
+                        espaço de tempo.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 52
+            </span>
+            <div class="perguntasC" id="quest52">
+                <h4>
+                    O LABGENE foi projetado considerando um programa de operação com potência média de qual valor?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp52" class="respostaC">
+                    <p>
+                        14,4MWt, 30% da sua potência nominal.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 53
+            </span>
+            <div class="perguntasC" id="quest53">
+                <h4>
+                    A carga de combustível para o núcleo deve ser capaz de gerar uma potência de 6,22 MWd/kgU sob uma
+                    potência média de 30% da nominal. Qual a importância desse valor?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp53" class="respostaC">
+                    <p>
+                        É o valor com suficiente reatividade para permitir o religamento mesmo nas condições mais
+                        adversas de concentração de Xenônio, obedecendo aos requisitos de segurança que incluem as
+                        temperaturas máximas permitidas, mínimo DNBR, limites em condições de acidentes e margens de
+                        segurança.<br>
+                        Ou seja, o critério que limita a queima do combustível é a reatividade final que o núcleo deve
+                        ter para compensar a produção do Xenônio e dos demais produtos de fissão e permitir as manobras
+                        de potência
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        
+
+
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 55
+            </span>
+            <div class="perguntasC" id="quest55">
+                <h4>
+                    Em reatores PWRs comerciais a altura ativa do núcleo é de aproximadamente 4 metros, enquanto que no
+                    LABGENE essa altura ativa é inferior. No que implica essa diferença de altura para o LABGENE quando
+                    comparado a outros reatores do tipo PWR com altura ativa de 4 metros?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp55" class="respostaC">
+                    <p>
+
+                        A diferença existente favorece o Reator do LABGENE no comportamento do Xenônio durante a
+                        operação.<br>
+                        Os reatores compactos não apresentam a oscilação espacial do Xenônio, contribuindo na
+                        estabilidade e segurança da planta.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="desoito" class="questãoSecaoC">
+            <span class="numeroDaQuestão">
+                Questão 56
+            </span>
+            <div class="perguntasC" id="quest56">
+                <h4>
+                    Qual a diferença estrutural existente no na vareta combustível do LABGENE em relação a outros
+                    reatores PWR e qual a vantagem de ter essa diferença no LABGENE?
+                </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp56" class="respostaC">
+                    <p>
+                        Possui 6 grades espaçadoras ao longo da vareta, o que favorece a estrutura e tona o Elemento
+                        Combustível mais rígido que o de outros reatores PWRs, suportando condições de choque e
+                        carregamentos mecânicos.
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
         <!-- <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 37
+                Questão 47
             </span>
-            <div class="perguntasC" id="quest37">
+            <div class="perguntasC" id="quest47">
                 <h4>
 
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp37" class="respostaC">
+                <div id="resp47" class="respostaC">
                     <p>
 
                     </p>
@@ -1030,19 +1456,18 @@
             </div>
             <hr>
         </div>
-
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 37
+                Questão 47
             </span>
-            <div class="perguntasC" id="quest37">
+            <div class="perguntasC" id="quest47">
                 <h4>
 
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp37" class="respostaC">
+                <div id="resp47" class="respostaC">
                     <p>
 
                     </p>
@@ -1050,79 +1475,18 @@
             </div>
             <hr>
         </div>
-
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
-                Questão 37
+                Questão 47
             </span>
-            <div class="perguntasC" id="quest37">
+            <div class="perguntasC" id="quest47">
                 <h4>
 
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp37" class="respostaC">
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 37
-            </span>
-            <div class="perguntasC" id="quest37">
-                <h4>
-
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp37" class="respostaC">
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 37
-            </span>
-            <div class="perguntasC" id="quest37">
-                <h4>
-
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp37" class="respostaC">
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div id="desoito" class="questãoSecaoC">
-            <span class="numeroDaQuestão">
-                Questão 37
-            </span>
-            <div class="perguntasC" id="quest37">
-                <h4>
-
-                </h4>
-                <p>
-                    <input type="button" value="Resposta" class="chamaResposta">
-                </p>
-                <div id="resp37" class="respostaC">
+                <div id="resp47" class="respostaC">
                     <p>
 
                     </p>
