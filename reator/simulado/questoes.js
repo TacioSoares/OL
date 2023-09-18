@@ -82,7 +82,7 @@ const questoes = {
             alternativas: {
                 0: 'Quando atinge-se 3,2 anos de operação',
 
-                1: 'Quandão não tiver reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio.',
+                1: 'Quando não tiver reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio.',
 
                 2: 'Quandão não tiver reatividade suficiente para permitir o religamento, após o pico de Xenônio.',
 
@@ -91,7 +91,7 @@ const questoes = {
                 4: 'Quando atinge-se 0,96 anos de operação caso esteja com 100%',
             },
 
-            resposta: 'Quandão não tiver reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio.',
+            resposta: 'Quando não tiver reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio.',
 
             responder(alternativa) {
                 if (alternativa == this.resposta) {
