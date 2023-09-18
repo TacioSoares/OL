@@ -84,7 +84,7 @@ const questoes = {
 
                 1: 'Quando não tiver reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio.',
 
-                2: 'Quandão não tiver reatividade suficiente para permitir o religamento, após o pico de Xenônio.',
+                2: 'Quando não tiver reatividade suficiente para permitir o religamento, após o pico de Xenônio.',
 
                 3: 'Quando atinge-se 2,3 anos de operação',
 
