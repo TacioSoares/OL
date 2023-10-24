@@ -26,24 +26,40 @@
             </span>
             <div id="pergunta1" class="perguntasA">
                 <h4>
-                    Com relação aos coeficientes de temperatura do moderador e do combustível responda: <br><br>
-                    Qual dos coeficientes do LABGENE apresenta os maiores valores em módulo?<br><br>
-
-                    Com relação a idade do núcleo, quando os coeficientes de temperatura são mais negativos?
+                    Explique os 5 tipos de procedimentos operacionais <br><br>
+                    Procedimentos Operacionais Gerais (POG)<br>
+                    Procedimentos Operacionais de Sistemas (POS)<br>
+                    Procedimentos Operacionais Anormais (POA) <br>
+                    Procedimentos Operacionais de Emergência (POE) <br>
+                    Procedimentos de Resposta a Alarmes (PRA);
                 </h4>
                 <p>
                     <input type="button" class="chamaResposta" value="Resposta">
                 </p>
                 <div id="resp1" class="respostaA">
                     <p>
-                        Os maiores valores em módulo são do coeficiente de temperatura do
-                        moderador. <br><br>
-                        Conforme o núcleo envelhece o coeficiente de temperatura do
-                        combustível torna-se mais negativo, já o coeficiente de temperatura do
-                        moderador é mais negativo no início de vida, ficando menos negativo
-                        conforme o núcleo aproxima-se do fim de vida.
+                        POG - Indica as linhas gerais de operação normal da planta, desde as condições ambientes até
+                        levar o reator nuclear a produzir 100% de potência, passando pelo aquecimento, pressurização da
+                        planta e pela partida de todos os equipamentos, retorno às condições ambientes (desligamento da
+                        planta) e troca de combustível. <br><br>
 
+                        POS - Detalha a operação de equipamentos ou sistemas específicos. Pode ser iniciado por
+                        indicação em qualquer outro tipo de procedimento ou quando o operador identificar a necessidade
+                        de operar aquele sistema ou equipamento.<br><br>
 
+                        POA - Utilizado para operação da planta fora do estado estacionário/transitório normal previsto
+                        no projeto, que não ameaça as barreiras de segurança contra a liberação de atividade para o meio
+                        ambiente e provavelmente não causaria danos significativos a itens importantes para a segurança
+                        nuclear <br><br>
+
+                        POE - Contém instruções para a equipe operacional implementar as medidas preventivas a fim de
+                        gerenciar os acidentes. Os POE's, geralmente contém todas as medidas preventivas para os
+                        acidentes básicos de projeto e para além dos acidentes básicos de projeto até o ponto de dano no
+                        núcleo. <br><br>
+
+                        PRA - Identifica os alarmes existentes na planta, o local de indicação do alarme na sala de
+                        controle, seus valores (setpoints) de alarme, possíveis causas, ações do operador para
+                        interpretar e eliminar o alarme, bem como apresenta seus documentos de referência
                     </p>
                 </div>
             </div>
@@ -57,22 +73,31 @@
             </span>
             <div id="pergunta2" class="perguntasA">
                 <h4>
-                    Devido a questões administrativas, o período de recarregamento do LABGENE deverá ser adiado em um
-                    mês. Visando não atrasar a rotina de testes propostos, foi autorizado pelo departamento de
-                    neutrônica da
-                    instalação e pelo regulador, a operação da planta por um mês além do previsto para ciclo, com uma
-                    nova margem de operação de 350pcm. Ciente
-                    disso, qual deve ser o requisito de reatividade mínimo para a operação do
-                    reator durante esse período adicional? <br><br>
-                    Obs.: Considere a reatividade devida ao pico de xenônio após trip a 100% de
-                    potência igual a 2770 pcm e o defeito de potência de 0 a 100% igual a 800 pcm.
+                    Dada uma certa situação operacional, como definir qual o tipo de procedimento de operação a ser
+                    utilizado?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp2" class="respostaA">
                     <p>
-                        &rho;exc= 2770+800+350 = 3920 pcm
+                        Operação Normal: <br>
+                        Conforme demanda do Chefe/Experimento, operador segue POG (e os POG chamam POS);<br><br><br>
+
+                        Qualquer anormalidade: <br>
+                        • A princípio, operador não sabe o que é, então pega o POE-0002/0003 de Monitoração de Função de
+                        Segurança e Identificação de Acidente <br><br>
+                        • Se alguma Função de Segurança não está atendida (SPP não conseguiu desempenhar seu papel
+                        satisfatoriamente), o POE-0002 aponta qual é o POE-01XX equivalente (com prioridade para qual
+                        vai primeiro) <br><br>
+                        • Se as Funções de Segurança estão todas atendidas, o operador continua tentando Identificar o
+                        Evento pelo POE-0003, eventualmente ele aponta qual POE-02XX ou qual POA o operador deve seguir
+                        (sempre monitorando o POE-0002) <br><br>
+                        • Se for um evento não identificável, porém que o SPP tenha atuado, operador continua
+                        monitorando o POE-0002 e tentando identificar o evento (eventualmente, com consulta externa ao
+                        turno)<br><br>
+                        • Se for um evento não identificável, e que o SPP não atuou, o operador ataca os alarmes, um a
+                        um, seguindo os PRA equivalentes.
                     </p>
                 </div>
             </div>
@@ -89,7 +114,8 @@
             </span>
             <div id="pergunta3" class="perguntasA">
                 <h4>
-                    Calcule a densidade linear de potência média do LABGENE a 100% e a 30% de potência nominal (48MWt).
+                    Correlacione os símbolos mais utilizados nos procedimentos de operação do LABGENE com o seu
+                    significado;
                 </h4>
 
                 <p>
@@ -97,11 +123,7 @@
                 </p>
                 <div id="resp3" class="respostaA">
                     <p>
-                        Número de varetas combustíveis:(17 * 17 * 21) - 21 - 20 - (28*21) = 5440 <br>
-                        Comprimento ativo da vareta: 98,7 cm<br>
-                        Potência do reator: 48MW<br>
-                        DLP = 48MW / (98,7*5440) = 89,4 W/cm = 8,94 kW/m
-
+                        <img src="./imagens/tabela-MOL.jpg" alt="tabela simbolos do mol" class="imgQuestao">
                     </p>
                 </div>
             </div>
@@ -118,24 +140,23 @@
             </span>
             <div class="perguntasA" id="quest04">
                 <h4>
-                    O reator do LABGENE está a uma potência 35MW com fator de pico de 2,8 e fator de canal quente 1,2.
-                    Qual a densidade linear de potência máxima? Qual
-                    a máxima potência gerada por uma única vareta combustível? <br><br>
-                    Dados:<br><br>
-                    Número de varetas combustíveis: 5440<br>
-                    Comprimento ativo da vareta: 99 cm
+                    Diferencie verbos de atuação de verbos de verificação de estado que são utilizados nos manuais de
+                    operação do LABGENE dando exemplos desses verbos.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp4" class="respostaA">
                     <p>
-                        DLPMED=P / NVCxLVC = 35000 / 5440x0,99 <br>
-                        DLPMED = 6,5 kW / m<br>
-                        FP = DLPMAX/DLPMED = 2,8<br>
-                        DLPMAX=2 ,8x6 ,5=18 ,2 kW / m<br>
-                        FQ=PMAX/PMED PMED=35000 / 5440= 6,43 kw<br>
-                        PMAX = 1,2x6,43 = 7,72 kW
+                        Verbos de Verificação de Estado: <br><br>
+                        Fonte: “normal” (não-negrito)<br>
+                        Exemplo: Aberta / fechada, Ligada / desligada, Ajustada<br><br><br>
+
+                        Verbos de <strong>Atuação:</strong><br><br>
+                        Fonte: <strong>“negrito”</strong><br>
+                        Exemplo: <strong>
+                            Abrir / fechar, Ligar / desligar, Ajustar
+                        </strong>
                     </p>
                 </div>
             </div>
@@ -149,19 +170,15 @@
             </span>
             <div class="perguntasA" id="quest05">
                 <h4>
-                    O LABGENE está operando com Densidade linear de potência máxima= 162 W/cm e potência nuclear de 30
-                    MW. Qual o fator de pico? Considere o
-                    comprimento ativo da vareta igual 99 cm.
+                    Defina Plano de Emergência Local (PEL).
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp5" class="respostaA">
                     <p>
-                        DLPMED= P / NVC x LVC
-                        DLPMED=30000 / 5440 x 0,99 = 5,57 kW / m
-                        FP = DLPMAX / DLPMED
-                        FP = 16,2 / 5,57 = 2,91
+                        Conjunto de medidas a serem implementadas em caso de situação real ou potencial de emergência
+                        no CTMSP-CEA.
 
                     </p>
                 </div>
@@ -176,16 +193,17 @@
             </span>
             <div class="perguntasA" id="quest06">
                 <h4>
-                    O SDNI além de apresentar dados relativos ao fluxo de nêutrons, auxilia na medição de que
-                    outros parâmetros do reator?
+                    Qual o raio de ação da Zona de Planejamento de Emergência (ZPE)?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp6" class="respostaA">
                     <p>
-                        O SDNI também tem como função apresentar valores da temperatura do refrigerante na saída
-                        de cada Elemento Combustível e contribuir com dados sobre o nível do refrigerante no vaso do
+                        A ZPE do LABGENE abrange
+                        uma área delimitada por uma
+                        circunferência de 800m de
+                        raio, centrada no Prédio do
                         Reator.
                     </p>
                 </div>
@@ -200,14 +218,17 @@
             </span>
             <div class="perguntasC" id="quest07">
                 <h4>
-                    O SDNE é classificado como sistema 1E ou N1E?
+                    Cite quais são as classes de emergência do LABGENE (classificação de emergência).
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp07" class="respostaC">
                     <p>
-                        O SDNE é classificado como sistema 1E.
+                        Evento Não Usual (ENU); <br>
+                        Alerta;<br>
+                        Emergência de Área;<br>
+                        Emergência Geral.
 
                     </p>
                 </div>
@@ -221,21 +242,28 @@
             </span>
             <div class="perguntasB" id="quest08">
                 <h4>
-                    Quando há a sobreposição das faixas intermediária e de potência do SDNE, as medições estão
-                    sendo realizadas em quais alturas da parte ativa do núcleo?
-
+                    Defina Evento Não Usual (ENU) e Alerta
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp8" class="respostaB">
                     <p>
-                        Sob essa condição estarão ocorrendo detecções na parte inferior, no centro e na parte superior
-                        no núcleo, a 1/4, 1/2 e 3/4 da altura ativa do núcleo. As medições na parte superior e inferior
-                        (1/4
-                        e 3/4 respectivamente) são feitas pela faixa de potência, enquanto que a medição na parte
-                        central
-                        será realizada pela faixa intermediária.
+                        ENU - Configura um evento que, em função de uma
+                        Condição Inicial (CI), após ter sido avaliada a situação, teve a constatação e/ou
+                        previsão, de que não houve, e provavelmente não haverá, qualquer
+                        vazamento ou liberação não programada de produtos radioativos para o meio
+                        ambiente que indique a necessidade de medidas de proteção pertinentes a
+                        ZPE do LABGENE <br><br>
+
+                        Alerta - Situação configurada no momento em que se verificar: <br>
+                        • Uma condição inicial que indique real ou provável degradação do nível de
+                        segurança da instalação; ou<br>
+                        • A constatação e/ou previsão, após ter sido avaliada a condição da
+                        instalação, de que houve ou provavelmente haverá vazamento ou
+                        liberação não programada, na instalação, de material radioativo, porém
+                        sem colocar em risco a saúde de pessoas no interior da instalação ou
+                        além dos seus limites físicos.
                     </p>
                 </div>
             </div>
@@ -249,19 +277,30 @@
             </span>
             <div class="perguntasB" id="quest09">
                 <h4>
-                    Com relação as indicações do IPMAB e do EXMAB, qual dos dois apresenta as medições mais precisas a
-                    cerca da posição das barras de controle e segurança e qual dos dois apresenta as medições mais
-                    confiáveis a cerca da posição das barras de controle e
-                    segurança??
+                    Defina Evento Emergência de área e Emergência geral
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp9" class="respostaB">
                     <p>
-                        O EXMAB tem uma precisão de 0,25 mm, sendo bem mais preciso que o IPMAB, cuja precisão é de
-                        15 mm. Por outro lado, embora o IPMAB tenha menor precisão, é mais confiável, sendo,
-                        inclusive, classificado como equipamento Classe 1E.
+                        Emergência de Área - Situação configurada no momento em que se verificar: <br>
+                        • Uma condição inicial que indique perda real do nível de segurança da
+                        instalação; ou<br>
+                        • A constatação e/ou previsão, após ter sido avaliada a condição da
+                        instalação, de que houve ou provavelmente haverá vazamento ou
+                        liberação de material radioativo e/ou substâncias tóxicas, indicando a
+                        necessidade de medidas imediatas de proteção além dos limites físicos
+                        da instalação, porém ainda internas aos limites de propriedade do CEA;<br><br>
+
+                        Emergência Geral - Situação configurada no momento em que se verificar:
+                        • Uma condição inicial que indique uma redução real e significativa do nível
+                        de segurança da instalação; e
+                        • A constatação ou previsão, após ter sido avaliada a condição da
+                        instalação, de que houve ou provavelmente haverá vazamento ou
+                        liberação de quantidades significativas de material radioativo e/ou
+                        substâncias tóxicas, indicando a necessidade de medidas imediatas de
+                        proteção além dos limites de propriedade do CEA
                     </p>
                 </div>
             </div>
@@ -277,14 +316,16 @@
                 <h4>
                     Qual condição determina o fim do ciclo de um núcleo do LABGENE?
 
-                    
+
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp10" class="respostaB">
                     <p>
-                        LABGENE, durante sua operação, deve ter reatividade suficiente para permitir o religamento, mesmo nas condições mais adversas de concentração de Xenônio. A impossibilidade de atender a esse requisito coincide com o fim do ciclo de operação do núcleo do reator.
+                        LABGENE, durante sua operação, deve ter reatividade suficiente para permitir o religamento,
+                        mesmo nas condições mais adversas de concentração de Xenônio. A impossibilidade de atender a
+                        esse requisito coincide com o fim do ciclo de operação do núcleo do reator.
 
                     </p>
                 </div>
@@ -395,7 +436,7 @@
             </div>
             <hr>
         </div>
-        
+
         <div id="quinze" class="questãoSecaoC">
             <span class="numeroDaQuestão">
                 Questão 15
@@ -674,7 +715,7 @@
             </div>
             <hr>
         </div>
-        
+
 
         <div id="dezesseis" class="questãoSecaoC">
             <span class="numeroDaQuestão">
@@ -876,7 +917,7 @@
         </div>
 
 
-        
+
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
@@ -902,7 +943,7 @@
         </div>
 
 
-        
+
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
@@ -1190,9 +1231,9 @@
             <hr>
         </div>
 
-        
 
-        
+
+
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
@@ -1220,7 +1261,7 @@
             <hr>
         </div>
 
-        
+
 
         <div id="desoito" class="questãoSecaoC">
             <span class="numeroDaQuestão">
@@ -1385,7 +1426,7 @@
             <hr>
         </div>
 
-        
+
 
 
         <div id="desoito" class="questãoSecaoC">
