@@ -269,7 +269,10 @@
                     <p>
                         É composto por 2 (duas) unidades completas e independentes de
                         Controladores de Processamento (CP), sendo cada unidade responsável
-                        pelo acionamento de um dos trens de operação da planta.
+                        pelo acionamento de um dos trens de operação da planta.<br><br>
+                        Utiliza tecnologia Hardline que é baseado em uma combinação de relés e transistores. <br><br>
+                        O SDA não apresenta IHM exclusivas/dedicadas, ou seja, serão utilizadas as
+                        IHMs comuns com o SPP/SCS.
                     </p>
                 </div>
             </div>
@@ -281,16 +284,23 @@
             <span class="numeroDaQuestão">
                 Questão 11
             </span>
-            <div class="perguntasF" id="quest11">
+            <div class="perguntasE" id="quest11">
                 <h4>
-                    Quais são as possíveis classificações dos itens SSCs do LABGENE? (UE2)
+                    Como funciona o Sistema Distribuído de Controle do Processo (SDCP)?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp11" class="respostaB">
                     <p>
-                        Classificação sísmica, de grupo de qualidade e de segurança.
+                        Todo o SDCP (Sistema Distribuído de Controle do Processo) são
+                        sistemas de controle não relacionado com a segurança (N1E) e é o sistema mais usado na operação
+                        da planta. <br><br>
+                        São intertravamentos e controles que não são responsáveis por
+                        desligar, resfriar ou manter íntegras as barreiras físicas para impedir<br><br>
+                        a dispersão de material radioativo.
+                        No entanto, são a primeira camada de proteção do reator. Em caso
+                        de falha, demanda atuação do SCS, SPP ou SDA.
                     </p>
                 </div>
             </div>
@@ -302,7 +312,7 @@
             </span>
             <div class="perguntasC" id="quest12">
                 <h4>
-                    O que é um Acidente Base de Projeto?
+                    Onde o SDCP possui redundância?
 
                 </h4>
                 <p>
@@ -310,8 +320,7 @@
                 </p>
                 <div id="resp12" class="respostaC">
                     <p>
-                        São acidentes postulados com probabilidade de ocorrência relevante e que devem constar no
-                        projeto para que a instalação continue segura, mesmo após a sua ocorrência.
+                        Só possui redundância de CPU e comunicações de rede.
                     </p>
                 </div>
             </div>
@@ -323,15 +332,19 @@
             </span>
             <div class="perguntasC" id="quest13">
                 <h4>
-                    O que é um item importante à segurança?
+                    Quais os controles importantes do SDCP?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp13" class="respostaC">
                     <p>
-                        Item com funcionamento essencial para a segurança. Identificá-los é necessário para a mitigação,
-                        prevenção e contenção de prováveis acidentes.
+                        • Controle de Temperatura Média do Primário <br><br>
+                        • Controle da Pressão do PZ<br><br>
+                        • Controle do Nível do GV<br><br>
+                        • Controle do Sistema de Desvio de Vapor Vivo<br><br>
+                        • Controle do Nível do CD<br><br>
+                        • Controle da Pressão do CD
                     </p>
                 </div>
             </div>
@@ -343,15 +356,21 @@
             </span>
             <div class="perguntasC" id="quest14">
                 <h4>
-                    Quais as classes do grupo de qualidade (ou classes de segurança) do LABGENE?
+                    Em relação ao controle de temperatura média do primário, qual a diferença entre Controle Automático
+                    de Temperatura
+                    Média do Reator em Potência (CTMP) e Controle Automático de Potência
+                    do Reator (CAP)?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp14" class="respostaC">
                     <p>
-                        Classe de Segurança 1 (CS1), classe de segurança 2 (CS2), classe de segurança 3 (CS3) e classe
-                        de segurança não nuclear (CS-NN).
+                        • Abaixo de 500 W de potência do reator, apenas controle manual. <br><br>
+                        • Na partida o CAP é ativado a partir de 500 W e fica ativo até 5 MW. Na
+                        parada o CAP é ativado abaixo de 4 MW.<br><br>
+                        • O CTMP é ativado quando o CAP está desativado e a potência acima de
+                        500 W. Na subida de potência em 5 MW e na descida em 4 MW.
                     </p>
                 </div>
             </div>
@@ -363,16 +382,14 @@
             </span>
             <div class="perguntasC" id="quest15">
                 <h4>
-                    Quais são as classificações Sísmica do LABGENE?
+                    Qual a classificação elétrica do SDNE?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp15" class="respostaC">
                     <p>
-                        Categoria Sísmica I; <br>
-                        Categoria Não Sísmica I; e<br>
-                        Categoria Não Sísmica I Especiais.
+                        Devido às suas funções este sistema é classificado como 1E.
                     </p>
                 </div>
             </div>
