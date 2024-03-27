@@ -26,17 +26,23 @@
             </span>
             <div id="pergunta1" class="perguntasE">
                 <h4>
-                    Quais as principais funções do SPP?
+                    O que é e qual a função do Sistema de Monitoração Sísmica (SMS)?
                 </h4>
                 <p>
                     <input type="button" class="chamaResposta" value="Resposta">
                 </p>
                 <div id="resp1" class="respostaA">
                     <p>
-                        Controle da Reatividade (Desligar o Reator) <br><br>
-                        Remoção de Calor Residual (mesmo desligado, precisa 1 a 7%) - ATENÇÃO!<br><br>
-                        Barreiras contra emissão de material radioativo (Integridade do Primário e da
-                        Contenção)
+                        O Sistema de Monitoração Sísmica é um sistema N1E, que tem as seguintes funções:<br><br>
+
+                        • Medir continuamente através de sensores sísmicos (acelerômetros do
+                        tipo tri-axial), as variações sísmicas dentro das condições
+                        especificadas para a instalação;<br><br>
+                        • Registrar ocorrências e espectro de atividades sísmicas;<br><br>
+                        • Gerar alarme próprio e enviar sinal através de contato seco (livre de
+                        potencial) para alarme na Sala de Comando do LABGENE (SCR); e<br><br>
+                        • Gerar gráfico de intensidade sísmica e armazenamento destas
+                        informações.
                     </p>
                 </div>
             </div>
@@ -54,16 +60,20 @@
             </span>
             <div id="pergunta2" class="perguntasA">
                 <h4>
-                    Quais as características elétricas do SPP
+                    Quais alarmes deverão ser visualizados na Sala de Comando do LABGENE (SCR) oriundas do SMS
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp2" class="respostaA">
                     <p>
-                        Classificação Elétrica 1E <br><br>
-                        Redundâncias: 2 para alimentação elétrica; 4 para sensores e lógica; 2 para
-                        atuadores
+                        1. Ativação do sistema de gravação de sismo; <br><br>
+                        2. OBE (Operating Basis Earthquake) excedido;<br><br>
+                        3. SSE (Safe Shutdown Earthquake) excedido;<br><br>
+                        4. Excedido o Nível de Aceleração pré-estabelecido para o OBE;<br><br>
+                        5. Excedida a aceleração de resposta para qualquer das 12 frequências
+                        naturais de cada eixo tri-ortogonal; e<br><br>
+                        6. Alarmes de indicação de falhas do sistema.
                     </p>
                 </div>
             </div>
@@ -80,7 +90,7 @@
             </span>
             <div id="pergunta3" class="perguntasA">
                 <h4>
-                    O que é o Sistema de Controle de Segurança (SCS) do LABGENE?
+                    Quais são, qual a quantidade e onde estão localizados os sensores do SMS
                 </h4>
 
                 <p>
@@ -88,8 +98,13 @@
                 </p>
                 <div id="resp3" class="respostaA">
                     <p>
-                        O SCS é um sistema de segurança que possibilita a atuação manual (diversa do SPP) dos
-                        equipamentos 1E.
+                        6 acelerômetros tri-axiais de histórico de tempo, responsáveis em fornecer dados de frequência,
+                        amplitude e relação de fase da resposta sísmica, após a ocorrência de um sismo. Estão instalados
+                        nos seguintes locais: <br><br>
+
+                        1 no Campo livre; <br>
+                        3 no Prédio do Reator (PR); <br>
+                        2 no Prédio do Combustível (PC).
                     </p>
                 </div>
             </div>
@@ -417,13 +432,13 @@
             </div>
             <hr>
         </div>
+<!--
         <div id="dezesseis" class="questãoSecaoD">
             <span class="numeroDaQuestão">
                 Questão 16
             </span>
             <div class="perguntasD" id="quest16">
                 <h4>
-                    O que é e qual a função do Sistema de Monitoração Sísmica (SMS)?
 
                 </h4>
                 <p>
@@ -431,16 +446,7 @@
                 </p>
                 <div id="resp16" class="respostaD">
                     <p>
-                        O Sistema de Monitoração Sísmica é um sistema N1E, que tem as seguintes funções:<br><br>
-
-                        • Medir continuamente através de sensores sísmicos (acelerômetros do
-                        tipo tri-axial), as variações sísmicas dentro das condições
-                        especificadas para a instalação;<br><br>
-                        • Registrar ocorrências e espectro de atividades sísmicas;<br><br>
-                        • Gerar alarme próprio e enviar sinal através de contato seco (livre de
-                        potencial) para alarme na Sala de Comando do LABGENE (SCR); e<br><br>
-                        • Gerar gráfico de intensidade sísmica e armazenamento destas
-                        informações.
+                        
                     </p>
                 </div>
             </div>
@@ -452,7 +458,7 @@
             </span>
             <div class="perguntasD" id="quest17">
                 <h4>
-                    Quais são, qual a quantidade e onde estão localizados os sensores do SMS
+                    
 
                 </h4>
                 <p>
@@ -460,13 +466,7 @@
                 </p>
                 <div id="resp17" class="respostaD">
                     <p>
-                        6 acelerômetros tri-axiais de histórico de tempo, responsáveis em fornecer dados de frequência,
-                        amplitude e relação de fase da resposta sísmica, após a ocorrência de um sismo. Estão instalados
-                        nos seguintes locais: <br><br>
-
-                        1 no Campo livre; <br>
-                        3 no Prédio do Reator (PR); <br>
-                        2 no Prédio do Combustível (PC).
+                        
 
                     </p>
                 </div>
@@ -480,7 +480,7 @@
             </span>
             <div class="perguntasD" id="quest18">
                 <h4>
-                    Quais alarmes deverão ser visualizados na Sala de Comando do LABGENE (SCR) oriundas do SMS
+                    
 
                 </h4>
                 <p>
@@ -488,19 +488,13 @@
                 </p>
                 <div id="resp18" class="respostaD">
                     <p>
-                        1. Ativação do sistema de gravação de sismo; <br><br>
-                        2. OBE (Operating Basis Earthquake) excedido;<br><br>
-                        3. SSE (Safe Shutdown Earthquake) excedido;<br><br>
-                        4. Excedido o Nível de Aceleração pré-estabelecido para o OBE;<br><br>
-                        5. Excedida a aceleração de resposta para qualquer das 12 frequências
-                        naturais de cada eixo tri-ortogonal; e<br><br>
-                        6. Alarmes de indicação de falhas do sistema.
+                        
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-<!--
+
         <div id="dezenove" class="questãoSecaoD">
             <span class="numeroDaQuestão">
                 Questão 19
