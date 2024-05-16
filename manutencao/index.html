@@ -26,16 +26,18 @@
             </span>
             <div id="pergunta1" class="perguntasA">
                 <h4>
-                    O que é Manutenção Corretiva Não Planejada?
+                    Quais são os 2 circuitos de água do Subsistema Nuclear do SAG e como é realizada a dissipação final
+                    do calor absorvido por esse subsistema?
                 </h4>
                 <p>
                     <input type="button" class="chamaResposta" value="Resposta">
                 </p>
                 <div id="resp1" class="respostaA">
                     <p>
-                        É aquela que é feita após a ocorrência de uma falha ou redução na performance do ativo, sem que
-                        haja planejamento prévio dessa ação. Assim, é uma ação reativa, que ocorre após um acontecimento
-                        ou ocorrência.
+                        Subsistema Nuclear (CS-3) - atende os consumidores CS-3;
+                        Subsistema Não-Nuclear - atende os consumidores CS-NN.<br><br>
+
+                        A dissipação final é realizada pelos resfriadores evaporativos que envia calor para atmosfera.
                     </p>
                 </div>
             </div>
@@ -53,16 +55,16 @@
             </span>
             <div id="pergunta2" class="perguntasA">
                 <h4>
-                    O quê é Manutenção Preventiva?
+                    Explique por que o Subsistema Nuclear do SAG necessita de 4 tanques de expansão, enquanto no
+                    Subsistema Não-Nuclear, apenas 1 tanque de expansão é suficiente
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp2" class="respostaA">
                     <p>
-                        É aquela que, obedecendo a um plano previamente elaborado, faz atuações nos ativos com o
-                        principal objetivo de evitar falhas. Pode implicar em retirada do equipamento de operação para
-                        verificações ou troca de peças
+                        Porque o Subsistema Nuclear possui dois trêns redundantes e independentes e cada um deles rejeita calor para outro circuito redundante e independente, ou seja, cada trêm do subsistema nuclear precisa ter um tanque de expansão e cada circuito no qual ele rejeita calor precisa ter um tanque de expansão cada, somando-se 4 tanques no total(2 trens independentes x 2 circuitos fechados).
+                        Já o subsistema não nuclear tem seu circuito de água gelada interligado, por isso, apenas um tanque de expansão consegue atender as redundâncias(apenas 1 circuito fechado compartilhado entre as redundância. Circuito de Água de Condensação aberto).
                     </p>
                 </div>
             </div>
@@ -79,7 +81,7 @@
             </span>
             <div id="pergunta3" class="perguntasA">
                 <h4>
-                    O quê é Manutenção Preditiva?
+                    Citar 2 ambientes cuja ventilação utiliza o Subsistema Nuclear do SAG.
                 </h4>
 
                 <p>
@@ -87,13 +89,9 @@
                 </p>
                 <div id="resp3" class="respostaA">
                     <p>
-                        É o nome dado ao conjunto de ações de monitoramento da condição dos
-                        equipamentos. Esse monitoramento permite a coleta de dados que, analisados, informam o estado do
-                        equipamento e permitem, com base nesses dados, definir se o equipamento pode ou não continuar em
-                        operação. Caso esses dados indiquem que há um início de degradação, é feito um acompanhamento de
-                        modo a se planejar uma ação corretiva. À essa ação corretiva PLANEJADA, se dá o nome de
-                        manutenção
-                        corretiva planejada.
+                        • SCR, CST e áreas de apoio do PANC <Br><Br>
+                        • salas de controle do PR e salas elétricas no APR<Br><Br>
+                        • salas elétricas e painéis do prédio dos GDG da SUB2
                     </p>
                 </div>
             </div>
@@ -107,21 +105,16 @@
             </span>
             <div class="perguntasA" id="quest04">
                 <h4>
-                    O quê é Manutenção Prescritiva?
+                    Qual a Diferencça Ar de Serviço e Ar de Instrumentos?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp4" class="respostaA">
                     <p>
-                        Manutenção Prescritiva - se baseia na análise Prescritiva cuja diferença da Análise Preditiva
-                        está em, além
-                        de predizer, também poder oferecer alternativas de solução. É característica da 4ª Revolução
-                        Industrial
-                        na qual, sensores inteligentes, big data, algorItimos, dentre outros, permitem a detecção
-                        antecipada de
-                        degradação nos ativos e através dos algoritmos definir o que deve ser feito, daí o nome
-                        PRESCRITIVA.
+                        Ar de serviço é usado para consumo em ferramentas pneumáticas, operações de processo e limpeza.<Br><Br>
+                        
+                        Ar de instrumentos é o ar que requer alta pureza: instrumentos, atuadores de válvulas e dampers
                     </p>
                 </div>
             </div>
@@ -135,17 +128,15 @@
             </span>
             <div class="perguntasA" id="quest05">
                 <h4>
-                    Quando se utiliza equipamentos / instrumentos, o monitoramento da manutenção preditiva é
-                    classificado como Offline e Online. Explique a diferença entre eles
+                    Cite quais são os 3 equipamentos do Sistema de Ar Comprimido que, no LABGENE, transformam Ar de
+                    Serviço em Ar de Instrumentos.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp5" class="respostaA">
                     <p>
-                        •Off line - Os dados de monitoramento da condição dos equipamentos são coletados de
-                        tempos em tempos, ou seja, há um espaçamento de tempo entre uma coleta e outra. <br><br>
-                        •On-line - os dados monitorados são adquiridos continuamente em tempo real.
+                        Filtros, Secador de Ar e Reservatório de ar de Instrumentos.
                     </p>
                 </div>
             </div>
@@ -159,23 +150,15 @@
             </span>
             <div class="perguntasA" id="quest06">
                 <h4>
-                    Qual o objetivo da manutenção preditiva?
+                    Citar quantos e quais são os componentes do Sistema de Ar Comprimido (SAC - R11.05-5111) que possuem
+                    classe de segurança nuclear, e em quais prédios esses componentes estão localizados.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp6" class="respostaA">
                     <p>
-
-                        ● Combinar a análise de dados com
-                        técnicas preditivas para antecipar
-                        e prevenir falhas ou avarias em
-                        equipamentos; <br><br>
-                        ● Minimizar o número e o custo de
-                        interrupções não programadas
-                        criadas por falhas;<br><br>
-                        ● Melhorar a disponibilidade geral
-                        das plantas em operação.
+                        6 Reservatórios de Ar de Instrumentos, redundância 1 de 2 para cada prédio atendido (PANC, PR e PC);
                     </p>
                 </div>
             </div>
@@ -189,19 +172,14 @@
             </span>
             <div class="perguntasB" id="quest07">
                 <h4>
-                    Quais as vantagens da manutenção preditiva
+                    
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp7" class="respostaB">
                     <p>
-                        ● Combinar a análise de dados com técnicas preditivas para antecipar e
-                        prevenir falhas ou avarias em equipamentos;<br><br>
-                        ● Minimizar o número e o custo de interrupções não programadas criadas
-                        por falhas;<br><br>
-                        ● Melhorar a disponibilidade geral das plantas em operação otimizando a
-                        disponibilidade do maquinário de processo.
+                        
                     </p>
                 </div>
             </div>
@@ -272,26 +250,26 @@
                     Quais as técnicas de manutenção preditiva são usadas no LABGENE atualmente e em quais
                     equipamentos/sistemas são aplicados?
                 </h4>
+                <p>
+                    <input type="button" value="Resposta" class="chamaResposta">
+                </p>
+                <div id="resp10" class="respostaB">
                     <p>
-                        <input type="button" value="Resposta" class="chamaResposta">
+                        Análise de óleo<br><br><br>
+                        ● SISTEMA 2620<br><br>
+                        ● MEP<br><br>
+                        ● REDUTORES PONTES ROLANTES<br><br>
+                        ● GERADORES<br><br>
+                        ● TRANSFORMADORES<br><br><br>
+
+                        Análise de vibração<br><br><br>
+                        Bombas, Motores, Ventiladores, Chillers, Transformadores, Compressores:<br><br>
+                        ● Desbalanceamento<br><br>
+                        ● Desalinhamento<br><br>
+                        ● Desgaste de Mancal<br><br>
+
                     </p>
-                    <div id="resp10" class="respostaB">
-                        <p>
-                            Análise de óleo<br><br><br>
-                            ● SISTEMA 2620<br><br>
-                            ● MEP<br><br>
-                            ● REDUTORES PONTES ROLANTES<br><br>
-                            ● GERADORES<br><br>
-                            ● TRANSFORMADORES<br><br><br>
-
-                            Análise de vibração<br><br><br>
-                            Bombas, Motores, Ventiladores, Chillers, Transformadores, Compressores:<br><br>
-                            ● Desbalanceamento<br><br>
-                            ● Desalinhamento<br><br>
-                            ● Desgaste de Mancal<br><br>
-
-                        </p>
-                    </div>
+                </div>
             </div>
 
             <hr>
@@ -446,7 +424,7 @@
             </div>
             <hr>
         </div>
-<!-- 
+        <!-- 
         <div id="dezessete" class="questãoSecaoD">
             <span class="numeroDaQuestão">
                 Questão 17
