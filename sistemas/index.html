@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeah Yeah Sistemas</title>
+    <title>Yeah Yeah Manutenção Preditiva</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
@@ -16,7 +16,7 @@
     <section>
         <header>
 
-            <h1>SISTEMAS</h1>
+            <h1>MANUTENÇÃO PREDITIVA</h1>
 
         </header>
 
@@ -24,30 +24,20 @@
             <span class="numeroDaQuestão">
                 Questão 01
             </span>
-            <div id="pergunta1" class="perguntasE">
+            <div id="pergunta1" class="perguntasA">
                 <h4>
-                    Qual a função do Sistema de Resfriamento de Componentes do Primário (2161)?
+                    Quais são os 2 circuitos de água do Subsistema Nuclear do SAG e como é realizada a dissipação final
+                    do calor absorvido por esse subsistema?
                 </h4>
                 <p>
                     <input type="button" class="chamaResposta" value="Resposta">
                 </p>
                 <div id="resp1" class="respostaA">
                     <p>
-                        O Sistema de Resfriamento de Componentes do Primário (2161) tem como função prover o
-                        arrefecimento dos seguintes sistemas/equipamentos do LABGENE: <br><br>
-                        • bombas de circulação do Sistema de Resfriamento do Reator (2141-B01A/B01B/B01C
-                        e2141-B02A/B02B/B02C);<br><br>
-                        • 21 (vinte e um) elementos do Mecanismo de Acionamento de Barras (MAB);<br><br>
-                        • fluido refrigerante no trocador não regenerativo 2151-TC02(Sist. de Purificação do
-                        Refrigerante do Primário);
-                        <br><br>
-                        • fluido contido no tanque de alívio 2155-TQ01 (descarga do 2141-PZ), através do trocador de
-                        calor 2155-TC01 (Sist. de Alívio e Descarga de Refrigerante);
-                        <br><br>
-                        • fluido de tanque de água blindagem 2183-TQ01 via trocadores de calor 2183-TC01/02/03/04 (Sist.
-                        de Água de Blindagem); e
-                        <br><br>
-                        • bombas de circulação de refrigerante do Sistema de Resfriamento de Emergência (2156-B05/B06).
+                        Subsistema Nuclear (CS-3) - atende os consumidores CS-3;
+                        Subsistema Não-Nuclear - atende os consumidores CS-NN.<br><br>
+
+                        A dissipação final é realizada pelos resfriadores evaporativos que envia calor para atmosfera.
                     </p>
                 </div>
             </div>
@@ -65,16 +55,22 @@
             </span>
             <div id="pergunta2" class="perguntasA">
                 <h4>
-                    Como é composto O Sistema de Resfriamento de Componentes do Primário (2161) e como é a sua dinâmica
-                    de funcionamento?
+                    Explique por que o Subsistema Nuclear do SAG necessita de 4 tanques de expansão, enquanto no
+                    Subsistema Não-Nuclear, apenas 1 tanque de expansão é suficiente
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp2" class="respostaA">
                     <p>
-                        É por dois circuitos independentes de distribuição e retorno que penetram a contenção nuclear.
-                        Um circuito opera enquanto o outro permanece em reserva.
+                        Porque o Subsistema Nuclear possui dois trêns redundantes e independentes e cada um deles
+                        rejeita calor para outro circuito redundante e independente, ou seja, cada trêm do subsistema
+                        nuclear precisa ter um tanque de expansão e cada circuito no qual ele rejeita calor precisa ter
+                        um tanque de expansão cada, somando-se 4 tanques no total(2 trens independentes x 2 circuitos
+                        fechados).
+                        Já o subsistema não nuclear tem seu circuito de água gelada interligado, por isso, apenas um
+                        tanque de expansão consegue atender as redundâncias(apenas 1 circuito fechado compartilhado
+                        entre as redundância. Circuito de Água de Condensação aberto).
                     </p>
                 </div>
             </div>
@@ -91,7 +87,7 @@
             </span>
             <div id="pergunta3" class="perguntasA">
                 <h4>
-                    Quais os principais componentes do 2161?
+                    Citar 2 ambientes cuja ventilação utiliza o Subsistema Nuclear do SAG.
                 </h4>
 
                 <p>
@@ -99,14 +95,9 @@
                 </p>
                 <div id="resp3" class="respostaA">
                     <p>
-                        seus principais componentes são: <br><br>
-                        • 2 Bombas Centrífugas (2161-B01 A/B), sendo uma por circuito;<br><br>
-                        • 2 Filtros Y classe de segurança CS-3 (2161-FT01 A/B), sendo um por circuito;<br><br>
-                        • 2 Trocadores de Calor tipo casco tubo (2161-TC01 A/B), sendo um por circuito;<br><br>
-                        • 2 Tanques de expansão (2161-TQ01 A/B), sendo um por circuito; <br><br>
-                        • 4 Válvulas de isolamento da contenção (2161-HV-1620 /1621/1622/1623); e<br><br>
-                        • 26 Válvulas de 3 vias (2161-HV-1633...1658).
-                        Obs.: Os tanques, trocadores de calor e bombas do 2161 são da classe de segurança nuclear CS-3.
+                        • SCR, CST e áreas de apoio do PANC <Br><Br>
+                        • salas de controle do PR e salas elétricas no APR<Br><Br>
+                        • salas elétricas e painéis do prédio dos GDG da SUB2
                     </p>
                 </div>
             </div>
@@ -118,19 +109,19 @@
             <span class="numeroDaQuestão">
                 Questão 04
             </span>
-            <div class="perguntasE" id="quest04">
+            <div class="perguntasA" id="quest04">
                 <h4>
-                    Como o 2161 identifica eventuais vazamentos de refrigerante do bloco 40 para fora da contenção?
+                    Qual a Diferencça Ar de Serviço e Ar de Instrumentos?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp4" class="respostaA">
                     <p>
-                        O sistema 2161 é equipado com instrumentos para medição da radioatividade (RE-1600 e RE-1632) na
-                        linha de retorno para identificar eventuais vazamentos de refrigerante do bloco 40 para fora da
-                        contenção
+                        Ar de serviço é usado para consumo em ferramentas pneumáticas, operações de processo e
+                        limpeza.<Br><Br>
 
+                        Ar de instrumentos é o ar que requer alta pureza: instrumentos, atuadores de válvulas e dampers
                     </p>
                 </div>
             </div>
@@ -144,25 +135,15 @@
             </span>
             <div class="perguntasA" id="quest05">
                 <h4>
-                    Quais os utilizadores e os sistemas que fazem interface com o sistema 2161?
+                    Cite quais são os 3 equipamentos do Sistema de Ar Comprimido que, no LABGENE, transformam Ar de
+                    Serviço em Ar de Instrumentos.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp5" class="respostaA">
                     <p>
-                        Utilizadores: <br><br>
-                        • 2141- Sistema de Resfriamento do Reator.<br>
-                        • 2151- Sistema de Purificação do Refrigerante do Primário.<br>
-                        • 2155 -Sistema de Alívio e Descarga do Refrigerante.<br>
-                        • 2156- Sistema de Resfriamento de Emergência.<br>
-                        • 2183- Sistema de Água de Blindagem.<br><br>
-
-                        Outras interfaces:<br><br>
-                        • 04-5322- SARSP;<br>
-                        • 05-5313- Sistema de Água Desmineralizada;<br>
-                        • 05-5111- Sistema de Ar Comprimido;<br>
-                        • 02-5410 - Sistema de Drenagem do Prédio do Reator.
+                        Filtros, Secador de Ar e Reservatório de ar de Instrumentos.
                     </p>
                 </div>
             </div>
@@ -176,17 +157,16 @@
             </span>
             <div class="perguntasA" id="quest06">
                 <h4>
-                    Qual o objetivo do Sistema de Amostragem de Refrigerante do Primário (01-2152-SAmRP)?
+                    Citar quantos e quais são os componentes do Sistema de Ar Comprimido (SAC - R11.05-5111) que possuem
+                    classe de segurança nuclear, e em quais prédios esses componentes estão localizados.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp6" class="respostaA">
                     <p>
-                        Permitir a monitoração da taxa de corrosão no circuito primário e da atividade total na água do
-                        circuito primário e estimar a eficiência do sistema de purificação e de alguns instrumentos.
-                        Secundariamente, pode subsidiar a calibração da instrumentação envolvida através dos resultados
-                        das análises.
+                        6 Reservatórios de Ar de Instrumentos, redundância 1 de 2 para cada prédio atendido (PANC, PR e
+                        PC);
                     </p>
                 </div>
             </div>
@@ -200,9 +180,8 @@
             </span>
             <div class="perguntasB" id="quest07">
                 <h4>
-                    Na linha de coleta de amostras do 01-2152-SAmRP, são instalados instrumentos dentro do painel de
-                    amostragem para monitoração direta de quais variáveis?
-
+                    Quais os Principais Componentes/utilizadores do Sistema de Estocagem e Transferência de Óleo
+                    Combustível?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
@@ -210,12 +189,6 @@
                 <div id="resp7" class="respostaB">
                     <p>
 
-                        • radioatividade (2152-RE-1861) - Ind./Alarme local e na SCR; <br><br>
-                        • condutividade (2152-CE-1863) - Ind./Alarme local e na SCR;<br><br>
-                        • pH (2152-AE-1864) - Indicação local e na SCR;<br><br>
-                        • concentração de Hidrogênio total (2152-AE-1865);<br><br>
-                        • vazão, pressão* e temperatura*.
-                        *NÃO apresentados na IHM do simulador
                     </p>
                 </div>
             </div>
@@ -229,7 +202,8 @@
             </span>
             <div class="perguntasB" id="quest08">
                 <h4>
-                    Quais os sistemas possuem interface com os sistemas de amostragem (01-2152-SAmRP?)
+                    Qual a função principal do Sistema de Estocagem e Transferência de Óleo Combustível?
+
 
                 </h4>
                 <p>
@@ -237,12 +211,8 @@
                 </p>
                 <div id="resp8" class="respostaB">
                     <p>
-                        • Sistema de Purificação da Água do Primário (01-2151-SPAP); <br><br>
-                        • Sistema de Descarga de Refrigerante (01-2155-SDRP); <br><br>
-                        • Sistema Água Desmineralizada (05-5313-SAD); <br><br>
-                        • Sistema de Ventilação do Prédio do Reator (02-5120-SVAC); <br><br>
-                        • Sistema de Suprimento de Nitrogênio (01-5532-SSN); <br><br>
-
+                        Suprir combustível de forma adequada e segura aos 4 grupos Diesel-Geradores de emergência da SUB
+                        2.
                     </p>
                 </div>
             </div>
@@ -254,17 +224,22 @@
             <span class="numeroDaQuestão">
                 Questão 09
             </span>
-            <div class="perguntasE" id="quest09">
+            <div class="perguntasB" id="quest09">
                 <h4>
-                    Como é a atuação da operação de amostragem?
+                    Quais os principais componentes do Sistema de Estocagem e Transferência de Óleo Combustível?
+
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp9" class="respostaB">
                     <p>
-                        A amostragem tem o seu início determinada pelo operador e será de atuação Manual e Local,
-                        diretamente no painel.
+                        Reservatórios de armazenagem (2 un ); <br><br>
+                        Reservatórios de óleo extravasado (2 un );<br><br>
+                        Tanques diários (04 un);<br><br>
+                        Grupos Diesel-Geradores (04 un de 1250 KW);<br><br>
+                        Bombas: transferência, circulação, e de óleo extravasado;<br><br>
+                        Filtros de óleo combustível.
                     </p>
                 </div>
             </div>
@@ -278,18 +253,16 @@
             </span>
             <div class="perguntasB" id="quest10">
                 <h4>
-                    Como é a rotina de amostragem no 01-2152-SAmRP?
+                    O sistema de óleo diesel tem capacidade para manter cada um dos 2 GDG's continuamente à plena carga,
+                    sem reabastecimento por quanto tempo?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp10" class="respostaB">
                     <p>
-                        São previstas 04(quatro) amostras diárias(coletadas em dois momentos distintos, a cada 12
-                        horas), com duração de 02(dois) minutos para cada uma, removendo para análise 08kg/dia de
-                        refrigerante.<br><br>
-                        Cada amostragem será executada uma de cada vez, e tirada de pontos diferentes, sendo um ponto de
-                        coleta após o desionizador(2151) e o outro ponto antes do desionizador, sempre nesta sequência.
+                        por 7 dias
+
                     </p>
                 </div>
             </div>
@@ -301,20 +274,17 @@
             <span class="numeroDaQuestão">
                 Questão 11
             </span>
-            <div class="perguntasE" id="quest11">
+            <div class="perguntasB" id="quest11">
                 <h4>
-                    Quais os valores normais das variáveis verificadas na amostra?
+                    Defina Condição Limite de Operação (CLO)
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp11" class="respostaB">
                     <p>
-                        • Pressão de trabalho: 2bar; <br><br>
-                        • Vazão de processo: 59,42 kg/h (MS);<br><br>
-                        • Radioatividade: ≤ 8µCi/g de água;<br><br>
-                        • Condutividade: < 2µS/cm; <br><br>
-                            • ph: 9,5 a 10,5
+                        CLO - Especificam os requisitos mínimos para assegurar a operação segura da planta, de acordo
+                        com os critérios de projeto e parâmetros de segurança.
                     </p>
                 </div>
             </div>
@@ -326,18 +296,14 @@
             </span>
             <div class="perguntasC" id="quest12">
                 <h4>
-                    Citar 4 sistemas que são apoiados pelo Sistema de Água de Resfriamento Principal (SARP)
-
+                    Cite 1 exemplo de sistema/equipamento SEM classe de segurança nuclear que inicia uma CLO
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp12" class="respostaC">
                     <p>
-                        Sistema de Resfriamento Principal (SRP); <br><br>
-                        Sistema de Resfriamento de Componentes do Secundário;<br><br>
-                        Sistema de Água Gelada do PANC;<br><br>
-                        Sistema de Ar Comprimido do PANC.
+                        Sistema de distribuição de água.
                     </p>
                 </div>
             </div>
@@ -349,14 +315,19 @@
             </span>
             <div class="perguntasC" id="quest13">
                 <h4>
-                    Descreva como é realizado o tratamento da água da bacia da torre
+                    Cite e justifique 1 exemplo de CLO normalmente exigida pela NRC que não é aplicável ao LABGENE.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp13" class="respostaC">
                     <p>
+                        Válvulas de Isolamento de Fontes de Água não Borada. <br><br>
 
+                        O LABGENE, por opção de projeto, não utiliza compostos borados na água, seja do circuito
+                        primário ou na Piscina de Estocagem Combustível (PEC). Assim, o acidente de diluição inadvertida
+                        de Boro no circuito primário ou na PEC não é crível, fazendo com que esta CLO não seja aplicável
+                        ao LABGENE. (idem para Válvula de Isolamento de Água não Borada)
                     </p>
                 </div>
             </div>
@@ -368,17 +339,18 @@
             </span>
             <div class="perguntasC" id="quest14">
                 <h4>
-                    Cite as 3 funções que o Dissipador de Calor Final (Ultimate Heat Sink - UHS) deve realizar
+                    Qual a finalidade do Sistema de Iluminação?
+
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp14" class="respostaC">
                     <p>
-                        1) dissipação do calor residual após desligamento do reator; <br><br>
-                        2) dissipação do calor residual após um acidente, exemplo LOCA (APRP); e<br><br>
-                        3) dissipação do máximo calor de decaimento esperado na Piscina de Elemento Combustível
-                        Irradiado.
+                        O sistema de Iluminação tem a finalidade de prover as áreas externas e internas, que compõem o
+                        conjunto das instalações do LABGENE, iluminação confiável e que atenda as exigências
+                        luminotécnicas dos locais de trabalho, durante os estados operacionais da planta, atividades de
+                        manutenção e em condições de acidente.
                     </p>
                 </div>
             </div>
@@ -390,65 +362,54 @@
             </span>
             <div class="perguntasC" id="quest15">
                 <h4>
-                    Cite os 2 sistemas que desempenham o papel de Dissipador de Calor Final (UHS) no LABGENE;
+                    Como é subdividido o Sistema de Iluminação?
+
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp15" class="respostaC">
                     <p>
-                        Sistema de Água de Resfriamento do Protótipo (SARSP); e <br><br>
-                        Sistema de Água de Resfriamento do Prédio do Combustível (SARS-PC).
+                        Sistema de iluminação Corrente Alternada<br>
+                        Sistema de iluminação Corrente Contínua<br>
+                        Sistema de iluminação do PROTER
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-
         <div id="dezesseis" class="questãoSecaoD">
             <span class="numeroDaQuestão">
                 Questão 16
             </span>
             <div class="perguntasD" id="quest16">
                 <h4>
-                    Citar os 3 subsistemas que compõem o SARSP e suas respectivas funções;
+                    Como cada uma das subdivisões do Sistema de iluminação pode ser classificados de acordo com a classe
+                    1E ou N1E?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp16" class="respostaD">
                     <p>
-                        Subsistema de Resfriamento de Segurança, que consiste de um tanque cheio de água (Piscina de
-                        Blindagem - 5322-TQ01) resfriado pelos Resfriadores Evaporativos (5322-RF01A/B) que tem a função
-                        de;<br><br>
+                        Sistema de Iluminação em Corrente Alternada Classificado como CS-N1E.<br><br>
 
-                        • Receber as eventuais descargas de vapor provenientes dos Geradores de Vapor;<br><br>
-                        • Fonte final de remoção de calor de decaimento dos produtos de fissão, fornecendo água fria para
-                        o Sistema de Resfriamento de Emergência (R11.01-2156 - SRE); e<br><br>
-                        • Blindagem contra as radiações provenientes do núcleo do reator.<br><br>
-                        
-                        Subsistema de Resfriamento dos Sistemas Essenciais, composto pelos Resfriadores Evaporativos que tem a função de:<br><br>
+                        Sistema de Iluminação em Corrente Contínua Classificado como CS-N1E;<br><br>
 
-                        • Dissipar a carga térmica proveniente do Sistema de Resfriamento de Componentes do Primário.<br><br>
-
-                        Subsistema de Água de Reposição, composto por um tanque cheio de água (5322-TQ02) como fonte segura de água de reposição e tem como função:<br><br>
-
-                        • Repor água em diversos Resfriadores Evaporativos e Tanques com classe de segurança nuclear do SARSP, SARS-PC e Sistema de Água Gelada (parte com classe de segurança), por 30 dias.
-
-
+                        Sistema de Iluminação do PROTER Classificado como CS-N1E;
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-        
+
         <div id="dezessete" class="questãoSecaoD">
             <span class="numeroDaQuestão">
                 Questão 17
             </span>
             <div class="perguntasD" id="quest17">
                 <h4>
-                    Onde está localizado o Sistema de Amostragem do Secundário (01-2554-SAS) e qual o seu objetivo?
+                    Qual a finalidade do Sistema de Comunicação
 
                 </h4>
                 <p>
@@ -456,8 +417,9 @@
                 </p>
                 <div id="resp17" class="respostaD">
                     <p>
-                        Localizado no bloco 30, que está no Prédio das Turbinas (PT), tem como objetivo principal permitir a monitoração dos parâmetros da água do secundário, visando o controle da taxa de corrosão no circuito, subsidiar a calibração dos instrumentos envolvidos de amostragem, bem como levantar dados para ajuste da dosagem e rotinas do Sistema de Adição Química do Secundário.
-
+                        O sistema de comunicação tem a finalidade de proporcionar comunicação confiável entre todas as
+                        áreas do LABGENE, durante operação normal da planta, atividades de manutenção, testes, troca de
+                        elemento combustível, e satisfazer o Plano de Emergência (PEL) em condições de acidente.
                     </p>
                 </div>
             </div>
@@ -470,7 +432,9 @@
             </span>
             <div class="perguntasD" id="quest18">
                 <h4>
-                    Quais os modos de operação do Sistema de Amostragem do Secundário (01-2554-SAS)?
+                    Qual subsistema de comunicação proporciona meios de comunicação entre a Sala de Controle do LABGENE
+                    (SCR) e a portaria do LABGENE, ao Centro Integrado de Segurança e Comunicação (CISC) e, qualquer
+                    ponto localizado nas dependências externas à instalação?
 
                 </h4>
                 <p>
@@ -478,29 +442,28 @@
                 </p>
                 <div id="resp18" class="respostaD">
                     <p>
-                        Manual ou Automático, selecionado por chave específica na SCR de 3 posições.
-                        O modo de operação automático, após selecionado, para que se inicie e termine a amostragem, o operador da SCR deve atuar o permissivo. O modo de operação manual, por sua vez, pode ser remoto ou local.
+                        Subsistema de Radiocomunicação
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-
         <div id="dezenove" class="questãoSecaoD">
             <span class="numeroDaQuestão">
                 Questão 19
             </span>
             <div class="perguntasD" id="quest19">
                 <h4>
-                    Qual a rotina de amostragem do Sistema de Amostragem do Secundário (01-2554-SAS)
+                    Qual a função da bomba Jockey do Sistema de Auxiliar de Combate a Incêndio?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp19" class="respostaD">
                     <p>
-                        Duas amostragens diárias a cada 12 horas sendo coletadas 2 amostras a cada amostragem em um total de 4 amostras coletadas ao dia. São dois pontos diferentes de coleta de amostra, sendo um da derivação da linha de bombordo de água de alimentação do GV-2 e o outro ponto vindo da derivação da linha de boreste de água de alimentação do GV-1.
-
+                        Em condições normais a bomba jockey (5810-B02) manterá a rede de combate a incêndio
+                        pressurizada. Essa bomba é comandada pelo Painel de Comando da Bomba Elétrica, que recebe sinais
+                        de liga-desliga provenientes do pressostato PSHL-4866.
                     </p>
                 </div>
             </div>
@@ -513,74 +476,84 @@
             </span>
             <div class="perguntasD" id="quest20">
                 <h4>
-                    Qual o procedimento que o operador deve prestar atenção durante a coleta das amostras?
+                    Quando há uma queda de pressão nas redes do Sistema de Auxiliar de Combate a Incêndio qual ação é
+                    tomada?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp20" class="respostaD">
                     <p>
-                        O operador deve prestar atenção para instalar antecipadamente os cilindros de amostragem para cada coleta, caso tenha que coletar amostra. Os cilindros de amostragem serão transportados ao Laboratório de Análises de PAC em uma caixa específica, para análise físico-química da água do Ciclo do Secundário.
+                        Quando ocorrer queda de pressão, a bomba jockey é acionada até repor a pressão na
+                        rede, e assim que a pressão setada é alcançada, o pressostato envia comando para desligar a
+                        bomba.
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-        <!--
+
         <div id="vinte e um" class="questãoSecaoE">
             <span class="numeroDaQuestão">
                 Questão 21
             </span>
             <div class="perguntasE" id="quest21">
                 <h4>
-
+                    Quando o sistema de combate a incêndio for acionado, haverá uma maior queda de
+                    pressão na rede, nesse caso, como a pressão na rede é mantida?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp21" class="respostaE">
                     <p>
-
+                        O pressostato PSL-4864 enviará um sinal ao Painel de
+                        Comando da Bomba Elétrica, para o acionamento do conjunto moto bomba elétrico (5810-B01)
+                        principal.
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-        
         <div id="vinte e dois" class="questãoSecaoE">
             <span class="numeroDaQuestão">
                 Questão 22
             </span>
             <div class="perguntasE" id="quest22">
                 <h4>
-
+                    Caso falte energia elétrica ou ocorra nova queda de pressão após uma queda de pressão por
+                    acionamento, existe algum mecanismo para manter a pressão no sistema? se sim, como funciona?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp22" class="respostaE">
                     <p>
-
+                        Sim, o pressostato PSLL-4863 enviará um sinal ao Painel de Comando do Motor Diesel que então
+                        comandará o acionamento do conjunto motobomba diesel (5810-B03)
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-
         <div id="vinte e três" class="questãoSecaoE">
             <span class="numeroDaQuestão">
                 Questão 23
             </span>
             <div class="perguntasE" id="quest23">
                 <h4>
-
+                    No sistema de ventilação e ar condicionado, identifique os equipamentos fancoil e caixa de filtragem
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp23" class="respostaE">
                     <p>
+                        Fancoil <br>
+                        <img src="./imagens/fancoil.png" alt="fancoil" class="imgQuestao"> <br><br><br><br>
 
+                        Caixa de Filtragem <br><br>
+                        <img src="./imagens/caixa-filtragem.png" alt="caixa de filtragem" class="imgQuestao">
                     </p>
                 </div>
             </div>
@@ -590,57 +563,59 @@
             <span class="numeroDaQuestão">
                 Questão 24
             </span>
-            <div class="perguntasE" id="quest24">
+            <div class="perguntasC" id="quest24">
                 <h4>
-
-
+                    Na entrada e saída da caixa de filtragem há dampers corta-fogo que a isolam em caso de incêndio e
+                    válvula de abertura da água de combate à incêndio, como é o acionamento desses equipamentos?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
-                <div id="resp24" class="respostaE">
+                <div id="resp24" class="respostaC">
                     <p>
-
+                        Há sensores que monitoram a temperatura pós filtro adsorvedor e alarmam caso as temperaturas de
+                        150 e 250°C sejam alcançadas para que o operador verifique e execute a abertura das válvulas de
+                        inundação do filtro, porém os dampers são fechados automáticamente para cortar a entrada de ar.
                     </p>
                 </div>
             </div>
             <hr>
         </div>
+
         <div id="vinte e cinco" class="questãoSecaoF">
             <span class="numeroDaQuestão">
                 Questão 25
             </span>
-            <div class="perguntasE" id="quest25">
+            <div class="perguntasC" id="quest25">
                 <h4>
-
+                    Para onde vai o ar exaurido do prédio do reator?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp25" class="respostaE">
                     <p>
-
+                        sistemas de exaustão da chaminé (R11.06-2177)
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-
-
         <div id="vinte e seis" class="questãoSecaoF">
             <span class="numeroDaQuestão">
                 Questão 26
             </span>
-            <div class="perguntasE" id="quest26">
+            <div class="perguntasC" id="quest26">
                 <h4>
-
+                    Quais sistemas descarregam na chaminé?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp26" class="respostaF">
                     <p>
-
+                        Sistemas do Prédio do Reator, Bloco 40, Prédio do Combustível, PAC e Bloco 30, além dos sistemas
+                        de exaustão do LABGENE
                     </p>
                 </div>
             </div>
@@ -650,18 +625,18 @@
             <span class="numeroDaQuestão">
                 Questão 27
             </span>
-            <div class="perguntasE" id="quest27">
+            <div class="perguntasC" id="quest27">
                 <h4>
-
-
+                    Qual o objetivo do Sistema de Drenagem do Prédio do Reator?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp27" class="respostaF">
                     <p>
-
-
+                        O Sistema de Drenagem do Prédio do Reator tem por objetivo coletar e armazenar, em
+                        reservatórios, os efluentes gerados por vazamentos ou esgotamento de equipamentos e eventual
+                        lavagem do piso. Ainda, destinar os efluentes armazenados.
                     </p>
                 </div>
             </div>
@@ -671,19 +646,28 @@
             <span class="numeroDaQuestão">
                 Questão 28
             </span>
-            <div class="perguntasE" id="quest28">
+            <div class="perguntasC" id="quest28">
                 <h4>
-                    Qual é a mais provável fonte de míssil da turbina? É um problema para o LABGENE?
-                    Justifique
-
+                    Como funciona o controle dos componentes do Sistema de Drenagem do Prédio do Reator?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp28" class="respostaF">
                     <p>
-                        Sim. O desprendimento das pás de uma turbina são as mais prováveis fontes de mísseis de turbinas
-                        e representam uma grande ameaça devido à grande quantidade de energia cinética envolvida.
+                        Cada reservatório possui uma chave tipo bóia com 3 posições de atuação (LSH, LSL e LSHH).
+                        <br><br>
+
+                        O contato LSH liga a bomba (em nível alto) do reservatório;<br><br>
+
+                        O contato LSL desliga a bomba do reservatório (em nível baixo);<br><br>
+
+                        O contato LSHH é responsável pelo alarme LAHH que sinaliza nível alto-alto no reservatório e
+                        liga a segunda bomba do reservatório.<br><br>
+
+                        NOTA: O acionamento e parada manual da bomba pode ser executado no local ou na sala de Controle
+                        do Reator.
+
                     </p>
                 </div>
             </div>
@@ -693,21 +677,25 @@
             <span class="numeroDaQuestão">
                 Questão 29
             </span>
-            <div class="perguntasE" id="quest29">
+            <div class="perguntasC" id="quest29">
                 <h4>
-                    Por que não exige nenhum cuidado extra a queda de aeronaves no LABGENE?
-
+                    Como funciona o controle dos componentes do Sistema de Drenagem do Prédio das Turbinas?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp29" class="respostaF">
                     <p>
-                        Por meio de uma avaliação da frequência de quedas de aeronaves sobre o sítio de Aramar, efetuada
-                        em 1999, e posteriormente em 2010, que colheu informações atualizadas sobre o tráfego aéreo na
-                        região, a frequência anual de queda de aviões sobre o LABGENE é de 4,82 x 10^(-8),
-                        constatando-se que, de acordo com o critério de aceitação estabelecido em /2/, continua
-                        inalterada a conclusão acima mencionada.
+                        O reservatório possui uma chave tipo bóia com 3 posições de atuação (LSH, LSL e LSHH). <br><br>
+
+                        O contato LSH liga a bomba (em nível alto) do reservatório;<br><br>
+
+                        O contato LSL desliga a bomba do reservatório (em nível baixo);<br><br>
+
+                        O contato LSHH é responsável pelo alarme LAHH que sinaliza nível alto-alto no reservatório antes
+                        que transborde.<br><br>
+
+                        NOTA: O acionamento e parada manual da bomba pode ser executado da sala de Controle do Labgene.
                     </p>
                 </div>
             </div>
@@ -717,19 +705,27 @@
             <span class="numeroDaQuestão">
                 Questão 30
             </span>
-            <div class="perguntasF" id="quest30">
+            <div class="perguntasC" id="quest30">
                 <h4>
-                    Por que é impossível a inundação das instalações do LABGENE ou das demais
-                    instalações de segurança do CEA situadas acima desta elevação? (UE3)
+                    Como funciona o controle dos componentes do Sistema de Drenagem do Prédio do Combustível?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp30" class="respostaF">
                     <p>
-                        O Labgene foi construído em uma cota superior à cota máxima de inundação da bacia do Rio
-                        Ipanema. Ainda que haja rompimento da barragem Dr. Hedberg, mesmo considerando um acidente
-                        severo, o nível máximo atingido pelo Rio Ipanema está abaixo da cota de implantação do LABGENE.
+                        A operação de seleção e partida das bombas do sistema é manual e pode ser executada no painel
+                        local ou da Sala de Controle do LABGENE. <br><br>
+
+                        Cada reservatório possui uma indicação de nível que gera alarmes; baixo LAL, alto LAH e muito
+                        alto LAHH.<br><br>
+
+                        Para os RV01, RV02 e RV03:<br>
+                        - LAH o operador deverá acionar a bomba indicada como principal.
+                        - LAHH aciona a bomba indicada como reserva.
+                        - LAL desliga a bomba que estiver operando (automaticamente).<br><br>
+
+                        Para o RV04
                     </p>
                 </div>
             </div>
@@ -739,20 +735,34 @@
             <span class="numeroDaQuestão">
                 Questão 31
             </span>
-            <div class="perguntasE" id="quest31">
+            <div class="perguntasC" id="quest31">
                 <h4>
-                    Por que o projeto dos prédios do LABGENE não precisou sofrer adequação para o
-                    Tornado?
+                    Como funciona o controle dos componentes do Sistema de Drenagem do Prédio Auxiliar Controlado?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp31" class="respostaG">
                     <p>
-                        O projeto foi construído para suportar ventos de 50m/s mas com base nos registros históricos de
-                        tornados da região, estes chegam até 100km/h somente. Isso fez com que a estrutura inicial do
-                        projeto fosse suficiente para suportar ação dos tornados que são menos críticas do que a ação do
-                        vento na sua estrutura dispensando a necessidade de adequação.
+                        A operação de seleção e partida das bombas do sistema é manual e pode ser executada no painel
+                        local ou da Sala de Controle do LABGENE.<br><br>
+
+                        A sinalização é visual e sonoramente na Sala de Controle.<br><br>
+
+                        Cada reservatório possui uma indicação de nível que gera alarmes; baixo LAL, alto LAH e muito
+                        alto LAHH.<br><br>
+
+                        LAH - o operador deverá verificar a fonte do vazamento e providenciar a drenagem dos
+                        reservatórios e/ou poços;<br><br>
+
+                        LAHH (2151-RV01 e RV05) - o operador poderá acionar a bomba
+                        reserva em conjunto com a principal.<br><br>
+
+                        LAL ( 2151-RV01, RV05 e RV06) - Irá desligar automaticamente as bombas 2151-B01A/B, B12A/B e
+                        B13, respectivamente;<br><br>
+
+                        LAH (151-RV12 a RV17, RV19 e RV20) - o operador deve garantir o desligamento da bomba em
+                        operação (2151-B09 a B11 / B14 a B18).
                     </p>
                 </div>
             </div>
@@ -762,9 +772,9 @@
             <span class="numeroDaQuestão">
                 Questão 32
             </span>
-            <div class="perguntasE" id="quest32">
+            <div class="perguntasC" id="quest32">
                 <h4>
-                    Qual tipo de míssil gerado internamente, fora da contenção, é previsto ao LABGENE?
+                    Como funciona o controle dos componentes do Sistema de Drenagem do Prédio Auxiliar Não Controlado?
 
                 </h4>
                 <p>
@@ -772,32 +782,36 @@
                 </p>
                 <div id="resp32" class="respostaG">
                     <p>
-                        No caso do LABGENE, não é previsto qualquer míssel externa à contenção e o carregamento mais
-                        crítico previsto seria o rompimento da tubulação do secundário do lado de fora da contenção que
-                        induziria forças de jato e pressão externa.
+                        Cada reservatório possui uma chave tipo bóia com 3 posições de atuação (LSL, LSH e LSHH).<br><br>
+
+                        O contato LSH liga a bomba selecionada (em nível alto) de cada reservatório;<br><br>
+
+                        O contato LSL desliga as 2 bombas de cada reservatório (em nível baixo);<br><br>
+
+                        O contato LSHH liga a bomba reserva de cada reservatório e o alarme LAHH sinaliza nível
+                        alto-alto.
                     </p>
                 </div>
             </div>
             <hr>
         </div>
+
+
+
         <div id="trinta e três" class="questãoSecaoG">
             <span class="numeroDaQuestão">
                 Questão 33
             </span>
-            <div class="perguntasE" id="quest33">
+            <div class="perguntasC" id="quest33">
                 <h4>
-                    Qual a importância da Proteção contra efeitos dinâmicos associados com a ruptura
-                    postulada de tubulações?
-
+                    Qual a função do Sistema de Água de Resfriamento da PEC
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp33" class="respostaG">
                     <p>
-                        É importante para estabelecer os meios de proteção para os sistemas importantes à segurança e ao
-                        confinamento de radioatividade, garantindo a conservação dos príncipios básicos das funções de
-                        segurança da planta.
+                        Remoção de calor residual proveniente do decaimento de produtos de fissão dos Elementos Combustíveis (EC's) irradiados, armazenados nos compartimentos da PEC, após uma operação normal de recarga do núcleo.
                     </p>
                 </div>
             </div>
@@ -807,75 +821,62 @@
             <span class="numeroDaQuestão">
                 Questão 34
             </span>
-            <div class="perguntasE" id="quest34">
+            <div class="perguntasC" id="quest34">
                 <h4>
-                    Quais as consequências de uma ruptura ou de uma fissura na tubulação de um circuito
-                    implicando a perda de sua função específica?
+                    Qual a função do Sistema de Limpeza e Purificação da PEC
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp34" class="respostaG">
                     <p>
-                        As consequências de uma ruptura ou de uma fissura são: <br><br>
-
-                        Efeito do escoamento dos fluídos, eventualmente radioativos: Jatos, inundação, irradiação e
-                        contaminação; e<br><br>
-
-                        Modificação das condições ambientais locais: Pressão, temperatura e umidade
-                        Efeitos dinâmicos: Chicoteamente da tubulação e incidência sobre a operacionalidade dos órgãos
-                        ativos suportados.
+                        Tem como função efetuar a limpeza do piso da piscina (Compartimento I, II e III) e ainda remover o material particulado da superfície da água dos mesmos.
 
                     </p>
                 </div>
             </div>
             <hr>
         </div>
+        
         <div id="trinta e cinco" class="questãoSecaoG">
             <span class="numeroDaQuestão">
                 Questão 35
             </span>
-            <div class="perguntasE" id="quest35">
+            <div class="perguntasC" id="quest35">
                 <h4>
-                    Como essa proteção é implementada no projeto ou quais dispositivos adotados para a
-                    instalação dos sistemas para se limitar as consequências de uma ruptura de tubulação
-                    postulada sobre os componentes vizinhos?
+                    Qual a função do Sistema de Manuseio de Cargas
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp35" class="respostaG">
                     <p>
-                        Dispositivos para limitar consequências e uma ruptura de tubulação postulada sobre os
-                        componentes vizinho: <br><br>
-
-                        1 - separação geográfica (distância);<br>
-                        2 - a separação física (muros de concreto) ; e<br>
-                        3 - colocação de dispositivos contra os efeitos do chicoteamento (suportes).
+                        Tem por função Receber, Transportar, Manipular, Estocar e trocar o EC.
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-
-
+        <!--
         <div id="trinta e seis" class="questãoSecaoG">
             <span class="numeroDaQuestão">
                 Questão 36
             </span>
-            <div class="perguntasE" id="quest36">
+            <div class="perguntasG" id="quest36">
                 <h4>
-                    Quais tubulações são estudadas nesta seção do RPAS?
+                    Cite três responsabilidades do SPF.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp36" class="respostaG">
                     <p>
-                        1 - Tubulações contendo ou transportando fluidos com alta energia ( T>100°C e Pmax > 20bar) que
-                        podem se romper com chicoteamento.<br><br>
-                        2 - Tubulações com fluidos a moderada ou baixa energia (T < 100°C e P < 20bar ) que podem
-                            fissurar, sem chicoteamento possível. </p>
+                        i. Manter na instalação uma força de segurança durante as 24 horas do dia; <br><br>
+                        ii. Conferir, custodiar os meios para controle de acesso da instalação e providenciar mudanças
+                        nesses meios quando necessárias;<br><br>
+                        iii. Manter a operacionalidade do sistema de comunicação entre os integrantes do SPF e as
+                        instituições que o apoiam;
+                    </p>
                 </div>
             </div>
             <hr>
@@ -884,24 +885,24 @@
             <span class="numeroDaQuestão">
                 Questão 37
             </span>
-            <div class="perguntasF" id="quest37">
+            <div class="perguntasG" id="quest37">
                 <h4>
-                    Quais os Acidentes Básicos de Projeto (ABP) a partir dos quais são estabelecidas as
-                    proteções contra os efeitos dinâmicos associados com a ruptura de tubulações? (UE4)
-
+                    Cite três requisitos para a identificação de pessoas para acesso às áreas de segurança da
+                    instalação.
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp37" class="respostaG">
                     <p>
-                        1 - Acidente de Perda de Refrigerante Primário por Grande Ruptura - APRPGR- tipo
-                        guilhotina;<br><br>
-                        2 - Ruptura da tubulação da água de alimentação do lado secundário do GV, dentro e fora da
-                        contenção;<br><br>
-                        3 - Ruptura da tubulação principal de vapor do circuito secundário, dentro e fora da
-                        contenção;<br><br>
-                        4 - Vazamento ou falha do Sistema de Resfriamento de Emergência (SRE) dentro da contenção.
+                        i. Devem ser fornecidos distintivos, devidamente registrados, às pessoas com acesso autorizado
+                        às áreas de segurança; <br><br>
+                        ii. Os distintivos devem ser portados em local visível durante a permanência nas respectivas
+                        áreas <br><br>
+                        e deverão permitir a identificação por foto;
+                        iii. Extraordinariamente, a critério do SPF, poderá ser autorizado o acesso temporário às áreas
+                        de
+                        segurança sem uso de distintivo, com o devido registro;
                     </p>
                 </div>
             </div>
@@ -911,20 +912,19 @@
             <span class="numeroDaQuestão">
                 Questão 38
             </span>
-            <div class="perguntasE" id="quest38">
+            <div class="perguntasG" id="quest38">
                 <h4>
-                    Em que se trata o conceito de “Leak before Break”? O que isso promove de segurança?
+                    Para quê deve ser formada e mantida uma Força de Segurança na instalação?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp38" class="respostaG">
                     <p>
-                        I - Leak Before Break baseia-se na hipótese de que os materiais austeníticos, utilizados nas
-                        tubulações de alta energia do circuito primário de um Reator nuclear, são de boa qualidade e
-                        apresentam alta resistência mecânica. Dessa forma, resistem ao crescimento descontrolado de
-                        trincas existentes, permitindo a detecção de vazamentos antes de uma ruptura catastrófica da
-                        tubulação.
+                        Ela deve ser formada e estruturada de maneira que possa ser suficiente e ter ação adequada para
+                        contrapor-se, em tempo hábil, a tentativas de intrusão, conforme previsto pela estimativa de
+                        ameaças
+                        feita pelo SPF da instalação nuclear.
                     </p>
                 </div>
             </div>
@@ -934,10 +934,9 @@
             <span class="numeroDaQuestão">
                 Questão 39
             </span>
-            <div class="perguntasE" id="quest38">
+            <div class="perguntasG" id="quest38">
                 <h4>
-                    Haverá aplicação de LBB no LABGENE?
-
+                    Cite três objetivos das medidas de segurança física:
 
                 </h4>
                 <p>
@@ -945,54 +944,66 @@
                 </p>
                 <div id="resp39" class="respostaG">
                     <p>
-                        Inicialmente sim, mas a aprovação final está condicionada à capacidade de detecção de vazamentos
-                        pelo Sistema de Monitoração de Vazamentos da instalação.
+                        i. Proteger o material nuclear contra roubo, furto ou qualquer outra forma de remoção não
+                        autorizada; <br><br>
+                        ii. Contribuir para a recuperação do material nuclear que porventura tenha sido removido de
+                        forma não autorizada ou esteja desaparecido; <br><br>
+                        iii. Proteger as instalações e os materiais nucleares de atos não autorizados, em especial de
+                        sabotagem;
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-
         <div id="quarenta" class="questãoSecaoG">
             <span class="numeroDaQuestão">
                 Questão 40
             </span>
-            <div class="perguntasE" id="quest40">
+            <div class="perguntasG" id="quest40">
                 <h4>
-                    O que é uma Análise Sísmica?
+                    O que é uma Ameaça Base de Projeto (ABP)? Caso não exista uma ABP, o que deve ser elaborado
+                    em substituição?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp40" class="respostaG">
                     <p>
-                        Avaliação dos efeitos de eventos externos extremos, naturais ou provocados, tais como
-                        terremotos, inundações, quedas de aviões, explosões químicas, visando minimizar o impacto
-                        radiológico que a operação da instalação poderia ter sobre a população e o ambiente, sob
-                        condições normais ou acidentais.
+                        Define-se ABP como uma descrição quantitativa, definida pelo Estado, dos atributos e
+                        características
+                        de um adversário potencial (externo ou interno) contra o qual o SisPF de uma instalação nuclear
+                        é
+                        projetado e avaliado. A ABP provê parâmetros mínimos de dimensionamento para os SisPF das
+                        instalações nucleares do país. Na ausência da ABP, devem ser elaboradas estimativas de ameaças
+                        que
+                        levem em consideração, no mínimo, os seguintes aspectos:<br><br>
+                        i. Atributos e características dos adversários que indiquem sua motivação, intenção e capacidade
+                        para cometer um ato maléfico; <br><br>
+                        ii. Adversários internos (insiders) e/ou externos; <br><br>
+                        iii. Adoção de uma abordagem gradual que leve em consideração os atos maléficos e suas
+                        possíveis consequências radiológicas; e <br><br>
+                        iv. Particularidades do entorno da instalação.
+
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-
-    
         <div id="quarenta e um" class="questãoSecaoG">
             <span class="numeroDaQuestão">
                 Questão 41
             </span>
-            <div class="perguntasF" id="quest41">
+            <div class="perguntasG" id="quest41">
                 <h4>
-                    Qual o objetivo de se ter uma instrumentação sísmica? (UE5)
+                    Como deve ser a atuação da força de segurança em áreas internas e áreas vitais?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp41" class="respostaG">
                     <p>
-                        Para garantir que, na ocorrência de sismos, sejam coletados dados suficientes para permitir a
-                        verificação do estado da instalação por análise dinâmica e a avaliação das condições de
-                        segurança para a continuidade da operação.
+                        Em áreas vitais e áreas internas a força de segurança deve atuar sob supervisão e orientação do
+                        pessoal de operação da instalação
                     </p>
                 </div>
             </div>
@@ -1002,23 +1013,25 @@
             <span class="numeroDaQuestão">
                 Questão 42
             </span>
-            <div class="perguntasF" id="quest42">
+            <div class="perguntasG" id="quest42">
                 <h4>
-                    Qual(is) notificação(coes) são enviadas ao operador da sala de controle advindas da
-                    Instrumentação Sísmica? (UE5)
-
+                    Dois tambores encontram-se localizados na área protegida de uma instalação e possuem os
+                    seguintes materiais: <br><br>
+                    Tambor 1: 5 kg de Plutônio não irradiado (com concentração isotópica inferior a 80% de
+                    Pu-238)<br><br>
+                    Tambor 2: 15 kg de urânio enriquecido a 4,3% (em U-235)
+                    Eles estão armazenados no local correto?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp42" class="respostaG">
                     <p>
-                        O alarme sísmico triaxial, localizado na fundação da contenção; <br><br>
+                        O Tambor 1 está armazenado de forma inadequada, pois se trata de um Material Categoria I,
+                        devendo
+                        portanto ser armazenado em uma área interna ou vital. O Tambor 2, está armazenado em local
+                        adequado, pois se trata de um Material Categoria III.
 
-                        O registrador triaxial de espectro de resposta, instalado na fundação da contenção;<br><br>
-
-                        Deverá ser prevista ainda a possibilidade de obtenção imediata dos dados de toda a
-                        instrumentação sísmica prevista pelo operador da sala de controle.
                     </p>
                 </div>
             </div>
@@ -1028,20 +1041,27 @@
             <span class="numeroDaQuestão">
                 Questão 43
             </span>
-            <div class="perguntasE" id="quest43">
+            <div class="perguntasG" id="quest43">
                 <h4>
-                    Quais estruturas são categoria sísmica I?
+                    Qual a diferença entre o PPF Preliminar e o PPF?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp43" class="respostaG">
                     <p>
-                        Prédio do Combustível (PC);<br>
-                        Prédio Auxiliar Controlado (PAC);<br>
-                        Prédio Auxiliar Não Controlado (PANC);<br>
-                        Prédio de Emergência (SUB-2); e<br>
-                        Chaminé de Exaustão (CE).
+                        O Plano Preliminar de Proteção Física se aplica a fase de construção da instalação. Deve conter:
+                        <br><br>
+                        i. A caracterização detalhada da instalação; <br><br>
+                        ii. Diretrizes relacionadas à proteção física; e <br><br>
+                        iii. Plantas ou desenhos. <br><br>
+                        O PPF (final) deve compreender uma descrição real e atualizada de todas as informações relativas
+                        à
+                        proteção física já fornecidas no PPF Preliminar acrescido de: <br><br>
+                        i. Critérios de controle de acesso às áreas de segurança da instalação na fase de operação;
+                        <br><br>
+                        ii. Descrição dos dispositivos de detecção, alarme e certificação de intrusão; e <br><br>
+                        iii. Descrição dos sistemas de proteção de painéis, fiações, comunicações de segurança.
                     </p>
                 </div>
             </div>
@@ -1052,24 +1072,24 @@
             <span class="numeroDaQuestão">
                 Questão 44
             </span>
-            <div class="perguntasE" id="quest44">
+            <div class="perguntasG" id="quest44">
                 <h4>
-                    Quais os dois níveis de eventos sísmicos devem ser considerados para plantas
-                    nucleares?
+                    Quais os tipos de sanções cabíveis pelo não seguimento desta norma NN 2.01?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp44" class="respostaG">
                     <p>
-                        Para plantas nucleares, dois níveis de eventos sísmicos devem ser considerados: o Sismo Básico
-                        de Operação (SBO) e o Sismo de Desligamento Seguro (SDS)
+                        i. Advertência ao titular; <br><br>
+                        ii. Suspensão parcial da autorização concedida pela CNEN, por um prazo determinado;<br><br>
+                        iii. Suspensão total da autorização concedida pela CNEN, por um prazo determinado; ou<br><br>
+                        iv. Cancelamento da autorização concedida pela CNEN
                     </p>
                 </div>
             </div>
             <hr>
         </div>
-        
         <div id="quarenta e cinco" class="questãoSecaoG">
             <span class="numeroDaQuestão">
                 Questão 45
