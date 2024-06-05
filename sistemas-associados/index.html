@@ -16,51 +16,26 @@
     <section>
         <header>
 
-            <h1>Protecao Física e Condução da Operação</h1>
+            <h1>SISTEMAS ASSOCIADOS</h1>
 
         </header>
-        <a href="./simulado/index.html"><input type="button" disabled="true" value="Testar conhecimento"
-                class="botao-simulado"></a>
+        <!-- <a href="./simulado/index.html"><input type="button" disabled="true" value="Testar conhecimento"
+                class="botao-simulado"></a> -->
         <div id="q1" class="questãoSecaoA">
             <span class="numeroDaQuestão">
                 Questão 01
             </span>
             <div id="pergunta1" class="perguntasA">
                 <h4>
-                    Explique os 5 tipos de procedimentos operacionais <br><br>
-                    Procedimentos Operacionais Gerais (POG)<br>
-                    Procedimentos Operacionais de Sistemas (POS)<br>
-                    Procedimentos Operacionais Anormais (POA) <br>
-                    Procedimentos Operacionais de Emergência (POE) <br>
-                    Procedimentos de Resposta a Alarmes (PRA);
+                    Qual a função básica do Sistema de Resfriamento do Reator (SRR)?
                 </h4>
                 <p>
                     <input type="button" class="chamaResposta" value="Resposta">
                 </p>
                 <div id="resp1" class="respostaA">
                     <p>
-                        POG - Indica as linhas gerais de operação normal da planta, desde as condições ambientes até
-                        levar o reator nuclear a produzir 100% de potência, passando pelo aquecimento, pressurização da
-                        planta e pela partida de todos os equipamentos, retorno às condições ambientes (desligamento da
-                        planta) e troca de combustível. <br><br>
-
-                        POS - Detalha a operação de equipamentos ou sistemas específicos. Pode ser iniciado por
-                        indicação em qualquer outro tipo de procedimento ou quando o operador identificar a necessidade
-                        de operar aquele sistema ou equipamento.<br><br>
-
-                        POA - Utilizado para operação da planta fora do estado estacionário/transitório normal previsto
-                        no projeto, que não ameaça as barreiras de segurança contra a liberação de atividade para o meio
-                        ambiente e provavelmente não causaria danos significativos a itens importantes para a segurança
-                        nuclear <br><br>
-
-                        POE - Contém instruções para a equipe operacional implementar as medidas preventivas a fim de
-                        gerenciar os acidentes. Os POE's, geralmente contém todas as medidas preventivas para os
-                        acidentes básicos de projeto e para além dos acidentes básicos de projeto até o ponto de dano no
-                        núcleo. <br><br>
-
-                        PRA - Identifica os alarmes existentes na planta, o local de indicação do alarme na sala de
-                        controle, seus valores (setpoints) de alarme, possíveis causas, ações do operador para
-                        interpretar e eliminar o alarme, bem como apresenta seus documentos de referência
+                        Retirar o calor gerado pelo combustível no núcleo do Reator e transferi-lo, por meio dos
+                        Geradores de Vapor (GVs), ao fluido secundário, produzindo vapor para acionamento das turbinas.
                     </p>
                 </div>
             </div>
@@ -74,31 +49,17 @@
             </span>
             <div id="pergunta2" class="perguntasA">
                 <h4>
-                    Dada uma certa situação operacional, como definir qual o tipo de procedimento de operação a ser
-                    utilizado?
+                    Quais as funções de segurança do Sistema de Resfriamento do Reator (SRR)?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp2" class="respostaA">
                     <p>
-                        Operação Normal: <br>
-                        Conforme demanda do Chefe/Experimento, operador segue POG (e os POG chamam POS);<br><br><br>
-
-                        Qualquer anormalidade: <br>
-                        • A princípio, operador não sabe o que é, então pega o POE-0002/0003 de Monitoração de Função de
-                        Segurança e Identificação de Acidente <br><br>
-                        • Se alguma Função de Segurança não está atendida (SPP não conseguiu desempenhar seu papel
-                        satisfatoriamente), o POE-0002 aponta qual é o POE-01XX equivalente (com prioridade para qual
-                        vai primeiro) <br><br>
-                        • Se as Funções de Segurança estão todas atendidas, o operador continua tentando Identificar o
-                        Evento pelo POE-0003, eventualmente ele aponta qual POE-02XX ou qual POA o operador deve seguir
-                        (sempre monitorando o POE-0002) <br><br>
-                        • Se for um evento não identificável, porém que o SPP tenha atuado, operador continua
-                        monitorando o POE-0002 e tentando identificar o evento (eventualmente, com consulta externa ao
-                        turno)<br><br>
-                        • Se for um evento não identificável, e que o SPP não atuou, o operador ataca os alarmes, um a
-                        um, seguindo os PRA equivalentes.
+                        - Fornecer uma barreira contra a liberação de produtos radioativos para o meio ambiente, e
+                        <br><br>
+                        - Assegurar que as condições de projeto para o combustível nuclear não sejam excedidas durante
+                        qualquer condição de operação da instalação.
                     </p>
                 </div>
             </div>
@@ -115,8 +76,7 @@
             </span>
             <div id="pergunta3" class="perguntasA">
                 <h4>
-                    Correlacione os símbolos mais utilizados nos procedimentos de operação do LABGENE com o seu
-                    significado;
+                    Descreva o SRR
                 </h4>
 
                 <p>
@@ -124,7 +84,13 @@
                 </p>
                 <div id="resp3" class="respostaA">
                     <p>
-                        <img src="./imagens/tabela-MOL.jpg" alt="tabela simbolos do mol" class="imgQuestao">
+                        O SRR consiste de um pressurizador e dois circuitos fechados ligados ao Reator, sendo que cada
+                        circuito contém, duas válvulas para isolamento do Reator; três bombas de circulação em paralelo;
+                        três válvulas de retenção nas descargas das bombas; instrumentação para monitoração e controle;
+                        tubulações; e um GV com tubos em “U”.<br><br>
+
+                        Duas das três bombas de cada circuito funcionam simultaneamente, enquanto a terceira permanece
+                        como reserva para substituição em caso de falha de uma em funcionamento.
                     </p>
                 </div>
             </div>
@@ -141,23 +107,14 @@
             </span>
             <div class="perguntasA" id="quest04">
                 <h4>
-                    Diferencie verbos de atuação de verbos de verificação de estado que são utilizados nos manuais de
-                    operação do LABGENE dando exemplos desses verbos.
+                    O que é Barreira de Pressão?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp4" class="respostaA">
                     <p>
-                        Verbos de Verificação de Estado: <br><br>
-                        Fonte: “normal” (não-negrito)<br>
-                        Exemplo: Aberta / fechada, Ligada / desligada, Ajustada<br><br><br>
-
-                        Verbos de <strong>Atuação:</strong><br><br>
-                        Fonte: <strong>“negrito”</strong><br>
-                        Exemplo: <strong>
-                            Abrir / fechar, Ligar / desligar, Ajustar
-                        </strong>
+                        São todos os componentes que fazem parte do sistema de resfriamento do reator (SRR)
                     </p>
                 </div>
             </div>
@@ -171,16 +128,17 @@
             </span>
             <div class="perguntasA" id="quest05">
                 <h4>
-                    Defina Plano de Emergência Local (PEL).
+                    Quais os componentes da Barreira de pressão?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp5" class="respostaA">
                     <p>
-                        Conjunto de medidas a serem implementadas em caso de situação real ou potencial de emergência
-                        no CTMSP-CEA.
-
+                        Vaso de pressão; <br>
+                        Pressurizador;<br>
+                        Geradores de Vapor;<br>
+                        Bombas, Válvulas e Tubulações. 
                     </p>
                 </div>
             </div>
@@ -194,18 +152,14 @@
             </span>
             <div class="perguntasA" id="quest06">
                 <h4>
-                    Qual o raio de ação da Zona de Planejamento de Emergência (ZPE)?
+                    Qual o DNBR mínimo do LABGENE?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp6" class="respostaA">
                     <p>
-                        A ZPE do LABGENE abrange
-                        uma área delimitada por uma
-                        circunferência de 800m de
-                        raio, centrada no Prédio do
-                        Reator.
+                        1.446
                     </p>
                 </div>
             </div>
@@ -219,18 +173,16 @@
             </span>
             <div class="perguntasC" id="quest07">
                 <h4>
-                    Cite quais são as classes de emergência do LABGENE (classificação de emergência).
+                    Quais são os pontos de conexão do 2154 e 2157 com o primário?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp07" class="respostaC">
                     <p>
-                        Evento Não Usual (ENU); <br>
-                        Alerta;<br>
-                        Emergência de Área;<br>
-                        Emergência Geral.
+                        Os dois misturadores entre a perna quente e a perna fria.<br><br>
 
+                        Aspessor do pressurizador.
                     </p>
                 </div>
             </div>
@@ -755,7 +707,8 @@
                         • Nível Tático<br>
                         PR (Procedimento do SGQ)<br><br>
                         • <strong>Nível Operacional Normativo</strong><br>
-                        <strong>ID (Instrução Detalhada)</strong>, LGQ (Lista de GQ), <strong>PO (Prática Operacional)</strong><br><br>
+                        <strong>ID (Instrução Detalhada)</strong>, LGQ (Lista de GQ), <strong>PO (Prática
+                            Operacional)</strong><br><br>
                         • Nível Operacional Executivo<br>
                         Registros
                     </p>
