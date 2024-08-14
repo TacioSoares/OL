@@ -77,6 +77,13 @@
                         Desligar BEC, BAA, TGA, TGP e BCP, <BR><BR>
                         isolar 2530 e 2151,<BR><BR>
                         prontidão GDG
+
+                        • Partir e controlar 2159 (se GV disponível);<BR><BR>
+                        • Partir SRCR (se GV indisponível, e no final do resfriamento);<BR><BR>
+                        • Partir 2157 (se ATWS);<BR><BR>
+                        • Partir SIE, isolar contenção, comutar fases AP, BP, recirculação (se LOCA);<BR><BR>
+                        • Partir GDG e Transferir cargas essenciais temporizada (se Barramento de Segurança
+                        fora).
                     </p>
                 </div>
             </div>
@@ -180,16 +187,9 @@
                 </p>
                 <div id="resp6" class="respostaA">
                     <p>
-                        • Retirar A2 (~100cm a 1mm/s =
-                        ~17min); <br><br>
-                        • Retirar A1 (~100cm a 1mm/s =
-                        ~17min);<br><br>
-                        • Posicionar D e C (Início de Vida IV:
-                        D permanece 0;
-                        C 45,5cm (~8min);)<br><br>
-                        • Levantar 1/M e retirar B
-                        cuidadosamente até atingir a
-                        Criticalidade;
+                        A2 totalmente retirado; A1 totalmente retirado; D na posição exigida pelo
+                        passo de queima; C na posição exigida pelo passo de queima; finalmente B
+                        até a Criticalidade.
                     </p>
                 </div>
             </div>
@@ -217,7 +217,11 @@
                 </p>
                 <div id="resp07" class="respostaC">
                     <p>
-
+                        • Inserir. <br><br>
+                        • A potência tenderá a retornar a 7%, pois o moderador/refrigerante vai ter 
+                       sua temperatura reduzida, o que vai aumentando a potência até se igualar ao 
+                       consumo (7%). <br><br>
+                        • O operador deveria tentar igualar Tm de Tref
                     </p>
                 </div>
             </div>
@@ -245,35 +249,38 @@
 
             <hr>
         </div>
-        <!--
+
         <div id="nove" class="questãoSecaoB">
             <span class="numeroDaQuestão">
                 Questão 09
             </span>
             <div class="perguntasB" id="quest09">
                 <h4>
-                    Qual a função do Sistema de Desaeração do Primário (2158)?
+                    Cite algumas particularidades do LABGENE
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp9" class="respostaB">
                     <p>
-
-                        Remover o hidrogênio e os gases de fissão contidos no circuito primário anteriormente à abertura
-                        do tampo do vaso do reator;<br><br>
-
-                        Desaerar o circuito primário na operação de enchimento.<br><br>
-
-                        Desaerar do Tanque de Alívio (R11.01-2155-VP01) do Sistema de Descarga de Refrigerante do
-                        Primário (DG)
+                        • <strong>Xenônio</strong> <br><br>
+                        Estável 100%: 2180 pcm (vs ~2700 pcm);<br><br>
+                        Pico desligamento: +590 pcm (2770 pcm) em ~6h (vs 10h);<br><br>
+                        Oscilações de potência axial: irrisório (núcleo pequeno) (vs preocupante);<br><br><br>
+                        • <strong>Coef. Temp. Moderador (MTC)</strong>:<br><br>
+                        Sempre bastante negativo (vs quase 0 no BOL, bastante negativo EOL);<br><br>
+                        No EOL, fica levemente menos negativo (vs bem mais negativo no EOL);<br><br><br>
+                        • <strong>Excesso de Reatividade (kex) no EOL</strong>:<br><br>
+                        Dead-time 0 sempre, bastante kex, núcleo trocado ainda com muita energia (vs
+                        dead-time quase sempre presente, praticamente sem kex no EOL, núcleo
+                        trocado no limite de manter potência e temperaturas nominais)
                     </p>
                 </div>
             </div>
 
             <hr>
         </div>
-
+        <!--
         <div id="dez" class="questãoSecaoB">
             <span class="numeroDaQuestão">
                 Questão 10
