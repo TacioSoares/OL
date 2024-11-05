@@ -27,19 +27,20 @@
             </span>
             <div id="pergunta1" class="perguntasA">
                 <h4>
-                    Quais os objetivos de um APS?
+                    Cite 4 indícios de que está ocorrendo vazamento de refrigerante do LABGENE para a contenção
                 </h4>
                 <p>
                     <input type="button" class="chamaResposta" value="Resposta">
                 </p>
                 <div id="resp1" class="respostaA">
                     <p>
-                        • Identificar e delinear as combinações de eventos que podem levar a um
-                        acidente grave;<br><br>
+                        • Pressão no PZ diminuindo;<br><br>
 
-                        • Avaliar a probabilidade esperada de ocorrência para cada combinação; e<br><br>
+                        • Nível no PZ diminuindo<br><br>
 
-                        • Avaliar as consequências.
+                        • Pressão na contenção aumentando.<br><br>
+
+                        • Nível na contenção aumentando.<br><br>
                     </p>
                 </div>
             </div>
@@ -53,17 +54,19 @@
             </span>
             <div id="pergunta2" class="perguntasA">
                 <h4>
-                    Qual a definção geral de um APS?
+                    Quais os valores para a atuação do SPP para as variáveis Pressão no PZ, Nível do PZ e Pressão da
+                    Contenção e como consiste a lógica de atuação?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp2" class="respostaA">
                     <p>
-                        A APS é uma técnica analítica para integrar diversos aspectos de
-                        projeto e operação a fim de avaliar o risco de uma usina nuclear
-                        específica e desenvolver uma base de informações para analisar
-                        problemas genéricos e específicos
+                        Pressão no PZ < 120bar-a <br>
+                            Nível no PZ < 1,3m<br>
+                                Pressão na Contenção > 3bar-a<br><br>
+
+                                Lógica de atuação 2 de 3.
                     </p>
                 </div>
             </div>
@@ -80,7 +83,7 @@
             </span>
             <div id="pergunta3" class="perguntasA">
                 <h4>
-                    Cite algumas áreas nas quais o APS provou ser benéfico
+                    Como composta as fases de atuação do SPP do LABGENE em caso de LOCA?
                 </h4>
 
                 <p>
@@ -88,26 +91,10 @@
                 </p>
                 <div id="resp3" class="respostaA">
                     <p>
-                        • Avaliação da completude e equilíbrio do projeto para segurança (incluindo a
-                        identificação de condições de risco relevantes da planta e de possíveis 'efeitos de
-                        precipício' com relação a acidentes e suas consequências); <br><br>
-
-                        • Avaliação de modificações do projeto e procedimentos da planta de um ponto de vista
-                        de segurança; <br><br>
-
-                        • Avaliação de estratégias de gerenciamento e operacionais; <br><br>
-
-                        • Assistência à gerência da planta no estabelecimento de manutenção e testes eficazes
-                        (incluindo 'avaliações de segurança probabilísticas vivas'); <br><br>
-
-                        • Treinamento de equipe;<br><br>
-
-
-                        • Assistência na tomada de decisão sobre revisão de sistemas, estruturas ou
-                        componentes;<br><br>
-
-                        • Avaliação das estratégias de gerenciamento de acidentes;
-                        orientação para melhorar as especificações técnicas;
+                        É composta de 3 fases principais: <br><br>
+                        Injeção a Alta Pressão;<br>
+                        Injeção a Baixa Pressão;<br>
+                        Reciculação pelos pocetos.
                     </p>
                 </div>
             </div>
@@ -124,20 +111,17 @@
             </span>
             <div class="perguntasA" id="quest04">
                 <h4>
-                    O que é risco e o que algo precisa ter para ser considerado de risco?
+                    Caso haja um vazamento dos tubos em U do GV, contaminando a água do secundário, e consequentemente
+                    aumentando sua pressão, a ponto de talvez abrir as válvulas de segurança e descarregar água
+                    possívelmente contaminada para as piscinas, qual o procedimento que o operador deve executar para
+                    evitar que contamine a água da piscina nessa situação?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp4" class="respostaA">
                     <p>
-                        Definição de Risco: é a frequência com que uma determinada consequência
-                        ocorre <br><br>
 
-                        Envolve ambos:<br>
-                        • Probabilidade do evento indesejado<br><br>
-
-                        • Gravidade (magnitude) das consequências
                     </p>
                 </div>
             </div>
@@ -151,15 +135,20 @@
             </span>
             <div class="perguntasA" id="quest05">
                 <h4>
-                    Quantos são, quais os níveis que um APS possui e qual o resultado de cada um?
+                    Em caso de abertura inadvertida de uma válvula de alívio do LABGENE,qual a tendências das variáveis
+                    de Tmed do SRR, Reatividade e consequentemente Potencia nuclear, Nível e Pressão do PZ?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp5" class="respostaA">
                     <p>
-                        3 níveis: <br><br>
-                        <img src="./imagens/niveis.png" alt="tabela com os níveis" class="imgQuestao">
+                        Tmed do SRR cairia, pois a potência consumida pelo secundário seria maior do que a do Reator
+                        <br><br>
+
+                        Reatividade subiria, pois a diminuição da temperatura adicionaria reatividade positiva<br><br>
+
+                        Nível e Pressão do PZ - cairia em ambos devido a diminuição da Tmed do SRR
                     </p>
                 </div>
             </div>
@@ -173,18 +162,20 @@
             </span>
             <div class="perguntasA" id="quest06">
                 <h4>
-                    O que é Árvore de Falhas?
+                    Em caso de um grande consumo de vapor no qual o SPP detectasse LOCA, seria possível o SIE inundar a
+                    contenção através da injeção dos tanques de inundação? Explique o que aconteceria e como o operador
+                    poderia iniciar o resfriamento da planta?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp6" class="respostaA">
                     <p>
-                        Uma técnica analítica, pela qual um estado indesejado do sistema é especificado
-                        (geralmente um estado que é crítico do ponto de vista de segurança), e o
-                        sistema é então analisado com base no contexto do seu ambiente e da
-                        operação, para encontrar todas as maneiras críveis pelas quais o evento
-                        indesejado pode ocorrer.
+                        Não seria capaz, pois como a injeção do SIE é através do primário, por ter sido um falso LOCA, a
+                        pressão do refrigerante se estabilizaria acima de 90bar, como as bombas do SIE conseguem injetar
+                        a uma pressão de 90bar, seria fisicamente impossível. <br><br>
+                        O operador, quando observar a ausência de LOCA, deve resetar a detecção do LOCA e iniciar o
+                        resfriamento com o GV.
                     </p>
                 </div>
             </div>
@@ -198,15 +189,17 @@
             </span>
             <div class="perguntasC" id="quest07">
                 <h4>
-                    O que são erros pré-iniciador?
+                    Caso ocorra retirada incontrolada do banco B com o LABGENE em potência, quais as 3 possíveis causes
+                    de SCRAM previstas?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp07" class="respostaC">
                     <p>
-                        São erros de ações humanas latentes, não revelados, que
-                        ocorrem antes do evento iniciador.
+                        1 - Sobrepotência<br><br>
+                        2 - Por período curto<br><br>
+                        3 - Delta T fora do limite de curva de proteção.
                     </p>
                 </div>
             </div>
@@ -219,15 +212,17 @@
             </span>
             <div class="perguntasB" id="quest08">
                 <h4>
-                    O que são erros pós-iniciador?
+                    Com o LABGENE operando abaixo de 50%, ocorre um desalinhamento de barras em um mesmo banco de
+                    controle, é esperador que ocorra um SCRAM? O que o operador deve fazer?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp8" class="respostaB">
                     <p>
-                        São erros de ações humanas que ocorrem após o TRIP do
-                        reator e tipicamente ocorrem devido a dois tipos de erro humano.
+                        Não é esperado o SCRAM.<br><br>
+
+                        O operador deve reduzir a potência e realinhar as barras.
                     </p>
                 </div>
             </div>
@@ -241,19 +236,16 @@
             </span>
             <div class="perguntasB" id="quest09">
                 <h4>
-                    O que são erros de execução (manipulação ou erro humano) e quais os modos desse erro?
+                    Qual a pior consequência operacional prevista no LABGENE caso
+                    ocorra o desligamento inadvertido de uma BCP com a planta a 100%
+                    de potência?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp9" class="respostaB">
                     <p>
-                        falha em realizar as etapas críticas, uma vez
-                        decidida, normalmente devido aos seguintes modos de erro: <br><br>
-                        • Erro de omissão (EDO): Ação requerida não é executada.<br>
-                        ➢Exemplo: Op. esqueceu de monitorar o nível do tanque<br><br>
-                        • Erro de comissão (EDC): Ação requerida é executada erroneamente.<br>
-                        ➢ Exemplo: Op. abriu a válvula errada ou acionou o equipamento errado.
+                        O delta T ultrapassa os limites das Curvas de Proteção, e ocorrerá um SCRAM
                     </p>
                 </div>
             </div>
@@ -267,27 +259,24 @@
             </span>
             <div class="perguntasB" id="quest10">
                 <h4>
-                    No LABGENE, quais os recursos projetados para prevenir a ocorrência de dano a contenção e mitigar
-                    sua ocorrência(Nível 2):
+                    Na improvável situação em que o núcleo seja carregado com o EC
+                    com veneno queimável em posição incorreta, qual instrumento será
+                    capaz de identificar essa falha?
                 </h4>
                 <p>
                     <input type="button" value="Resposta" class="chamaResposta">
                 </p>
                 <div id="resp10" class="respostaB">
                     <p>
-                        I. Sistema de contenção (Duas barreiras)<br>
-                        <br>
-                        • Contenção de Aço: resistente a pressão e troca calor com a piscina de
-                        blindagem (Fonte fria do SRCR). <br><br>
-                        • Prédio do Reator: blindagem radiológica <br><br>
-                        • Sistemas Auxiliares da contenção:
+                        Serão os Self-Powered Neutron Detectors (SPND) do Sistema de Detecção
+                        Nuclear Interna (SDNI), que fazem o mapeamento 3D do fluxo de nêutrons.
                     </p>
                 </div>
             </div>
 
             <hr>
         </div>
-
+<!--
         <div id="onze" class="questãoSecaoC">
             <span class="numeroDaQuestão">
                 Questão 11
@@ -517,8 +506,8 @@
                 </p>
                 <div id="resp20" class="respostaC">
                     <p>
-                        É tipicamente usado para modelar a resposta a um EI. <br><br> 
-                        Uso primário:<br> 
+                        É tipicamente usado para modelar a resposta a um EI. <br><br>
+                        Uso primário:<br>
                         • Identificação de sequências de acidentes que resultam em algum resultado de interesse
                         (geralmente danos no núcleo e/ou falha de contenção)<br><br>
                         • Base para quantificação da sequência de acidentes
@@ -527,7 +516,7 @@
             </div>
             <hr>
         </div>
-        <!--
+        
         <div id="vinte-e-dois" class="questãoSecaoC">
             <span class="numeroDaQuestão">
                 Questão 21
